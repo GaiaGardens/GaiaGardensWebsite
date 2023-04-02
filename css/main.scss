@@ -1,0 +1,902 @@
+@import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+//////////Global Styles//////////
+*{
+    box-sizing: border-box;
+}
+
+body{width: 100vw; overflow-x: hidden; overflow-y: scroll; margin:0px;}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+.main-padding{
+    margin:0;
+    text-align: center;
+}
+//Colors//
+$GaiaLightGreen: #B4DE4A;
+$GaiaDarkGreen:  #446258;
+$GaiaGrey: #2C2C2C;
+
+//Buttons//
+.arrow-button-anchor{
+    text-decoration: none;
+    width: 16vw;
+    .green-arrow-button{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: $GaiaLightGreen;
+        width: 16vw;
+        height: 1.8vw;
+        border-radius: 44.9876px;
+        justify-items: center;
+        align-items: center;
+        margin:0;
+        transition:0.4s all ease;
+        p{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2vw;
+            font-variant: small-caps;
+            margin: 0 0 0 1vw;
+            color:#171C09;
+            letter-spacing: 0.1em;
+            transition:0.4s all ease;
+        }
+        .arrow{
+            width:5vw;
+            transition:0.4s all ease;
+            transform: translateX(-1.8em);
+        }
+    }
+    .green-arrow-button:hover{
+        box-shadow: 0 0.1em 0.5em 0.1em $GaiaDarkGreen;
+        background-color:  #bff82e;
+        .arrow{
+            transform: translateX(0.1em);
+        }
+        p{
+            letter-spacing:0.18em;
+        }
+    }
+}
+
+
+
+/////////////////Page Styles///////////////
+
+//////////Mobile Version/////////
+@media only screen and (max-width: 500px){
+    //Load Bar//
+    .loader{
+        position:fixed;
+        left:0;
+        top:0;
+        width:100vw;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background: white;
+        z-index: 200;
+        transition: opacity 0.75s, visibility 0.75s;
+    }
+    .loader--hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .loader::after{
+        content: "";
+        width:8vh;
+        height: 8vh;
+        border:15px solid #dddd;
+        border-top-color: black;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite; 
+    }
+    
+    @keyframes loading {
+        from { transform: rotate(0turn) }
+        to { transform: rotate(1turn) }
+    }
+    .hide-xs{
+        display:none;
+    }
+    body{max-width: 100vw; overflow-x:hidden;}
+
+    header{max-width: 100vw; overflow-x:hidden;}
+
+    .splash{
+        background-image: url("https://dsm01pap009files.storage.live.com/y4m5-sZVzELoDtrlWPnmgwg8kZcqURc3qvyDpOa-ZSKELt7ncK1_MjLZ_shDijWjXhnM4oEd-ORKS3Q86-8s3IC92Qb0gC14MP3Xs9Ec4F_S47sW1KdTqXuorH-0gcWm1Qgz7IXQOBxY3mCgwuA75f-xpTcfbSTK8fvxGGErAaX0_gBgzBp_VIKBvdinAPWJkjn?width=1923&height=969&cropmode=none");
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width:100%;
+        padding: 0;
+        position: fixed;  
+    }
+
+    
+    .home-footer-grid{
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: white;
+        width: 100vw;
+        height:12vh;
+        top:178vh;
+        
+        
+        div{
+            justify-self: center;
+            align-self: center;
+            padding-top:5vh;
+            width:80vw;
+            
+            
+            p{text-justify: center;
+            text-align: center;}
+        }
+    } 
+}
+
+///////////////Desktop Version////////////// 
+@media only screen and (min-width: 500px){
+
+    .hide-xl{display:none; visibility: hidden;}
+    
+    //Load Bar//
+    .loader{
+        position:fixed;
+        left:0;
+        top:0;
+        width:100vw;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background: white;
+        z-index: 200;
+        transition: opacity 0.75s, visibility 0.75s;
+    }
+    .loader--hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .loader::after{
+        content: "";
+        width:8vh;
+        height: 8vh;
+        border:15px solid #dddd;
+        border-top-color: black;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite; 
+    }
+    
+    @keyframes loading {
+        from { transform: rotate(0turn) }
+        to { transform: rotate(1turn) }
+    }
+    
+    .main-body{
+        display:grid;
+        width: 100vw;
+        align-content: center;
+        background-color: transparent;
+        overflow-y: hidden;
+    
+        .top-bar{
+            display: flex;
+            position:absolute;
+            left:0px;
+            top:0px;
+            z-index:99;
+            flex-direction: row;
+            background-image: url("https://dsm01pap009files.storage.live.com/y4mxtardiGUtDY3kgODSqZqoILtOsaT3ZU6mSkxMH5Zxd605WfUc0u-CHrkdSZMRZ1QwaOiUOVYixA11vlfFMxn3DRW0pliiLhSjS0jMtzmnkkk_cE72w6AkCGnxeFiiaBBGGogMiiXU-z2u3h5N8P_tuUgISdvUbXR8Mxedp_OSCrdlCxPid5NXh8pi4w294CS?width=1915&height=139&cropmode=none");
+            background-size:cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            width:100vw;
+            height:5vw;
+            #gaia-logo-top{
+                align-self: center;
+                height: 4vw;
+                padding-left: 3vw;
+                }
+            .callnow-section{
+                display: flex;
+                position: absolute;
+                right:0px;
+                flex-direction: row;
+                height: 4vh;
+                padding-right: 1vw;
+                align-self: center;
+                #phone-number{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        text-decoration: none;
+                        font-family: 'Roboto';
+                        font-weight: 200;
+                        font-size: .9vw;
+                        line-height: 1vw; 
+                        color: #FFFFFF;
+                        display:flex;
+                        align-items: center;
+                        
+                        #phoneicon-white{
+                            width: 0.7vw;
+                            margin-right:0.5vw;
+                        }
+                    }
+                    p{
+                        font-family: 'Roboto';
+                        font-weight: 200;
+                        font-size: .9vw;
+                        line-height: 1vw; 
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        header{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            position: absolute;
+            top:10vh;
+            left:0px;
+            z-index: 99;
+            width: 100vw;
+            background-color: none;
+            nav ul{
+                display: grid;
+                width:100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                justify-self: center;
+                align-self: center;
+                justify-items: center;
+                list-style-type: none;
+                padding:none;
+                .non-drop{
+                    a{
+                    color: white;
+                    justify-self: center;
+                    align-self: center; 
+                    text-decoration: none;
+                    font-family:'Roboto', sans-serif;
+                    text-transform:uppercase;
+                    font-weight: 300;
+                    font-size: .9vw;
+                    transition: 0.4s all ease;
+                    }
+                    a:hover{
+                        color:#B4DE4A;
+                        font-size: .95vw;
+                        border-bottom:3px solid $GaiaLightGreen;
+                        font-weight: 500;
+                    }
+                }
+                #dropdown{
+                    display:grid;
+                    grid-template-columns: 1fr;
+                    #dropdown-btn{
+                        color: white;
+                        justify-self: center;
+                        align-self: center; 
+                        text-decoration: none;
+                        font-family:'Roboto', sans-serif;
+                        text-transform:uppercase;
+                        font-weight: 300;
+                        font-size: .9vw;
+                        transition:0.4s all ease;
+                        }
+                    #dropdown-btn:hover{
+                        color:#B4DE4A;
+                        font-size: .95vw;
+                        font-weight: 500;
+                    }
+                    #dropdown-content{
+                        display:grid;
+                        height:0px;
+                        width:100%;
+                        opacity: 0;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-columns: 1fr;
+                        align-items: center;
+                        background-color: #1C312A;
+                        padding:0px;
+                        transition: .4s all ease;
+                        a{
+                            transition: .4s all ease;
+                            text-decoration: none;
+                            font-family:'Roboto', sans-serif;
+                            text-transform:uppercase;
+                            font-weight: 400;
+                            font-size: small;
+                            padding:10px;
+                            text-align: center;
+                            color: white;
+                            opacity: 0; 
+                        }
+                    }
+                }
+                #dropdown:hover #dropdown-content {
+                    display:grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    height:150px;
+                    width: 100%;
+                    opacity: 100%;
+                    a{
+                        opacity: 1;
+                    }
+                    a:hover{
+                        color:#B4DE4A;
+                    }
+                }
+            }
+        }
+
+        .splash{
+            position:absolute;
+            background-color: #1C312A;
+            left:0px;
+            top:5vw;
+            width:100vw;
+            height:90vh;
+            display:flex;
+            justify-content: center;
+            align-content: center;
+
+            .splash-items{
+                display:flex;
+                flex-direction: column;
+                align-self: center;
+                margin:0;
+                max-height: 60vh;
+                margin:0;
+                z-index:99;
+                align-items: center;
+                
+                .large-title{
+                    font-family: 'Aref Ruqaa', serif;
+                    text-transform: uppercase;
+                    color: $GaiaLightGreen;
+                    font-weight: 700;
+                    font-size: 70px;
+                    text-align: center;
+                    margin:0;
+                    line-height: 80%;
+                    z-index:99;
+                }
+                
+                .large-subhead{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    line-height: 27px;
+                    font-size: 20px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color:white;
+                    text-align: center;
+                    z-index:99;
+                    padding-top: 1vh;
+                    width: 40vw;
+                }
+            }
+        }
+
+        #background{
+            position:absolute;
+            left:0px;
+            top:5vw;
+            width:100vw;
+            height: 90vh;
+            z-index:3;
+            background-color: #1C312A;
+            #page1_image{
+                position: absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-image: url("https://dsm01pap009files.storage.live.com/y4m5-sZVzELoDtrlWPnmgwg8kZcqURc3qvyDpOa-ZSKELt7ncK1_MjLZ_shDijWjXhnM4oEd-ORKS3Q86-8s3IC92Qb0gC14MP3Xs9Ec4F_S47sW1KdTqXuorH-0gcWm1Qgz7IXQOBxY3mCgwuA75f-xpTcfbSTK8fvxGGErAaX0_gBgzBp_VIKBvdinAPWJkjn?width=1923&height=969&cropmode=none");
+            }
+            #page2_image{
+                position: absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-image: url("https://dsm01pap009files.storage.live.com/y4mROmUcAqSF7Ib96glE4OLQeK7vjhcm_sJkBqxbVgvVJE2JbS4YBgpVpAlXUt_TiTXSTxqLbWggvckuZgKfKjnBbbmG3YEcdi8zGG_L64a4S2u01Hj2IXU4aoK7alfhtW2s-Vl1k0U421Qtz9m7bgzTaoi4xNCN6MdK-wIHDIvoad2FEpaJp4ruoYdy7g4z0Tr?width=1923&height=969&cropmode=none");
+            }
+            #page3_image{
+                position: absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-image: url("https://dsm01pap009files.storage.live.com/y4mqZR-3nrJBXOx1Szrp3acvr9MbxSFoIsk6DCKnIP8lyTbaJY-X07l28Qe0HvYcvyANb9QL7Oqdq5oRchKUBzcXU72wJhGsSrzTR0weZmCK_aTxcW28yaMT0ogmd7IW4epNuIOKwHEDk2N1__C_11R_4YIcHLN9GB7l6LKVpzTCEXEq9PEzQYRNvef8ts7P8Ya?width=1923&height=969&cropmode=none");
+            }
+            #page4_image{
+                position: absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-image: url("https://dsm01pap009files.storage.live.com/y4mphVHysaC7zQ5VsTB9OmMVWrp1DZ1hgkKo4VjUuk4XVdGnbT-xnrlAGbYMoksZRqRHN793iNqoDQWQKNTyoYqR5QqRFzvTHnaI2DX3fiyDudRRRX3TQnjYPm3hapH8nMUUzEBnNNyobkmOaIj2Mn0ijvdb2uh7bZlda-zjBBe-E6j7lyK9Dz0z4Fr3hM_Dg_q?width=1923&height=969&cropmode=none");
+            }
+            #page5_image{
+                position: absolute;
+                top:0;
+                left:0;
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-image: url("https://dsm01pap009files.storage.live.com/y4mbV_ZWLBzt_htLCj_ZIGzJb8L9qrluyV3tmjcX3lxQwnCh5rgawd-39iRJN4N1NVcmyP5929-51RUZn77fUGeukXzjvwr1uzMvsHtJbYNS0Y05-vfP7g9J9dVVBCX3K3YmVFVy36tgMS-_v2OYyYIe2qCZGf-sRIovcXorU9mhpYopfZy_2-FFvbv_vZhhFZ4?width=6000&height=4000&cropmode=none");
+            }
+        }
+        .content{
+            position: relative;
+            margin-top:95vh;
+            background-color: #D0D7CF;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr;
+            z-index:1;
+            
+            .content-grid{
+                display: grid;
+                width: 70vw;
+                grid-template-columns: 1fr;
+                align-self: center;
+                justify-self: center;
+                margin-top:10vh;
+                margin-bottom: 10vh;
+                
+                
+                .content-item{
+                    width:100%;
+                    z-index: 99;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                }
+
+                #item1{
+                    background-color:$GaiaGrey;
+                    display: flex;
+                    justify-content: flex-start;
+                    max-height: 45vw;
+                    #side-image1{
+                        padding:40px;
+                        height: 35vw;
+                    }
+                    #two-row-container1{
+                        display: grid;
+                        grid-template-rows: 1fr 1fr;
+                        width: 60%;
+                        height: 35vw;
+                        justify-content: center;
+                        align-self: center;
+                        justify-self: center;
+                        gap:1vw;
+                        #row1{
+                            width:80%;
+                            margin-left:20px;
+                            margin-right:20px;
+                            justify-self: center;
+                            align-self: center;
+                            h3{
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 900;
+                                font-size: 3vw;
+                                line-height: 85%;
+                                text-align: center;
+                                font-variant: all-small-caps;
+                                color: $GaiaLightGreen;
+                                margin-bottom: 31px;
+                            }
+                            p{
+                                    font-family: 'Roboto';
+                                    font-weight: 200;
+                                    font-size: 1.1vw;
+                                    line-height: 23.64px; 
+                                    color: #FFFFFF;
+                                    text-align: center;
+                                    padding-top:20px;
+                                    border-top: 3px solid $GaiaLightGreen;
+                            }
+                        }
+                        #row2{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            width:80%;
+                            margin-left:20px;
+                            margin-right:20px;
+                            justify-self: center;
+                                
+                            div{
+                                display: grid;
+                                grid-template-rows: 1fr 1fr 1fr;
+                                align-items: center;
+                                justify-items: center;
+                                height:15vh;
+                                img{
+                                    padding-top:0px;
+                                    height:30px;
+                                }
+                                h5{
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 1.2vw;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    font-variant: all-small-caps;
+                                    color:$GaiaLightGreen;
+                                    margin-top: 10px;
+                                    margin-bottom:0px;
+                                }
+                                p{
+                                    font-family: 'Roboto';
+                                    font-weight: 200;
+                                    font-size: .9vw;
+                                    line-height: 20.64px; 
+                                    color: #FFFFFF;
+                                    text-align: center;
+                                    margin-top: 1vw;
+                                    width:fit-content;
+                                }
+                            }
+                        }
+                    }
+                }
+                #item2{
+                    display:grid;
+                    grid-template-columns: 1fr 1fr;
+                    background-color: #F1ECE8;
+                    width: 100%;
+                    height:20vw;
+                    #side-image2{
+                        background-image: url("https://dsm01pap009files.storage.live.com/y4mHwOfo1Iu7Hunp_tWyzZQS8G2bu67DYiNr7Zdj_vD7reVQq-bnZoA91SqRcgTiR_fi8Tc-zICJwYDVfJIrFG4vvp6MI7MAqpkkKVXE8BnhQFgGcb3yNuKRa9Wyq8oTLZ-eiFPf360_-M7hedGr6XzLcirnz7G41HBSkDpdQ6XxpJ8TcedRGjxo9dpg0Fr03iP?width=712&height=383&cropmode=none");
+                        padding: 3vw;
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        h3{
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 3vw;
+                            line-height: 85%;
+                            text-align: center;
+                            font-variant: all-small-caps;
+                            color:$GaiaLightGreen;
+
+                        }
+                    }
+                }
+
+                #item3{
+                    display: flex;
+                    flex-direction: row;
+                    background-image:url("https://dsm01pap009files.storage.live.com/y4maBrMSD_vYe_m8D3Nr69Pniplc2J1CqscH3AByoGi2F-N-3t6R6VOWtasNtIkz1gTW7CvQmlzv1xxHWyxzlP-5BuAI9ZRuPQvpTVegxPwoOtRTvWxAYFSK8OGCmYwX3xEsqHfjszAjFrvU7yA8piXpUIkfuoFupeaT5h9J-hM7v2b3izyubtZiiBGiMigoAlc?width=1468&height=930&cropmode=none");
+                    background-position: bottom center;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    width: 70vw;
+                    height:45vw;
+                    align-items: center;
+                    justify-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    margin-top: 0;
+                    #familyinfo{
+                        width:40%;
+                        height:70%;
+                        display: grid;
+                        grid-template-columns: 1fr;
+
+                        h3{
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 3vw;
+                            line-height: 85%;
+                            text-align: center;
+                            font-variant: all-small-caps;
+                            color:$GaiaDarkGreen;
+                            text-align: left;
+                            margin-top: 0;
+                            padding-bottom:5px;
+                            border-bottom:3px solid $GaiaDarkGreen;
+                            width: fit-content;
+                            height: fit-content;
+                            margin:0;
+                        }
+                        p{
+                            color:$GaiaGrey;
+                            font-family: 'Roboto';
+                            font-weight: 300;
+                            font-size: 1.2vw;
+                            line-height: 140%; 
+                            text-align: left;
+                            width:50%;
+                            height:70%;
+                            word-wrap: break-word;
+                            margin:0;
+                            padding-top: 2vw;
+
+                        }
+                        h5{
+                            font-family:'Sacramento';
+                            color: black;
+                            font-weight: 100;
+                            font-size: 2vw;
+                            margin:0;
+                            padding-top: 2vw;
+                        }
+                    }
+                    img{
+                        width:30%;
+                        box-shadow: 0px 4px 4px 7px rgba(0, 0, 0, 0.25);
+                    }
+                }
+                #item4{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    background-image: url("https://dsm01pap009files.storage.live.com/y4mBrUMkWpXvrMmWaDHF3XQx6d14ayztQHrqmFdg9lI7C2K3i5EuOm88sxO6JetBOdKzQfB68PxRD2a4vT-j51aSH0P2K1FfWhNma-hU8X9lI2a_mVe99A7DB23UbMZwW1EQN3lzWeMN3-Wlx-KO5WznKH0Wckc7ZttLJhHmO4_l0bFv6Gm_aytcMPotB0SIDXo?width=1466&height=1078&cropmode=none");
+                    background-repeat: no-repeat;
+                    background-position:right;
+                    background-size: cover;
+                    width:100%;
+                    height:50vw;
+                    align-items: center;
+                    #container-column{
+                        margin-left: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        height: 20vw;
+                        h3{
+                            color: $GaiaDarkGreen;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 3vw;
+                            line-height: 85%;
+                            text-align: center;
+                            font-variant: all-small-caps;
+                            width:35%;
+                            text-align: left;
+                        }
+                    }
+                    
+                }
+                #item5{
+                    height:50vw;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    background-color: #F1ECE8;
+                    align-content: center;
+                    justify-content: center;
+                    h3{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 3vw;
+                        line-height: 85%;
+                        text-align: center;
+                        font-variant: all-small-caps;
+                        color: $GaiaDarkGreen;
+                        margin-bottom: 31px;
+                    }
+
+                    #item5-grid{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        height:28vw;
+                        width:50vw;
+                        align-self: center;
+                        justify-self: center;
+                        align-content: center;
+                        justify-content: center;
+
+                        gap:1vw;
+                        a{
+                            text-decoration: none;
+                            
+                            .item5-column{
+                                display: flex;
+                                flex-direction: column;
+                                width:100%;
+                                height: 28vw;
+                                align-items: center;
+                                justify-self: center;
+                                justify-items: center;
+                                background-color: #446258;
+                                transition: 0.4s all ease;
+                                img{
+                                    width:100%;
+                                }
+                                h5{
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 1.2vw;
+                                    line-height: 2vw;
+                                    margin:0;
+                                    font-variant: all-small-caps;
+                                    color: $GaiaLightGreen;
+                                    height: fit-content;
+                                    width: fit-content;
+                                    border-bottom:3px solid $GaiaLightGreen;
+                                    padding-top: 2vw;
+                                    text-align: center;
+                                }
+                                p{
+                                    font-family: 'Roboto';
+                                    font-weight: 200;
+                                    font-size: .9vw;
+                                    color: #FFFFFF;
+                                    text-align: center;
+                                    padding:2vw;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                        a:hover{
+                            .item5-column{
+                                box-shadow: 0 0.2em 0.5em 0.1em black;
+                            }
+                        }
+                    }
+                }
+            }
+            #treeline{
+                width:100vw;
+                position:absolute;
+                bottom: -5vw;
+                left:0px;
+                z-index: 1;
+            }
+        }
+        .footer{
+            display:flex;
+            align-self: center;
+            align-items: center;
+            width: 100vw;
+            height:15vw;
+            background-color: #1C312A;
+            align-content: center;
+            justify-content: flex-start;
+            margin:0;
+            z-index:90;
+            position: relative;
+            bottom:0px;
+            margin-bottom:0px;
+            #gaiaartwork{
+                height: 9vw;
+                width:9vw;
+                margin-left: 10vw;
+
+            }
+            .footer-ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                list-style-type: none;
+                margin:0 0 0 10vw;
+                padding:0;
+                position: absolute;
+                top:2.5vw;
+                left:20vw;
+                .footer-li{
+                    width: 20vw;
+                    height:20vw;
+                    align-self: center;
+                    
+                    h5{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.2vw;
+                        line-height: 2vw;
+                        margin:0;
+                        font-variant: all-small-caps;
+                        color: $GaiaLightGreen;
+                    }
+                    .one-line-container{
+                        display:grid;
+                        grid-template-columns: 1fr;
+                        margin-top:0px;
+                        border-top:3px solid $GaiaLightGreen;
+                        height: fit-content;
+                        width:fit-content;
+                        p{
+                            font-family: 'Roboto';
+                            font-weight: 200;
+                            font-size: .9vw;
+                            line-height: 1vw; 
+                            color: #FFFFFF;
+                        }
+                        ul{
+                            list-style-type: disc;
+                            color:white;
+                            width: fit-content;
+                            
+                            li{
+                                width: fit-content;
+                                a{
+                                    font-family: 'Roboto';
+                                    font-weight: 200;
+                                    font-size: .9vw;
+                                    line-height: 2vw; 
+                                    color: #FFFFFF;
+                                    width: fit-content;
+                                }
+                            }
+                        }
+                    }
+
+                    .three-line-container{
+                        display:grid;
+                        grid-template-rows: 1fr 1fr;
+                        margin-top:0px;
+                        margin-bottom: 1vw;
+                        margin-right: 1vw;
+                        border-top:3px solid $GaiaLightGreen;
+                        height: fit-content;
+                        width:fit-content;
+                        a{
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 200;
+                            font-size: .9vw;
+                            line-height: 3vw;
+                            text-decoration-line: underline;
+                            color: #FFFFFF;
+                            display:flex;
+                            #mailicon{
+                                margin-right: 1vw;
+                                width:18px;
+                                height:13px;
+                                align-self: center;
+                            }
+                            #phoneicon{
+                                margin-right: .6vw;
+                                height:13px;
+                                align-self: center;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
