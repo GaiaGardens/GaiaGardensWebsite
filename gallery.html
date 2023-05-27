@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!---OG Markup-->
+        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Gaia Gardens Gallery">
+        <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Gardening and Tree Services Operating Out of the Seattle, Washington Area">
+        <meta prefix="og: http://ogp.me/ns#" property="og:image" content="">
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://gaiagardens.net/">
+        
+        <title>Gaia Gardens | Gallery</title>
+        
+
+        <!---CSS---->
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!---JQuery --->
+        <script src="js/jquery-3.3.1.js"></script>
+        
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!------Favicon------>
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+    </head>
+    
+    
+    <body>
+        <div class="loader"></div>
+        <div class="overlay-carousel-container">
+            <div class="overlay-carousel hide-xs">
+                <img class="x" src="https://dsm01pap009files.storage.live.com/y4m47swC9qlH0QYR6nxWgyP45EEWG7fAUXFfFd1B90c_f7tTE29KjhANP7O02vr_r05ArR2IYPWTXd2pMGBFgxo6wFfBTd4XqcDS6TjYyfNRR1I6NQirgDxTz19SK-_b66LUKA9rUklVh_1foQ0ix7Lmn0MBIVPpMeMwp_E61gN_x2GL0OSvtCPwxSNZNlHkOE5?width=256&height=256&cropmode=none">
+                <div class="overlay-carousel-picture"></div>
+            </div>
+            <div class="dark-overlay hide-xs"></div>
+        </div>
+        <section class="main-body">
+            <div class="top-bar">
+                <img id="gaia-logo-top" alt="logo" src="https://dsm01pap009files.storage.live.com/y4m9R_HTu5PouYK33ObsQ9kb9GF8ebirPWZzEYAlS3DbSUEzmz-7XXU9y6bcT2BBefhtoNbQ7YWGaaQexis0GsMdaI9Uy95V--vDJZZ5lJQZCXppIDNVTGaU3qscJA3n2HpASt1_h0krz3glFW0jejrCErOyC_B-HVa8pGYwpa2pNjLuoOiu4q-XXaQ5BzILkGO?width=165&height=97&cropmode=none">
+                <div class="spacer"></div>
+            </div>
+            <header id="alternate-nav-header">
+                <nav id="alternate-nav" class="hide-xs">
+                    <ul>
+                        <li class="non-drop"><a href="index.html">Home</a></li>
+                        <li class="non-drop"><a href="gallery.html">Gallery</a></li>
+                        <li id="dropdown">
+                            <a id="dropdown-btn" href="services.html">Services</a>
+                            <div id="dropdown-content" class="hide-xs" > 
+                                <a href="tree-care.html">Tree Care</a>
+                                <a href="garden-maintenance.hmtl">Maintenance</a>
+                                <a href="garden-design.html">Garden Design</a>
+                            </div>
+                        </li>
+                        <li class="non-drop"><a href="about.html">About</a></li>
+                        <li class="non-drop"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!------Main Content-------->
+            <section class="content-otherpages">
+                <div class="content-grid">
+                    <div id="carousel">
+                        <h2>Featured Garden Designs</h2>
+                        <div id="carousel-arrows">
+                            <div id="leftdiv"><img id="leftarrow" src="https://dsm01pap009files.storage.live.com/y4mZ7yYcmq_nswqThn8EKlvm_9QxXMixTYQDsl5O1E8MTMfH2DtdAHgm2NgjvggzixhD1SOZzro5r-lXtCXYaCwfDryxBPLSoSwwWZ-S9J3N77qGbsB--jb9XBPXo-OCN4V4nHPvOTL89alF8hhYzXc_DCPrQ-UQABkaUN0rFTdpwQOQFer3r_mXW3erZqVQdZt?width=22&height=85&cropmode=none"></div>
+                            <div id="rightdiv"><img id="rightarrow" src="https://dsm01pap009files.storage.live.com/y4myTFXAyVgkkqUi7c3icrzDtV8120nIGnKxGTBdK89kuKxIP6zfr0_b4ESOLgkRUgmo0wKdvksLeYo-D-tUUYycxO_zZHhLvXKYkPycUoYvPrYVsu6zxazb0VatEPoM2LFtG3IoEMoNnK9KOjAiR73684jAU2GmDYhwGT-w1SEMEGyVCbcfULC9zp_FVDIKfgO?width=22&height=85&cropmode=none"></div>
+                        </div>
+                        <div id="carousel-image-container">
+                            <div id="img-window">
+                                <div class="img" id="img1"></div>
+                                <div class="img" id="img2"></div>
+                                <div class="img" id="img3"></div>
+                            </div>
+                        </div>
+                        <div id="carousel-description">
+                            <h3 id="gardenname">Garden Name 1, Location 1</h3>
+                            <p id="gardendescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nostrum obcaecati vero neque dolor, nam magni dignissimos soluta distinctio. In laudantium adipisci voluptates dolores. Fuga facere ratione debitis veritatis animi.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-title">
+                        <h2>Gallery</h2>
+                    </div>
+
+                    <div class="image-gallery">
+                        <div class="column">
+                            <div class="image-item" id="image-item-1">
+                                <img src="https://dsm01pap009files.storage.live.com/y4meNRd58I_vov14uC-RSm7V1c0SVhO7bYQYM2c1qs4NZlbzahZNpRwcDIeJ7d5HeHMGok3p2ZtkgbxQN7DHwbNyNq0goO5GaPYPa_9XWJ8Iy-2KsBTpyuyHp6Tul_Qt0ZW-7CRS8HcWeQN7C8QsU6sHg5skp0OlLC7ycvO-5kAvquITGYLkppgqmkBApDQH_gD?width=3024&height=4032&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 1</span></div>
+                            </div>
+                            <div class="image-item" id="image-item-2">
+                                <img src="https://dsm01pap009files.storage.live.com/y4m-BuexTNboPWJq9ycVIHqx0R59cj454gRzneH42qNJeOadi_QcOo4l0UYtBQthHnVHJvHkLA9DcI1vN3EQhfnONtsm2lb2SOhgtMRSAmpv4Mr9dbE6FiPfZ1vQxaJ_wjz24Mbvehso6FbuJggHzdhPXL33BhTtZ3bwJeM_Q4ZA93eSgInKhYMa2TX6_dVBQFJ?width=3024&height=3318&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 2</span></div>
+                            </div>
+                            <div class="image-item" id="image-item-3">
+                                <img src="https://dsm01pap009files.storage.live.com/y4mogC_GhqGDJzq5Ws1T4RbF77j9M4Q6yM0NZia4z4UvKXJSL3EwpkryKausBy52hIlyix7Y9jwsF9V0GD6MSpv12X27_lkRACRBcPnqiqG0ZE4f6t6BtWh2AJ7bmje7sw3wvzNi4qTtp7lc_MjB8dfM6hYpdlCIIi7KFOS7W0YRfUKeeRabpjzTpmYp-QEEeMH?width=4032&height=3024&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 3</span></div>
+                            </div>
+                        </div>
+    
+                        <div class="column">
+                            <div class="image-item" id="image-item-4">
+                                <img src="https://dsm01pap009files.storage.live.com/y4m6G8Jc9-65LnHqb2pVTO5pVe3CBjNBZpOjOjtoTsZxq3GNZv3Rr8qoEecEGHTJQF0uWHXDwGJhvzlomNqJxiIIBen-dFcv1aIchACSMklv6HlEwwEEJzTgVhUHqdTMo7Fo4wshznWQEJw6cX7y2YUCWGRuo8_ZEelwPmlrcwlGDes3-6KHL2tDOcOmO90tO22?width=3469&height=2647&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 4</span></div>
+                            </div>
+                            <div class="image-item" id="image-item-5">
+                                <img src="https://dsm01pap009files.storage.live.com/y4mcRA8MkX-_PKRPseO6BBX5BubyrKF37JKPtYvqitjABV0mlL3DYLkYvbEKd9BD3sBfqvPhntRXLXWsYGWq7UO0LMo9Oud08QUo6ioCTdAslJ59YzxbOgqRis-Rat2L-6qrm4-ltsQWEOWo5d-8gkzh0ycjSqnRqbK-1z0-coGx3xJDDBT3BFm9V8jd_gXuIxj?width=3024&height=4032&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 5</span></div>
+                            </div>
+                            <div class="image-item" id="image-item-6">
+                                <img src="https://dsm01pap009files.storage.live.com/y4mJiCaN-BDN1QAX_SEi8iQr_jvn78fUQo4LdREsdrCAYrRcYk28VxUiaw1vsL2ew43VGzWrm9aBFYieehWOfSRbQWX3AtLWbrQQ5At2OfyoO9Re8BjM12F2m85oaPVG0jH9XcgA17XDWTLGms49_TpGr-Gev0V73AtH4nrg8z1pBBAnrItGk38tsL3o1koSMEr?width=3024&height=4032&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 6</span></div>
+                            </div>
+                        </div>
+    
+                        <div class="column">
+                            <div class="image-item" id="image-item-7">
+                                <img src="https://dsm01pap009files.storage.live.com/y4mnKWDxYXXxoriaQO86olz6a3w5K8YytVcNXJPPkrDXCG4gWYqCDRja0Mn7BaAQ50y0h8AFTwm7SPZ-q68TBD_qmPv9PvztVVOOR5F5JUmRO8Qu0yV5r98g1ZcaqFGZbhOEeXWyF5lVFAXQjidQmbpLMXiYFCK0qXcCDUowhQuM4-_ws-n36-_gK6nGdxzmn7P?width=3024&height=4032&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 7</span></div>
+                            </div>
+                            <div class="image-item" id="image-item-8">
+                                <img src="https://dsm01pap009files.storage.live.com/y4molgt21s7AoxsY0GZzqpZ7dCQkdLT_j7Pi8ROswWfPyEzlLCgtDQXXZbgY-8in-TYlR8wwbHQJLtYlJhD6DcHvMBTXJF4esSeZiCSSgF25nwrOgpnyLxZUQCwNBt5zabaSWvTitK1YdtnW9yoHfyM30YCpE4Tz9C4AzGUBTcv6XbK9sqhRytIYWr7bvkaEXhI?width=3469&height=2647&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 8</span></div>
+                            </div>
+                            <div class="image-item" id="image-item-9">
+                                <img src="https://dsm01pap009files.storage.live.com/y4mvLTYv6elUtkWBW1b6ELAlzkrrqkmX_YLZJVhKtO-y_HLufL9arpZvDaruBR-0kQ386HMW0rSO2wbI16u8LL6r45RCxfWOOl_mZfJ6J3nV6ZJUXhWM0civgMaI60z_kycRRbhUrNL3nnO1_2fWDU7OuKwO0RsVo3BdvwkAoKYHo3uYqZrPHk5idJ0Ffxn2khJ?width=3024&height=4032&cropmode=none" alt="Garden Image"/>
+                                <div class="overlay"><span>Garden 9</span></div>
+                            </div>
+                        </div>
+                    </div>    
+                    <img id="treeline" src="https://dsm01pap009files.storage.live.com/y4m0h22DC8U8f0OF1CJojR5NlciGIdPJrVz_jpV3LCtJGwQlHRFwFid1RKWOmw2rI15unZK-SRWH3X_jIsEDC6Jo1c-9eCRy6Z4Q_4IiTJ8q4A1ZV0p0mgR86dwDX5TnlIr7Fz4WGAMXDwzllSJxyWw3Oy-JeHIGNGtRDjgtd2KPHrOTTxUYoKrmcyVE0CnVesa?width=1916&height=784&cropmode=none">
+                </div>
+            </section>
+            
+            <!---footer---->
+            <section class="footer hide-xs">
+                <img id="gaiaartwork" alt="Gaia Gardens Logo" src="https://dsm01pap009files.storage.live.com/y4mifrXWDn3yxB9gNAbVy-Jupr7RdVoeD0kT7TOj5EGvlu9PlruiEE_PYUQQbYkNcsWnRDShMMbOlPxawJz4W0eNv2sY2my3F6KodFZ8nEQTxGMs_5nxZ-_zR8HdlmTIFI4hF0oIhA5LX70OFrwnEfauXGKGcWoj6_lmcTfAcJ6nCyubuO_No4MUYpLi_uggUK7?width=415&height=417&cropmode=none">
+                <ul class="footer-ul">
+                    <li class="footer-li" id="contact">
+                        <h5 class="small-heading">Contact</h5>
+                        <div class="three-line-container">
+                            <a href = "mailto: bre@gaiagardensllc.com"><img id="mailicon" alt="mail icon" src="https://dsm01pap009files.storage.live.com/y4mYSI6exacHOWHHlFYE_RC-bww2R4UhVESfc-OuA1jfUn0pMkMTsXBqTiuxIhaKdesbsTMjk1hR34NZEmU-bzWkfKzFlLdi6lIK96YnWD4d2fbeAywzHszgT9WhI9O_RxhhParyBE1BhO3GxgsTqyx0ASFQHndNUmtg6ycSFO2pEK9444TTZiMCNu7TdUL7fY2?width=29&height=21&cropmode=none">bre@gaiagardensllc.com</a>
+                            <a href="tel:4255126491"><img id="phoneicon" alt="phone icon" src="https://dsm01pap009files.storage.live.com/y4mPuQ8_GMMZfOQOy-wvH6ZScmKBG_Kg0Ayf1g4OPVoG_FqkrB412kARqYMcOAr_sAzrnqt0fIonwmwj_JQiuMnpruhwzKRaUEnkEj-Rs_JO4ds_jMGZ4E4_33dYZwd7o2qSVAqdM_VzGnJ-Qd21-GArDQUo7PVt0PCkWG77WDG4ezesXLjVy29Ha6K-easCRK_?width=21&height=21&cropmode=none">(425)-512-6491</a>
+                            
+                        </div>
+                    </li>
+                    <li class="footer-li" id="services">
+                        <h5 class="small-heading">Services</h5>
+                        <div class="one-line-container">
+                            <ul>
+                                <li><a href="">Garden Design + Installation </a></li>
+                                <li><a href="">Garden Maintenance</a></li>
+                                <li><a href="">Tree Trimming and Removal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer-li" id="location">
+                        <h5 class="small-heading">Location</h5>
+                        <div class="one-line-container">
+                            <p>Seattle, Washington</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
+        <script src="js/mobile.js"></script>
+    
+    </body> 
+</html>

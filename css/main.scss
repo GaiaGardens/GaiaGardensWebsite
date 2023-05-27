@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
+
 //////////Global Styles//////////
 *{
     box-sizing: border-box;
@@ -19,7 +20,7 @@ html.sr .load-hidden {
 }
 //Colors//
 $GaiaLightGreen: #B4DE4A;
-$GaiaDarkGreen:  #446258;
+$GaiaDarkGreen:  rgb(68, 98, 88);
 $GaiaGrey: #2C2C2C;
 
 //Buttons//
@@ -67,8 +68,9 @@ $GaiaGrey: #2C2C2C;
 }
 
 
-
 /////////////////Page Styles///////////////
+@import "gallery"; 
+
 
 //////////Mobile Version/////////
 @media only screen and (max-width: 499px){
@@ -133,87 +135,10 @@ $GaiaGrey: #2C2C2C;
                 align-self: center;
                 height: 15vw;
                 padding-left: 3vw;
-                }
-            .callnow-section{
-                display: flex;
-                position: absolute;
-                right:2vw;
-                flex-direction: row;
-                height: fit-content;
-                padding-right: 1vw;
-                align-self: center;
-                #phone-number{
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    margin-right: 1vw;
-                    height:fit-content;
-                    align-self: center;
-                    justify-self: center;
-                    a{
-                        text-decoration: none;
-                        font-family: 'Roboto';
-                        font-weight: 200;
-                        font-size: .8vw;
-                        color: #FFFFFF;
-                        display:flex;
-                        align-items: center;
-                        padding-bottom: 0.1vw;
-                        
-                        #phoneicon-white{
-                            width: 0.7vw;
-                            margin-right:0.5vw;
-                        }
-                    }
-                    p{
-                        font-family: 'Roboto';
-                        font-weight: 200;
-                        font-size: .8vw;
-                        color: #FFFFFF;
-                        margin: 0;
-                    }
-                }
-                #call-now-btn{
-                    text-decoration: none;
-                    div{
-                        background-color: $GaiaLightGreen;
-                        border-radius: 20%;
-                        width: 3.3vw;
-                        height:3.1vw;
-                        display: flex;
-                        flex-direction: column;
-                        margin-left: 0.5vw;
-                        transition:0.4s all ease;
-                        align-items: center;
-                        justify-content: center;    
-                        p{
-                            font-family: 'Roboto';
-                            font-weight: 500;
-                            font-size: .7vw;
-                            line-height: .1vw; 
-                            color: $GaiaDarkGreen;
-                            padding-left:.2vw;
-                            padding-right:.2vw;
-                        }
-                        img{
-                            width:1.5vw;
-                            transition:0.4s all ease;
-                            transform: rotate(0)
-                        }
-                    }
-                }
-                #call-now-btn:hover{
-                    div{
-                        background-color: #bff82e;
-                        box-shadow: 0 0.1em 0.5em 0.1em $GaiaGrey;
-                        img{
-                            transform: rotate(0.5turn)
-                        }
-                    }
-                }
             }
         }
 
-        header{
+        #main-nav-header{
             display:grid;
             grid-template-columns: 1fr;
             position: absolute;
@@ -221,7 +146,7 @@ $GaiaGrey: #2C2C2C;
             left:0px;
             z-index: 99;
             width: 100vw;
-            nav ul{
+            #main-nav ul{
                 display: grid;
                 width:100%;
                 grid-template-columns: 1fr;
@@ -316,9 +241,9 @@ $GaiaGrey: #2C2C2C;
             position:absolute;
             background-color: #1C312A;
             left:0px;
-            top:5vw;
+            top:0vw;
             width:100vw;
-            height:90vh;
+            height:100vh;
             display:flex;
             justify-content: center;
             align-content: center;
@@ -332,25 +257,25 @@ $GaiaGrey: #2C2C2C;
                 margin:0;
                 z-index:99;
                 align-items: center;
-                width:35vw;
+                width:80vw;
                 
                 .large-title{
                     font-family: 'Aref Ruqaa', serif;
                     text-transform: uppercase;
                     color: $GaiaLightGreen;
                     font-weight: 700;
-                    font-size: 4vw;
+                    font-size: 13vw;
                     text-align: center;
                     margin:0;
-                    line-height: 80%;
+                    line-height: 110%;
                     z-index:99;
                 }
                 
                 .large-subhead{
                     font-family: 'Roboto', sans-serif;
                     font-weight: 300;
-                    line-height: 27px;
-                    font-size: 1vw;
+                    line-height: 120%;
+                    font-size: 4.5vw;
                     letter-spacing: 0.05em;
                     text-transform: uppercase;
                     color:white;
@@ -358,15 +283,64 @@ $GaiaGrey: #2C2C2C;
                     z-index:99;
                     padding-top: 1vh;
                 }
+                .call-now-mobile{
+                    display:flex;
+                    flex-direction: column;
+                    width:60vw;
+                    height: 40vw;
+                    align-items: center;
+                    justify-content: center;
+                    background:rgba(68, 98, 88, 0.5);
+                    border-radius: 3%;
+                    p{
+                        font-family: 'Roboto';
+                        font-weight: 200;
+                        font-size: 4vw;
+                        line-height: 170%; 
+                        color: #FFFFFF;
+                        text-align: center;
+                        margin-top: 1vw;
+                        width:40%; 
+                    }
+                    .call-now-btn-mobile{
+                        text-decoration: none;
+                        div{
+                            background-color: $GaiaLightGreen;
+                            border-radius: 15%;
+                            width: 13vw;
+                            height:8vw;
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 0.5vw;
+                            transition:0.4s all ease;
+                            align-items: center;
+                            justify-content: center;    
+                            img{
+                                width:6vw;
+                                transition:0.4s all ease;
+                                transform: rotate(0)
+                            }
+                        }
+                    }
+                    .call-now-btn-mobile:hover{
+                        div{
+                            background-color: #bff82e;
+                            box-shadow: 0 0.1em 0.5em 0.1em $GaiaGrey;
+                            img{
+                                transform: rotate(0.5turn)
+                            }
+                        }
+                    }
+                }
             }
         }
 
         #background{
             position:absolute;
             left:0px;
-            top:5vw;
+            top:0vw;
             width:100vw;
-            height: 90vh;
+            height: 100vh;
             z-index:3;
             background-color: #1C312A;
             #page1_image{
@@ -427,8 +401,8 @@ $GaiaGrey: #2C2C2C;
         }
         .content{
             position: relative;
-            margin-top:95vh;
-            background-color: #D0D7CF;
+            margin-top:100vh;
+            background-color: $GaiaDarkGreen;
             width: 100vw;
             display: grid;
             grid-template-columns: 1fr;
@@ -436,12 +410,12 @@ $GaiaGrey: #2C2C2C;
             
             .content-grid{
                 display: grid;
-                width: 70vw;
+                width: 100vw;
                 grid-template-columns: 1fr;
                 align-self: center;
                 justify-self: center;
-                margin-top:10vh;
-                margin-bottom: 10vh;
+                margin-top:0vh;
+                margin-bottom: 0vh;
                 
                 
                 .content-item{
@@ -453,84 +427,98 @@ $GaiaGrey: #2C2C2C;
                 #item1{
                     background-color:$GaiaGrey;
                     display: flex;
+                    flex-direction: column;
                     justify-content: flex-start;
-                    max-height: 45vw;
+                    height: fit-content;
+                    width: 95%;
+                    justify-self: center;
+                    margin-top: 4vw;
                     #side-image1{
-                        padding:40px;
-                        height: 35vw;
+                        width: 100%;
+                        align-self: center;
+                        padding:10vw;
                     }
                     #two-row-container1{
-                        display: grid;
-                        grid-template-rows: 1fr 1fr;
-                        width: 60%;
-                        height: 35vw;
-                        justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        width: 90%;
+                        justify-items:center;
                         align-self: center;
                         justify-self: center;
-                        gap:1vw;
+                        height:fit-content;
                         #row1{
-                            width:80%;
-                            margin-left:20px;
-                            margin-right:20px;
+                            width:100%;
+                            height:50vh;
                             justify-self: center;
                             align-self: center;
+                            justify-content: center;
+                            padding:2vw;
+                            display:flex;
+                            flex-direction: column;
+                            align-items: center;
                             h3{
                                 font-family: 'Roboto';
                                 font-style: normal;
-                                font-weight: 900;
-                                font-size: 3vw;
-                                line-height: 85%;
+                                font-weight: 500;
+                                font-size: 7.5vw;
                                 text-align: center;
                                 font-variant: all-small-caps;
                                 color: $GaiaLightGreen;
-                                margin-bottom: 31px;
+                                margin-bottom: 0;
                             }
                             p{
                                     font-family: 'Roboto';
                                     font-weight: 200;
-                                    font-size: 1.1vw;
-                                    line-height: 23.64px; 
+                                    font-size: 4.5vw;
+                                    line-height: 160%; 
                                     color: #FFFFFF;
                                     text-align: center;
-                                    padding-top:20px;
-                                    border-top: 3px solid $GaiaLightGreen;
+                                    padding-top:2vw;
+                                    width:90%; 
                             }
                         }
                         #row2{
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            width:80%;
-                            margin-left:20px;
-                            margin-right:20px;
+                            display: flex;
+                            flex-direction: column;
+                            width: 60%;
+                            height: fit-content;
                             justify-self: center;
+                            align-self: center;
+                            border-top: 1.5px solid $GaiaLightGreen;
+                            padding-top: 15vw;
+                            padding-bottom: 15vw;
                                 
                             div{
-                                display: grid;
-                                grid-template-rows: 1fr 1fr 1fr;
+                                display: flex;
+                                flex-direction: column;
                                 align-items: center;
                                 justify-items: center;
-                                height:15vh;
+                                height:fit-content;
+                                padding-bottom: 4vw;
+
                                 img{
-                                    padding-top:0px;
-                                    height:30px;
+                                    padding-bottom:3vw;
+                                    height:15vw;
                                 }
                                 h5{
                                     font-family: 'Roboto';
                                     font-style: normal;
                                     font-weight: 600;
-                                    font-size: 1.2vw;
+                                    font-size: 5vw;
                                     line-height: 100%;
                                     text-align: center;
                                     font-variant: all-small-caps;
                                     color:$GaiaLightGreen;
-                                    margin-top: 10px;
-                                    margin-bottom:0px;
+                                    align-self: center;
+                                    margin-bottom: 0;
+                                    margin-top: 4vw;
+
                                 }
                                 p{
                                     font-family: 'Roboto';
                                     font-weight: 200;
-                                    font-size: .9vw;
-                                    line-height: 20.64px; 
+                                    font-size: 4vw;
+                                    line-height: 170%; 
                                     color: #FFFFFF;
                                     text-align: center;
                                     margin-top: 1vw;
@@ -540,33 +528,7 @@ $GaiaGrey: #2C2C2C;
                         }
                     }
                 }
-                #item2{
-                    display:grid;
-                    grid-template-columns: 1fr 1fr;
-                    background-color: #F1ECE8;
-                    width: 100%;
-                    height:20vw;
-                    #side-image2{
-                        background-image: url("https://dsm01pap009files.storage.live.com/y4mHwOfo1Iu7Hunp_tWyzZQS8G2bu67DYiNr7Zdj_vD7reVQq-bnZoA91SqRcgTiR_fi8Tc-zICJwYDVfJIrFG4vvp6MI7MAqpkkKVXE8BnhQFgGcb3yNuKRa9Wyq8oTLZ-eiFPf360_-M7hedGr6XzLcirnz7G41HBSkDpdQ6XxpJ8TcedRGjxo9dpg0Fr03iP?width=712&height=383&cropmode=none");
-                        padding: 3vw;
-                        display: flex;
-                        align-items: center;
-                        justify-items: center;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        h3{
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 900;
-                            font-size: 3vw;
-                            line-height: 85%;
-                            text-align: center;
-                            font-variant: all-small-caps;
-                            color:$GaiaLightGreen;
 
-                        }
-                    }
-                }
 
                 #item3{
                     display: flex;
@@ -925,16 +887,17 @@ $GaiaGrey: #2C2C2C;
             background-position: left;
             background-repeat: no-repeat;
             width:100vw;
-            height:5vw;
+            height:12vh;
             #gaia-logo-top{
                 align-self: center;
                 height: 4vw;
-                padding-left: 3vw;
+                position: absolute;
+                left:4vw;
                 }
             .callnow-section{
                 display: flex;
                 position: absolute;
-                right:2vw;
+                right:4vw;
                 flex-direction: row;
                 height: fit-content;
                 padding-right: 1vw;
@@ -969,13 +932,13 @@ $GaiaGrey: #2C2C2C;
                         margin: 0;
                     }
                 }
-                #call-now-btn{
+                .call-now-btn{
                     text-decoration: none;
                     div{
                         background-color: $GaiaLightGreen;
                         border-radius: 20%;
-                        width: 3.3vw;
-                        height:3.1vw;
+                        width: 2.8vw;
+                        height:2.6vw;
                         display: flex;
                         flex-direction: column;
                         margin-left: 0.5vw;
@@ -985,7 +948,7 @@ $GaiaGrey: #2C2C2C;
                         p{
                             font-family: 'Roboto';
                             font-weight: 500;
-                            font-size: .7vw;
+                            font-size: .5vw;
                             line-height: .1vw; 
                             color: $GaiaDarkGreen;
                             padding-left:.2vw;
@@ -998,7 +961,7 @@ $GaiaGrey: #2C2C2C;
                         }
                     }
                 }
-                #call-now-btn:hover{
+                .call-now-btn:hover{
                     div{
                         background-color: #bff82e;
                         box-shadow: 0 0.1em 0.5em 0.1em $GaiaGrey;
@@ -1019,15 +982,26 @@ $GaiaGrey: #2C2C2C;
             z-index: 99;
             width: 100vw;
             background-color: none;
+            .socials a img{
+                width:1.2vw;
+                align-self: center;
+                justify-self: center;
+                position:absolute;
+                left:4vw;
+                padding-top:.6vw;
+
+            }
             nav ul{
                 display: grid;
-                width:100%;
+                width:50%;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 justify-self: center;
                 align-self: center;
                 justify-items: center;
                 list-style-type: none;
                 padding:none;
+                position:absolute;
+                right:4vw;
                 .non-drop{
                     a{
                     color: white;
@@ -1553,7 +1527,7 @@ $GaiaGrey: #2C2C2C;
             align-self: center;
             align-items: center;
             width: 100vw;
-            height:15vw;
+            height:13vw;
             background-color: #1C312A;
             align-content: center;
             justify-content: flex-start;
@@ -1563,9 +1537,9 @@ $GaiaGrey: #2C2C2C;
             bottom:0px;
             margin-bottom:0px;
             #gaiaartwork{
-                height: 9vw;
-                width:9vw;
-                margin-left: 10vw;
+                height: 7vw;
+                width:7vw;
+                margin-left: 8vw;
 
             }
             .footer-ul{
@@ -1579,7 +1553,7 @@ $GaiaGrey: #2C2C2C;
                 left:20vw;
                 .footer-li{
                     width: 20vw;
-                    height:20vw;
+                    height:18vw;
                     align-self: center;
                     
                     h5{
@@ -1603,7 +1577,7 @@ $GaiaGrey: #2C2C2C;
                             font-family: 'Roboto';
                             font-weight: 200;
                             font-size: .9vw;
-                            line-height: 1vw; 
+                            line-height: 1.7vw; 
                             color: #FFFFFF;
                         }
                         ul{
@@ -1617,7 +1591,7 @@ $GaiaGrey: #2C2C2C;
                                     font-family: 'Roboto';
                                     font-weight: 200;
                                     font-size: .9vw;
-                                    line-height: 2vw; 
+                                    line-height: 1.7vw; 
                                     color: #FFFFFF;
                                     width: fit-content;
                                 }
@@ -1639,7 +1613,7 @@ $GaiaGrey: #2C2C2C;
                             font-style: normal;
                             font-weight: 200;
                             font-size: .9vw;
-                            line-height: 3vw;
+                            line-height: 1.7vw;
                             text-decoration-line: underline;
                             color: #FFFFFF;
                             display:flex;
