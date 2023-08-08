@@ -1542,7 +1542,16 @@ $GaiaGrey: #2C2C2C;
                 height: 7vw;
                 width:7vw;
                 margin-left: 8vw;
-
+            }
+            #bottom-tag{
+                font-family: 'Roboto';
+                font-weight: 200;
+                font-size: .9vw;
+                line-height: 1.7vw; 
+                color: #FFFFFF;
+                position:absolute;
+                left: 40%;
+                bottom: 0.5vw;
             }
             .footer-ul{
                 display: grid;

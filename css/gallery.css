@@ -157,6 +157,48 @@
   #alternate-nav-header #alternate-nav ul #dropdown:hover #dropdown-content a:hover {
     color: #B4DE4A;
   }
+  .content-wip-page {
+    position: relative;
+    background-color: #1C312A;
+    width: 100%;
+    padding-top: 12vh;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    z-index: 1;
+  }
+  .content-wip-page .content-grid {
+    display: grid;
+    width: 70vw;
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  .content-wip-page .content-grid .content-item {
+    width: 100%;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  }
+  .content-wip-page .content-grid #wip {
+    height: 70vh;
+    background-color: rgb(68, 98, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+  }
+  .content-wip-page .content-grid #wip h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    color: #B4DE4A;
+  }
   .content-otherpages {
     position: relative;
     background-color: #D0D7CF;

@@ -178,6 +178,50 @@ $GaiaGrey: #2C2C2C;
             }
         }
     }
+    .content-wip-page{
+        position: relative;
+        background-color:#1C312A;
+        width: 100%;
+        padding-top: 12vh;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        z-index:1;
+        .content-grid{
+            display: grid;
+            width: 70vw;
+            grid-template-columns: 1fr;
+            align-self: center;
+            justify-self: center;
+            margin-top:10vh;
+            margin-bottom: 10vh;
+            
+            
+            .content-item{
+                width:100%;
+                z-index: 99;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+            }
+            #wip{
+                height:70vh;
+                background-color: $GaiaDarkGreen;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding:4vw;
+                h1{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 2.5vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: $GaiaLightGreen;
+                }
+            }
+        }
+    }
     .content-otherpages{
         position: relative;
         background-color: #D0D7CF;
@@ -205,6 +249,7 @@ $GaiaGrey: #2C2C2C;
                 box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
             }
             
+
             #treeline{
                 width:100vw;
                 position:absolute;
