@@ -2,7 +2,7 @@
 ScrollReveal().reveal('.large-title', { duration:3000, distance: '20px', origin: 'bottom'});
 ScrollReveal().reveal('.large-subhead', { duration:3000, distance: '10px', origin: 'bottom'});
 ScrollReveal().reveal('nav', {delay:1000, duration: 1000});
-ScrollReveal().reveal('#mailicon', {delay:1000, duration: 1000});
+ScrollReveal().reveal('#mailiconhomepage', {delay:1000, duration: 1000});
 ScrollReveal().reveal('.alternate-nav', {delay:1000, duration: 1000});
 ScrollReveal().reveal('.content-item', { duration:2000, distance: '10px', origin: 'bottom'});
 ScrollReveal().reveal('.green-arrow-button', { delay:800, duration:1000, distance: '10px', origin: 'left'});
@@ -122,6 +122,93 @@ $(document).ready(function(){
 
 });
 
+
+/*Testimonials-Carousel*/
+$(document).ready(function(){
+    
+    count = 0;
+
+    /*Left Arrow*/
+    $('#testimonials-leftarrow').on( "click", function() {
+        count-=1
+        if (count>0){
+            $('#testimonials-leftarrow').css({"visibility":"visible"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+
+            if(count=1){
+                $('#gardenname').text('Garden Name 2, Location 2');
+            }
+            else if(count=2){
+                $('#gardenname').text('Garden Name 3, Location 3');
+            }
+            else{
+                $('#gardenname').text('');
+            }
+        }
+        else{
+            $('#testimonials-leftarrow').css({"visibility":"hidden"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+            $('#gardenname').text('Garden Name 1, Location 1');
+        };
+        
+        if(count>=2){
+            $('#testimonials-rightarrow').css({"visibility":"hidden"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+        }
+        else{
+            $('#testimonials-rightarrow').css({"visibility":"visible"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+        }
+    });
+
+    /*Right Arrow*/
+    $('#testimonials-rightarrow').on( "click", function() {
+        count+=1
+        if (count>0){
+            $('#testimonials-leftarrow').css({"visibility":"visible"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+        }
+        
+        else{
+            $('#testimonials-leftarrow').css({"visibility":"hidden"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+        };
+        
+        if(count>=2){
+            $('#testimonials-rightarrow').css({"visibility":"hidden"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+
+            if(count=2){
+                $('#gardenname').text('Garden Name 3, Location 3');
+            }
+            else{
+                $('#gardenname').text('');
+            }
+        }
+        else{
+            $('#testimonials-rightarrow').css({"visibility":"visible"});
+            $('.img').css({
+                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
+            });
+            $('#gardenname').text('Garden Name 2, Location 2');
+        }
+    });
+
+});
 
 /*Overlay Carousel*/
 /* Exit Button */
