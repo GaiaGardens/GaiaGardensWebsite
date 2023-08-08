@@ -888,6 +888,7 @@ $GaiaGrey: #2C2C2C;
             background-repeat: no-repeat;
             width:100vw;
             height:12vh;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
             #gaia-logo-top{
                 align-self: center;
                 height: 4vw;
@@ -977,7 +978,7 @@ $GaiaGrey: #2C2C2C;
             display:grid;
             grid-template-columns: 1fr 1fr;
             position: absolute;
-            top:12vh;
+            top:15vh;
             left:0px;
             z-index: 99;
             width: 100vw;
@@ -1115,6 +1116,7 @@ $GaiaGrey: #2C2C2C;
                     margin:0;
                     line-height: 80%;
                     z-index:99;
+                    text-shadow: 3px 4px 7px rgba(32, 32, 32, 0.8);
                 }
                 
                 .large-subhead{
@@ -1380,10 +1382,10 @@ $GaiaGrey: #2C2C2C;
                             color:$GaiaGrey;
                             font-family: 'Roboto';
                             font-weight: 300;
-                            font-size: 1.2vw;
+                            font-size: 1vw;
                             line-height: 140%; 
                             text-align: left;
-                            width:50%;
+                            width:60%;
                             height:70%;
                             word-wrap: break-word;
                             margin:0;
@@ -1508,7 +1510,7 @@ $GaiaGrey: #2C2C2C;
                         }
                         a:hover{
                             .item5-column{
-                                box-shadow: 0 0.2em 0.5em 0.1em black;
+                                box-shadow: 0 0.2em 0.5em 0.1em rgba(0, 0, 0, 0.884);
                             }
                         }
                     }
