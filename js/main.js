@@ -7,8 +7,9 @@ ScrollReveal().reveal('.alternate-nav', {delay:1000, duration: 1000});
 ScrollReveal().reveal('.content-item', { duration:2000, distance: '10px', origin: 'bottom'});
 ScrollReveal().reveal('.green-arrow-button', { delay:800, duration:1000, distance: '10px', origin: 'left'});
 ScrollReveal().reveal('.image-item', {duration:2000});
-
-
+ScrollReveal().reveal('#expert-care', {duration:2000, delay:800, distance: '10px', origin: 'bottom'});
+ScrollReveal().reveal('#underline', {duration:2000, delay:1000, distance: '20px', origin: 'bottom'});
+ScrollReveal().reveal('#row2', {duration:2000, delay:1500, distance: '30px', origin: 'bottom'});
 /*Cycling Animated Pictures*/        
 $('#background div:first').siblings().hide();
 loop();
@@ -219,7 +220,7 @@ $(document).ready(function(){
     });
 });
 
-/* Images*/
+/*Gallery Images*/
 $(document).ready(function(){
     $("#image-item-1").click(function(){
         $(".dark-overlay").css({"visibility":"visible", "opacity":".7"});
