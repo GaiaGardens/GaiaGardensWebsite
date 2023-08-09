@@ -254,7 +254,7 @@ html.sr .load-hidden {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3vw;
+    padding: 4vw;
   }
   .content-wip-page .content-grid #wip h1 {
     font-family: "Roboto";
@@ -1873,6 +1873,7 @@ html.sr .load-hidden {
     text-align: center;
     z-index: 99;
     padding-top: 1vh;
+    text-shadow: 3px 4px 7px rgba(32, 32, 32, 0.8);
   }
   .main-body #background {
     position: absolute;
@@ -2002,17 +2003,17 @@ html.sr .load-hidden {
   .main-body .content .content-grid #item1 #two-row-container1 #row1 p {
     font-family: "Roboto";
     font-weight: 200;
-    font-size: 1.1vw;
-    line-height: 23.64px;
+    font-size: 1.2vw;
+    line-height: 130%;
     color: #FFFFFF;
     text-align: center;
     padding-top: 20px;
-    border-top: 3px solid #B4DE4A;
+    border-top: 2px solid #B4DE4A;
   }
   .main-body .content .content-grid #item1 #two-row-container1 #row2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     margin-left: 20px;
     margin-right: 20px;
     justify-self: center;
@@ -2032,24 +2033,27 @@ html.sr .load-hidden {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     line-height: 100%;
     text-align: center;
     font-variant: all-small-caps;
     color: #B4DE4A;
-    margin-top: 10px;
+    margin-top: 1vw;
     margin-bottom: 0px;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
   .main-body .content .content-grid #item1 #two-row-container1 #row2 div p {
     font-family: "Roboto";
     font-weight: 200;
-    font-size: 0.9vw;
-    line-height: 20.64px;
+    font-size: 1.1vw;
+    line-height: 120%;
     color: #FFFFFF;
     text-align: center;
     margin-top: 1vw;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 18vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
   .main-body .content .content-grid #item2 {
     display: grid;
