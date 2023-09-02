@@ -14,6 +14,9 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .main-padding{
     margin:0;
     text-align: center;
@@ -116,9 +119,11 @@ $GaiaGrey: #2C2C2C;
         width: 100vw;
         align-content: center;
         background-color: transparent;
-        overflow-y: hidden;
+        height: fit-content;
+        overflow-x: clip;
+        overflow-y:clip;
     
-        .top-bar{
+        .top-bar{ 
             display: flex;
             position:absolute;
             left:0px;
@@ -742,9 +747,9 @@ $GaiaGrey: #2C2C2C;
                 position: absolute;
                 top:2.5vw;
                 left:20vw;
+                height:fit-content;
                 .footer-li{
                     width: 20vw;
-                    height:20vw;
                     align-self: center;
                     
                     h5{
@@ -990,8 +995,9 @@ $GaiaGrey: #2C2C2C;
                 position:absolute;
                 left:4vw;
                 padding-top:.6vw;
-
             }
+            
+//// -------NAVIGATION----- /////
             nav ul{
                 display: grid;
                 width:50%;
@@ -1083,7 +1089,7 @@ $GaiaGrey: #2C2C2C;
                 }
             }
         }
-
+//// -------SPLASH ----- /////
         .splash{
             position:absolute;
             background-color: #1C312A;
@@ -1134,7 +1140,8 @@ $GaiaGrey: #2C2C2C;
                 }
             }
         }
-
+        
+//// -------ANIMATED SPLASH BACKGROUND----- /////
         #background{
             position:absolute;
             left:0px;
@@ -1199,6 +1206,9 @@ $GaiaGrey: #2C2C2C;
                 background-image: url("https://dsm01pap009files.storage.live.com/y4mbV_ZWLBzt_htLCj_ZIGzJb8L9qrluyV3tmjcX3lxQwnCh5rgawd-39iRJN4N1NVcmyP5929-51RUZn77fUGeukXzjvwr1uzMvsHtJbYNS0Y05-vfP7g9J9dVVBCX3K3YmVFVy36tgMS-_v2OYyYIe2qCZGf-sRIovcXorU9mhpYopfZy_2-FFvbv_vZhhFZ4?width=6000&height=4000&cropmode=none");
             }
         }
+
+//// -------INDEX------ /////
+
         .content{
             position: relative;
             margin-top:95vh;
@@ -1530,6 +1540,8 @@ $GaiaGrey: #2C2C2C;
                 z-index: 1;
             }
         }
+
+//// -------FOOTER----- /////
         .footer{
             display:flex;
             align-self: center;
