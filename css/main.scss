@@ -129,38 +129,42 @@ $GaiaGrey: #2C2C2C;
             left:0px;
             top:0px;
             z-index:99;
-            flex-direction: row;
-            background-image: url("https://dsm01pap009files.storage.live.com/y4mxtardiGUtDY3kgODSqZqoILtOsaT3ZU6mSkxMH5Zxd605WfUc0u-CHrkdSZMRZ1QwaOiUOVYixA11vlfFMxn3DRW0pliiLhSjS0jMtzmnkkk_cE72w6AkCGnxeFiiaBBGGogMiiXU-z2u3h5N8P_tuUgISdvUbXR8Mxedp_OSCrdlCxPid5NXh8pi4w294CS?width=1915&height=139&cropmode=none");
-            background-size:cover;
-            background-position: left;
-            background-repeat: no-repeat;
+            flex-direction: column;
+            background-color: #2E443E;
             width:100vw;
             height:20vw;
-            #gaia-logo-top{
+            justify-content: center;
+            margin-bottom: 20vw;
+            #hamburger{
                 align-self: center;
-                height: 15vw;
-                padding-left: 3vw;
             }
         }
 
         #main-nav-header{
-            display:grid;
-            grid-template-columns: 1fr;
+            display:flex;
+            flex-direction: column;
             position: absolute;
+            justify-content: center;
+            align-items: center;
             top:20vw;
             left:0px;
             z-index: 99;
             width: 100vw;
+            height: 90vh;
+            background-color: #2E443E;
+            opacity: 1;
             #main-nav ul{
                 display: grid;
                 width:100%;
+                height:50vh;
                 grid-template-columns: 1fr;
                 justify-self: center;
                 align-self: center;
                 justify-items: center;
                 list-style-type: none;
-                padding:none;
-                background-color: $GaiaDarkGreen;
+                padding:0;
+                margin-top: 20vw;
+                
                 .non-drop{
                     a{
                     color: white;
@@ -170,7 +174,7 @@ $GaiaGrey: #2C2C2C;
                     font-family:'Roboto', sans-serif;
                     text-transform:uppercase;
                     font-weight: 400;
-                    font-size: .9vw;
+                    font-size: 20px;
                     transition: 0.4s all ease;
                     }
                     a:hover{
@@ -185,58 +189,15 @@ $GaiaGrey: #2C2C2C;
                     grid-template-columns: 1fr;
                     #dropdown-btn{
                         color: white;
-                        justify-self: center;
-                        align-self: center; 
                         text-decoration: none;
                         font-family:'Roboto', sans-serif;
                         text-transform:uppercase;
                         font-weight: 400;
-                        font-size: .9vw;
+                        font-size: 20px;
                         transition:0.4s all ease;
                         }
-                    #dropdown-btn:hover{
-                        color:#B4DE4A;
-                        font-size: .95vw;
-                        font-weight: 500;
-                    }
                     #dropdown-content{
-                        display:grid;
-                        height:0px;
-                        width:100%;
-                        opacity: 0;
-                        grid-template-rows: 1fr 1fr 1fr;
-                        grid-template-columns: 1fr;
-                        align-items: center;
-                        background-color: #1C312A;
-                        padding:0px;
-                        transition: .4s all ease;
-                        a{
-                            transition: .4s all ease;
-                            text-decoration: none;
-                            font-family:'Roboto', sans-serif;
-                            text-transform:uppercase;
-                            font-weight: 400;
-                            font-size: small;
-                            padding:10px;
-                            text-align: center;
-                            color: white;
-                            opacity: 0; 
-                        }
-                    }
-                }
-
-                //Dropdown Menu///
-                #dropdown:hover #dropdown-content {
-                    display:grid;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    height:10vw;
-                    width: 100%;
-                    opacity: 100%;
-                    a{
-                        opacity: 1;
-                    }
-                    a:hover{
-                        color:#B4DE4A;
+                        display:none;
                     }
                 }
             }
@@ -260,7 +221,7 @@ $GaiaGrey: #2C2C2C;
                 margin:0;
                 max-height: 60vh;
                 margin:0;
-                z-index:99;
+                z-index:98;
                 align-items: center;
                 width:80vw;
                 
@@ -288,120 +249,59 @@ $GaiaGrey: #2C2C2C;
                     z-index:99;
                     padding-top: 1vh;
                 }
-                .call-now-mobile{
-                    display:flex;
-                    flex-direction: column;
-                    width:60vw;
-                    height: 40vw;
-                    align-items: center;
-                    justify-content: center;
-                    background:rgba(68, 98, 88, 0.5);
-                    border-radius: 3%;
-                    p{
-                        font-family: 'Roboto';
-                        font-weight: 200;
-                        font-size: 4vw;
-                        line-height: 170%; 
-                        color: #FFFFFF;
-                        text-align: center;
-                        margin-top: 1vw;
-                        width:40%; 
-                    }
-                    .call-now-btn-mobile{
-                        text-decoration: none;
-                        div{
-                            background-color: $GaiaLightGreen;
-                            border-radius: 15%;
-                            width: 13vw;
-                            height:8vw;
-                            display: flex;
-                            flex-direction: column;
-                            margin-left: 0.5vw;
-                            transition:0.4s all ease;
-                            align-items: center;
-                            justify-content: center;    
-                            img{
-                                width:6vw;
-                                transition:0.4s all ease;
-                                transform: rotate(0)
-                            }
-                        }
-                    }
-                    .call-now-btn-mobile:hover{
-                        div{
-                            background-color: #bff82e;
-                            box-shadow: 0 0.1em 0.5em 0.1em $GaiaGrey;
-                            img{
-                                transform: rotate(0.5turn)
-                            }
-                        }
-                    }
-                }
             }
         }
 
-        #background{
+        #mobile-background{
             position:absolute;
+            display: grid;
+            grid-template-columns: 1fr;
             left:0px;
             top:0vw;
             width:100vw;
             height: 100vh;
-            z-index:3;
-            background-color: #1C312A;
-            #page1_image{
-                position: absolute;
-                top:0;
-                left:0;
-                height: 100%;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-image: url("https://dsm01pap009files.storage.live.com/y4m5-sZVzELoDtrlWPnmgwg8kZcqURc3qvyDpOa-ZSKELt7ncK1_MjLZ_shDijWjXhnM4oEd-ORKS3Q86-8s3IC92Qb0gC14MP3Xs9Ec4F_S47sW1KdTqXuorH-0gcWm1Qgz7IXQOBxY3mCgwuA75f-xpTcfbSTK8fvxGGErAaX0_gBgzBp_VIKBvdinAPWJkjn?width=1923&height=969&cropmode=none");
+            background-color: #D0D7CF;
+            overflow-y: auto;
+            overflow-x:hidden;
+            perspective: 10px;
+            #treescontainer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform-style: preserve-3d;
+                z-index:-1;
             }
-            #page2_image{
-                position: absolute;
-                top:0;
-                left:0;
-                height: 100%;
-                width: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-image: url("https://dsm01pap009files.storage.live.com/y4mROmUcAqSF7Ib96glE4OLQeK7vjhcm_sJkBqxbVgvVJE2JbS4YBgpVpAlXUt_TiTXSTxqLbWggvckuZgKfKjnBbbmG3YEcdi8zGG_L64a4S2u01Hj2IXU4aoK7alfhtW2s-Vl1k0U421Qtz9m7bgzTaoi4xNCN6MdK-wIHDIvoad2FEpaJp4ruoYdy7g4z0Tr?width=1923&height=969&cropmode=none");
+            #mobile-logo{
+                align-self:center;
+                justify-self: center;
             }
-            #page3_image{
+            #treesforeground{
                 position: absolute;
                 top:0;
                 left:0;
                 height: 100%;
                 width: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-image: url("https://dsm01pap009files.storage.live.com/y4mqZR-3nrJBXOx1Szrp3acvr9MbxSFoIsk6DCKnIP8lyTbaJY-X07l28Qe0HvYcvyANb9QL7Oqdq5oRchKUBzcXU72wJhGsSrzTR0weZmCK_aTxcW28yaMT0ogmd7IW4epNuIOKwHEDk2N1__C_11R_4YIcHLN9GB7l6LKVpzTCEXEq9PEzQYRNvef8ts7P8Ya?width=1923&height=969&cropmode=none");
+                object-fit: cover;
+                z-index: -1;
             }
-            #page4_image{
+            #treesmiddle{
                 position: absolute;
                 top:0;
                 left:0;
                 height: 100%;
                 width: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-image: url("https://dsm01pap009files.storage.live.com/y4mphVHysaC7zQ5VsTB9OmMVWrp1DZ1hgkKo4VjUuk4XVdGnbT-xnrlAGbYMoksZRqRHN793iNqoDQWQKNTyoYqR5QqRFzvTHnaI2DX3fiyDudRRRX3TQnjYPm3hapH8nMUUzEBnNNyobkmOaIj2Mn0ijvdb2uh7bZlda-zjBBe-E6j7lyK9Dz0z4Fr3hM_Dg_q?width=1923&height=969&cropmode=none");
+                z-index:-2;
+                object-fit: cover;
+                transform: scale(1.5) translateZ(-5px);
             }
-            #page5_image{
+            #treesbg{
                 position: absolute;
                 top:0;
                 left:0;
                 height: 100%;
                 width: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-image: url("https://dsm01pap009files.storage.live.com/y4mbV_ZWLBzt_htLCj_ZIGzJb8L9qrluyV3tmjcX3lxQwnCh5rgawd-39iRJN4N1NVcmyP5929-51RUZn77fUGeukXzjvwr1uzMvsHtJbYNS0Y05-vfP7g9J9dVVBCX3K3YmVFVy36tgMS-_v2OYyYIe2qCZGf-sRIovcXorU9mhpYopfZy_2-FFvbv_vZhhFZ4?width=6000&height=4000&cropmode=none");
+                object-fit: cover;
+                transform: scale(2) translateZ(-10px);
             }
         }
         .content{

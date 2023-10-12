@@ -79,6 +79,71 @@ $GaiaGrey: #2C2C2C;
         z-index:98;
         transition: 0.4s all ease;
     }
+
+    //overlay-project pictures//
+    .overlay-project-container{
+        display:grid;
+        opacity: 0;
+        visibility: hidden;
+        grid-template-columns: 1fr;
+        width:100vw;
+        height:100vh;
+        top:0px;
+        left:0px;
+        position:fixed;
+        z-index:99;
+        transition: 0.8s all ease;
+        .overlay-project{
+            display:grid;
+            grid-template-columns: 1fr;
+            justify-self: center;
+            align-self: center;
+            width:90vw;
+            height: 98vh;
+            z-index:99;
+            background-color:white;
+            box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+            .projectx{
+                position:absolute;
+                z-index: 99;
+                display:block;
+                top:10vh;
+                right:10vw;
+                width:2vw;
+                height:2vw;
+                opacity:1;
+                transition: 0.4s all ease;
+            }
+            .projectx:hover{
+                cursor: pointer;
+                opacity:.6;
+            }
+            .project-content{
+                width:50%;
+                height: 90%;
+                padding:30px;
+                align-self: center;
+                justify-self: center;
+                background-position: center;
+                background-size:contain;
+                background-repeat: no-repeat;
+                h2{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 3vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: $GaiaGrey;
+                    color: $GaiaGrey;
+                    height: 12vh;
+                    padding-top: 3vh;
+                    z-index: 98;
+                    margin: 0;
+                }
+            }
+        }
+    }
     
     #alternate-nav-header{
         display:grid;
