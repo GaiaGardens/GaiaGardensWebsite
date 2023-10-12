@@ -27,6 +27,7 @@ $('#servicesbanner h4').delay(8000).animate({opacity: '.8',}, 1800 );
 
 $('#servicesbanner a').delay(9000).animate({opacity: '1',}, 1800 );
 
+
 /*Cycling Animated Pictures*/        
 $('#background div:first').siblings().hide();
 loop();
@@ -38,12 +39,14 @@ function loop(){
     });
 }
 
+
 /*Back to top button*/
 $(document).ready(function(){
     $('#backtop').click(function(){
         window.scroll({top: 0, duration: 4000, behavior: 'smooth'});
     });
 });
+
 
 /*Load Screen*/
 window.addEventListener("load", () =>{
@@ -52,6 +55,7 @@ window.addEventListener("load", () =>{
     document.querySelector(".loader").addEventListener("transitionend" , () =>{
         document.body.removeChild(document.querySelector(".loader"))});
 });
+
 
 /*Carousel*/
 $(document).ready(function(){
@@ -151,99 +155,19 @@ $(document).ready(function(){
 });
 
 
-/*Testimonials-Carousel*/
-$(document).ready(function(){
-    
-    count = 0;
-
-    /*Left Arrow*/
-    $('#testimonials-leftarrow').on( "click", function() {
-        count-=1
-        if (count>0){
-            $('#testimonials-leftarrow').css({"visibility":"visible"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-
-            if(count=1){
-                $('#gardenname').text('Garden Name 2, Location 2');
-            }
-            else if(count=2){
-                $('#gardenname').text('Garden Name 3, Location 3');
-            }
-            else{
-                $('#gardenname').text('');
-            }
-        }
-        else{
-            $('#testimonials-leftarrow').css({"visibility":"hidden"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-            $('#gardenname').text('Garden Name 1, Location 1');
-        };
-        
-        if(count>=2){
-            $('#testimonials-rightarrow').css({"visibility":"hidden"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-        }
-        else{
-            $('#testimonials-rightarrow').css({"visibility":"visible"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-        }
-    });
-
-    /*Right Arrow*/
-    $('#testimonials-rightarrow').on( "click", function() {
-        count+=1
-        if (count>0){
-            $('#testimonials-leftarrow').css({"visibility":"visible"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-        }
-        
-        else{
-            $('#testimonials-leftarrow').css({"visibility":"hidden"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-        };
-        
-        if(count>=2){
-            $('#testimonials-rightarrow').css({"visibility":"hidden"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-
-            if(count=2){
-                $('#gardenname').text('Garden Name 3, Location 3');
-            }
-            else{
-                $('#gardenname').text('');
-            }
-        }
-        else{
-            $('#testimonials-rightarrow').css({"visibility":"visible"});
-            $('.img').css({
-                '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
-            });
-            $('#gardenname').text('Garden Name 2, Location 2');
-        }
-    });
-
-});
-
 /*Overlay Carousel*/
 /* Exit Button */
 $(document).ready(function(){
     $(".x").click(function(){
         $(".dark-overlay").css({"visibility":"hidden", "opacity":"0"});
         $(".overlay-carousel-container").css({"visibility":"hidden", "opacity":"0"});
+    });
+});
+
+$(document).ready(function(){
+    $(".projectx").click(function(){
+        $(".dark-overlay").css({"visibility":"hidden", "opacity":"0"});
+        $(".project-carousel-container").css({"visibility":"hidden", "opacity":"0"});
     });
 });
 
@@ -309,4 +233,12 @@ $(document).ready(function(){
         $(".overlay-carousel-picture").css({"background-image": "url(https://dsm01pap009files.storage.live.com/y4mvLTYv6elUtkWBW1b6ELAlzkrrqkmX_YLZJVhKtO-y_HLufL9arpZvDaruBR-0kQ386HMW0rSO2wbI16u8LL6r45RCxfWOOl_mZfJ6J3nV6ZJUXhWM0civgMaI60z_kycRRbhUrNL3nnO1_2fWDU7OuKwO0RsVo3BdvwkAoKYHo3uYqZrPHk5idJ0Ffxn2khJ?width=3024&height=4032&cropmode=none)" , });
     });
     
+    /*Project Images*/
+    $("#project1").click(function(){
+        $(".dark-overlay").css({"visibility":"visible", "opacity":".7"});
+        $(".overlay-project-container").css({"visibility":"visible", "opacity":"1"});
+        $(".project-content").css({"visibility":"visible", "opacity":"1"});
+        $("#project-name").text("Laura Lohman");
+        $("#project-text1").text("Queen Anne Urban Oasis");
+    });
 });
