@@ -971,7 +971,6 @@ html {
     width: 100vw;
     height: 90vh;
     background-color: #2E443E;
-    opacity: 1;
   }
   .main-body #main-nav-header #main-nav ul {
     display: grid;
@@ -984,6 +983,7 @@ html {
     list-style-type: none;
     padding: 0;
     margin-top: 20vw;
+    visibility: visible;
   }
   .main-body #main-nav-header #main-nav ul .non-drop a {
     color: white;
@@ -1018,51 +1018,6 @@ html {
   .main-body #main-nav-header #main-nav ul #dropdown #dropdown-content {
     display: none;
   }
-  .main-body .splash {
-    position: absolute;
-    background-color: #1C312A;
-    left: 0px;
-    top: 0vw;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  .main-body .splash .splash-items {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin: 0;
-    max-height: 60vh;
-    margin: 0;
-    z-index: 98;
-    align-items: center;
-    width: 80vw;
-  }
-  .main-body .splash .splash-items .large-title {
-    font-family: "Aref Ruqaa", serif;
-    text-transform: uppercase;
-    color: #B4DE4A;
-    font-weight: 700;
-    font-size: 13vw;
-    text-align: center;
-    margin: 0;
-    line-height: 110%;
-    z-index: 99;
-  }
-  .main-body .splash .splash-items .large-subhead {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    line-height: 120%;
-    font-size: 4.5vw;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    z-index: 99;
-    padding-top: 1vh;
-  }
   .main-body #mobile-background {
     position: absolute;
     display: grid;
@@ -1086,9 +1041,33 @@ html {
   .main-body #mobile-background #mobile-logo {
     align-self: center;
     justify-self: center;
+    z-index: -2;
+  }
+  .main-body #mobile-background #mobile-splash {
+    position: absolute;
+    top: 130vh;
+    z-index: -2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-body #mobile-background #mobile-splash h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 120%;
+    font-size: 4.5vw;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    z-index: 99;
+    padding-top: 1vh;
+    width: 80%;
   }
   .main-body #mobile-background #treesforeground {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     height: 100%;
@@ -1096,6 +1075,11 @@ html {
     -o-object-fit: cover;
        object-fit: cover;
     z-index: -1;
+    transform: scale(1.5) translateZ(-5px);
+    padding: 0;
+  }
+  .main-body #mobile-background #treesforeground img {
+    width: 100%;
   }
   .main-body #mobile-background #treesmiddle {
     position: absolute;
@@ -1103,10 +1087,9 @@ html {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: -2;
     -o-object-fit: cover;
        object-fit: cover;
-    transform: scale(1.5) translateZ(-5px);
+    transform: scale(1.75) translateZ(-7.5px);
   }
   .main-body #mobile-background #treesbg {
     position: absolute;
@@ -1120,7 +1103,7 @@ html {
   }
   .main-body .content {
     position: relative;
-    margin-top: 100vh;
+    margin-top: 87vh;
     background-color: rgb(68, 98, 88);
     width: 100vw;
     display: grid;
@@ -1152,10 +1135,10 @@ html {
     justify-self: center;
     margin-top: 4vw;
   }
-  .main-body .content .content-grid #item1 #side-image1 {
+  .main-body .content .content-grid #item1 #side-image1-mobile {
     width: 100%;
     align-self: center;
-    padding: 10vw;
+    padding: 0vw;
   }
   .main-body .content .content-grid #item1 #two-row-container1 {
     display: flex;
@@ -1249,13 +1232,10 @@ html {
   }
   .main-body .content .content-grid #item3 {
     display: flex;
-    flex-direction: row;
-    background-image: url("https://dsm01pap009files.storage.live.com/y4maBrMSD_vYe_m8D3Nr69Pniplc2J1CqscH3AByoGi2F-N-3t6R6VOWtasNtIkz1gTW7CvQmlzv1xxHWyxzlP-5BuAI9ZRuPQvpTVegxPwoOtRTvWxAYFSK8OGCmYwX3xEsqHfjszAjFrvU7yA8piXpUIkfuoFupeaT5h9J-hM7v2b3izyubtZiiBGiMigoAlc?width=1468&height=930&cropmode=none");
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 70vw;
-    height: 45vw;
+    flex-direction: column;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
     align-items: center;
     justify-items: center;
     align-content: center;
@@ -1309,8 +1289,7 @@ html {
     padding-top: 2vw;
   }
   .main-body .content .content-grid #item3 img {
-    width: 30%;
-    box-shadow: 0px 4px 4px 7px rgba(0, 0, 0, 0.25);
+    width: 100%;
   }
   .main-body .content .content-grid #item4 {
     display: grid;
