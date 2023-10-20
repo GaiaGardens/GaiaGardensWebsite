@@ -1,7 +1,7 @@
 /*Animated Fade ins*/
 ScrollReveal().reveal('.large-title', { duration:3000, distance: '20px', origin: 'bottom'});
 ScrollReveal().reveal('.large-subhead', { duration:3000, distance: '10px', origin: 'bottom'});
-ScrollReveal().reveal('nav', {delay:1000, duration: 1000});
+
 ScrollReveal().reveal('#mailiconhomepage', {delay:1000, duration: 1000});
 ScrollReveal().reveal('.alternate-nav', {delay:1000, duration: 1000});
 ScrollReveal().reveal('.content-item', { duration:2000, distance: '10px', origin: 'bottom'});
