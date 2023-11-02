@@ -495,35 +495,40 @@ $GaiaGrey: #2C2C2C;
                 #item4{
                     display: grid;
                     grid-template-columns: 1fr;
-                    background-image: url("https://dsm01pap009files.storage.live.com/y4mBrUMkWpXvrMmWaDHF3XQx6d14ayztQHrqmFdg9lI7C2K3i5EuOm88sxO6JetBOdKzQfB68PxRD2a4vT-j51aSH0P2K1FfWhNma-hU8X9lI2a_mVe99A7DB23UbMZwW1EQN3lzWeMN3-Wlx-KO5WznKH0Wckc7ZttLJhHmO4_l0bFv6Gm_aytcMPotB0SIDXo?width=1466&height=1078&cropmode=none");
+                    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%219012&authkey=%21AC7DRUs41kNuNJ4&width=1466&height=1078");
                     background-repeat: no-repeat;
                     background-position:right;
                     background-size: cover;
+                    opacity: 100%;
                     width:100%;
-                    height:50vw;
+                    height:100vh;
                     align-items: center;
                     #container-column{
-                        margin-left: 10%;
                         display: flex;
                         flex-direction: column;
                         height: 20vw;
+                        align-items: center;
+                        justify-content: center;
                         h3{
-                            color: $GaiaDarkGreen;
+                            color:$GaiaDarkGreen;
                             font-family: 'Roboto';
                             font-style: normal;
                             font-weight: 900;
-                            font-size: 3vw;
-                            line-height: 85%;
+                            font-size: 33px;
+                            line-height: 90%;
                             text-align: center;
                             font-variant: all-small-caps;
-                            width:35%;
-                            text-align: left;
+                            width:70%;
+                            text-align: center;
+                            padding:30px;
+                            background-color: white;
+                            box-shadow: #FFFFFF 1px 0 10px;
                         }
                     }
                     
                 }
                 #item5{
-                    height:50vw;
+                    height:100vh;
                     display: grid;
                     grid-template-columns: 1fr;
                     background-color: #F1ECE8;
@@ -533,19 +538,19 @@ $GaiaGrey: #2C2C2C;
                         font-family: 'Roboto';
                         font-style: normal;
                         font-weight: 900;
-                        font-size: 3vw;
+                        font-size: 35px;
                         line-height: 85%;
                         text-align: center;
                         font-variant: all-small-caps;
                         color: $GaiaDarkGreen;
-                        margin-bottom: 31px;
+                        margin-bottom: 30px;
                     }
 
                     #item5-grid{
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
-                        height:28vw;
-                        width:50vw;
+                        height:100%;
+                        width:100vw;
                         align-self: center;
                         justify-self: center;
                         align-content: center;
@@ -559,7 +564,7 @@ $GaiaGrey: #2C2C2C;
                                 display: flex;
                                 flex-direction: column;
                                 width:100%;
-                                height: 28vw;
+                                height: 70vh;
                                 align-items: center;
                                 justify-self: center;
                                 justify-items: center;
@@ -572,24 +577,24 @@ $GaiaGrey: #2C2C2C;
                                     font-family: 'Roboto';
                                     font-style: normal;
                                     font-weight: 600;
-                                    font-size: 1.2vw;
-                                    line-height: 2vw;
+                                    font-size: 25px;
+                                    width: 90%;
+                                    line-height: 90%;
                                     margin:0;
                                     font-variant: all-small-caps;
                                     color: $GaiaLightGreen;
-                                    height: fit-content;
-                                    width: fit-content;
-                                    border-bottom:3px solid $GaiaLightGreen;
-                                    padding-top: 2vw;
+                                    border-bottom:2px solid $GaiaLightGreen;
+                                    padding-top: 40px;
                                     text-align: center;
+                                    padding-bottom: 30px;
                                 }
                                 p{
                                     font-family: 'Roboto';
                                     font-weight: 200;
-                                    font-size: .9vw;
+                                    font-size: 20px;
                                     color: #FFFFFF;
                                     text-align: center;
-                                    padding:2vw;
+                                    padding:10px;
                                     margin: 0;
                                 }
                             }
@@ -615,7 +620,7 @@ $GaiaGrey: #2C2C2C;
             align-self: center;
             align-items: center;
             width: 100vw;
-            height:15vw;
+            height:30vh;
             background-color: #1C312A;
             align-content: center;
             justify-content: flex-start;
@@ -624,102 +629,15 @@ $GaiaGrey: #2C2C2C;
             position: relative;
             bottom:0px;
             margin-bottom:0px;
-            #gaiaartwork{
-                height: 9vw;
-                width:9vw;
-                margin-left: 10vw;
-
-            }
-            .footer-ul{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                list-style-type: none;
-                margin:0 0 0 10vw;
-                padding:0;
-                position: absolute;
-                top:2.5vw;
-                left:20vw;
-                height:fit-content;
-                .footer-li{
-                    width: 20vw;
-                    align-self: center;
-                    
-                    h5{
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 1.2vw;
-                        line-height: 2vw;
-                        margin:0;
-                        font-variant: all-small-caps;
-                        color: $GaiaLightGreen;
-                    }
-                    .one-line-container{
-                        display:grid;
-                        grid-template-columns: 1fr;
-                        margin-top:0px;
-                        border-top:3px solid $GaiaLightGreen;
-                        height: fit-content;
-                        width:fit-content;
-                        p{
-                            font-family: 'Roboto';
-                            font-weight: 200;
-                            font-size: .9vw;
-                            line-height: 1vw; 
-                            color: #FFFFFF;
-                        }
-                        ul{
-                            list-style-type: disc;
-                            color:white;
-                            width: fit-content;
-                            
-                            li{
-                                width: fit-content;
-                                a{
-                                    font-family: 'Roboto';
-                                    font-weight: 200;
-                                    font-size: .9vw;
-                                    line-height: 2vw; 
-                                    color: #FFFFFF;
-                                    width: fit-content;
-                                }
-                            }
-                        }
-                    }
-
-                    .three-line-container{
-                        display:grid;
-                        grid-template-rows: 1fr 1fr;
-                        margin-top:0px;
-                        margin-bottom: 1vw;
-                        margin-right: 1vw;
-                        border-top:3px solid $GaiaLightGreen;
-                        height: fit-content;
-                        width:fit-content;
-                        a{
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 200;
-                            font-size: .9vw;
-                            line-height: 3vw;
-                            text-decoration-line: underline;
-                            color: #FFFFFF;
-                            display:flex;
-                            #mailicon{
-                                margin-right: 1vw;
-                                width:18px;
-                                height:13px;
-                                align-self: center;
-                            }
-                            #phoneicon{
-                                margin-right: .6vw;
-                                height:13px;
-                                align-self: center;
-                            }
-                        }
-
-                    }
-                }
+            justify-content: center;
+            #bottom-tag{
+                color:white;
+                font-family: 'Roboto';
+                font-weight: 200;
+                font-size: 18px;
+                text-align: center;
+                padding:10px;
+                margin: 0;
 
             }
         }
