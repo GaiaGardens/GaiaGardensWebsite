@@ -1045,7 +1045,7 @@ html {
   }
   .main-body #mobile-background #mobile-splash {
     position: absolute;
-    top: 130vh;
+    top: 100vh;
     z-index: -2;
     width: 100%;
     display: flex;
