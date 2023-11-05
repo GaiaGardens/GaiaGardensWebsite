@@ -180,7 +180,7 @@ $GaiaGrey: #2C2C2C;
                     }
                     a:hover{
                         color:#B4DE4A;
-                        font-size: .95vw;
+                        font-size: 21px;
                         border-bottom:3px solid $GaiaLightGreen;
                         font-weight: 600;
                     }
@@ -467,7 +467,6 @@ $GaiaGrey: #2C2C2C;
                             font-weight: 300;
                             font-size: 18px;
                             line-height: 140%; 
-                            text-align: left;
                             width:60%;
                             height:70%;
                             word-wrap: break-word;
@@ -527,6 +526,14 @@ $GaiaGrey: #2C2C2C;
                     }
                     
                 }
+
+                #pruningpic{
+                    display: flex;
+                    padding:0;
+                    height: 60vh;
+                    background-color: #F1ECE8;
+                }
+
                 #item5{
                     height:100vh;
                     display: grid;
@@ -534,6 +541,7 @@ $GaiaGrey: #2C2C2C;
                     background-color: #F1ECE8;
                     align-content: center;
                     justify-content: center;
+                    justify-items: center;
                     h3{
                         font-family: 'Roboto';
                         font-style: normal;
@@ -546,64 +554,18 @@ $GaiaGrey: #2C2C2C;
                         margin-bottom: 30px;
                     }
 
-                    #item5-grid{
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
-                        height:100%;
-                        width:100vw;
-                        align-self: center;
-                        justify-self: center;
-                        align-content: center;
-                        justify-content: center;
-
-                        gap:1vw;
-                        a{
-                            text-decoration: none;
-                            
-                            .item5-column{
-                                display: flex;
-                                flex-direction: column;
-                                width:100%;
-                                height: 70vh;
-                                align-items: center;
-                                justify-self: center;
-                                justify-items: center;
-                                background-color: #446258;
-                                transition: 0.4s all ease;
-                                img{
-                                    width:100%;
-                                }
-                                h5{
-                                    font-family: 'Roboto';
-                                    font-style: normal;
-                                    font-weight: 600;
-                                    font-size: 25px;
-                                    width: 90%;
-                                    line-height: 90%;
-                                    margin:0;
-                                    font-variant: all-small-caps;
-                                    color: $GaiaLightGreen;
-                                    border-bottom:2px solid $GaiaLightGreen;
-                                    padding-top: 40px;
-                                    text-align: center;
-                                    padding-bottom: 30px;
-                                }
-                                p{
-                                    font-family: 'Roboto';
-                                    font-weight: 200;
-                                    font-size: 20px;
-                                    color: #FFFFFF;
-                                    text-align: center;
-                                    padding:10px;
-                                    margin: 0;
-                                }
-                            }
-                        }
-                        a:hover{
-                            .item5-column{
-                                box-shadow: 0 0.2em 0.5em 0.1em black;
-                            }
-                        }
+                    p{
+                        color:$GaiaGrey;
+                        font-family: 'Roboto';
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 140%; 
+                        width:60%;
+                        height:70%;
+                        word-wrap: break-word;
+                        margin:0;
+                        padding-top:40px;
+                        text-align: center;
                     }
                 }
             }
