@@ -53,7 +53,7 @@ window.addEventListener("load", () =>{
     document.querySelector(".loader").classList.add("loader--hidden");
 
     document.querySelector(".loader").addEventListener("transitionend" , () =>{
-        document.body.removeChild(document.querySelector(".loader"))});
+    });
 });
 
 
@@ -231,14 +231,5 @@ $(document).ready(function(){
         $(".dark-overlay").css({"visibility":"visible", "opacity":".7"});
         $(".overlay-carousel-container").css({"visibility":"visible", "opacity":"1"});
         $(".overlay-carousel-picture").css({"background-image": "url(https://dsm01pap009files.storage.live.com/y4mvLTYv6elUtkWBW1b6ELAlzkrrqkmX_YLZJVhKtO-y_HLufL9arpZvDaruBR-0kQ386HMW0rSO2wbI16u8LL6r45RCxfWOOl_mZfJ6J3nV6ZJUXhWM0civgMaI60z_kycRRbhUrNL3nnO1_2fWDU7OuKwO0RsVo3BdvwkAoKYHo3uYqZrPHk5idJ0Ffxn2khJ?width=3024&height=4032&cropmode=none)" , });
-    });
-    
-    /*Project Images*/
-    $("#project1").click(function(){
-        $(".dark-overlay").css({"visibility":"visible", "opacity":".7"});
-        $(".overlay-project-container").css({"visibility":"visible", "opacity":"1"});
-        $(".project-content").css({"visibility":"visible", "opacity":"1"});
-        $("#project-name").text("Laura Lohman");
-        $("#project-text1").text("Queen Anne Urban Oasis");
     });
 });
