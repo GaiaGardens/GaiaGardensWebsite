@@ -13,19 +13,21 @@ ScrollReveal().reveal('#row2', {duration:2000, delay:1500, distance: '30px', ori
 
 /*Services Page*/
 
-$('#servicesbanner h2').css("opacity","0");
-$('#servicesbanner a').css("opacity","0");
-$('#servicesbanner h2:first').delay(3200).animate({left: '100px', opacity: '1'}, 1400);
+$('#text1 h2').css("opacity","0");
+$('#text2 a').css("opacity","0");
+ScrollReveal().reveal('#mobiletext1', {duration: 2000, delay:800});
+ScrollReveal().reveal('#mobiletext2', {duration: 2000});
+$('#services-slidein1').delay(3200).animate({left: '100px', opacity: '1'}, 1400);
 
-$('#servicesbanner h2:first').next().delay(4000).animate({left: '100px', opacity: '1',}, 1000);
+$('#services-slidein2').delay(4000).animate({left: '100px', opacity: '1',}, 1000);
 
-$('#servicesbanner h2:first').next().next().delay(5000).animate({left: '100px', opacity: '1',}, 1400);
+$('#services-slidein3').delay(5000).animate({left: '100px', opacity: '1',}, 1400);
 
-$('#servicesbanner h2:first').next().next().next().delay(6000).animate({left: '100px', opacity: '1',}, 1800 );
+$('#services-slidein4').delay(6000).animate({left: '100px', opacity: '1',}, 1800 );
 
-$('#servicesbanner h4').delay(8000).animate({opacity: '.8',}, 1800 );
+$('#pleasecallslidein').delay(8000).animate({opacity: '.8',}, 1800 );
 
-$('#servicesbanner a').delay(9000).animate({opacity: '1',}, 1800 );
+$('#text2 a').delay(9000).animate({opacity: '1',}, 1800 );
 
 
 /*Cycling Animated Pictures*/        
