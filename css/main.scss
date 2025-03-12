@@ -75,6 +75,7 @@ $GaiaGrey: #2C2C2C;
 @import "gallery"; 
 @import "services";
 @import "wip";
+@import "about";
 
 //////////Mobile Version/////////
 @media only screen and (max-width: 499px){
@@ -660,7 +661,7 @@ $GaiaGrey: #2C2C2C;
             top:0px;
             z-index:99;
             flex-direction: row;
-            background-image: url("https://dsm01pap009files.storage.live.com/y4mxtardiGUtDY3kgODSqZqoILtOsaT3ZU6mSkxMH5Zxd605WfUc0u-CHrkdSZMRZ1QwaOiUOVYixA11vlfFMxn3DRW0pliiLhSjS0jMtzmnkkk_cE72w6AkCGnxeFiiaBBGGogMiiXU-z2u3h5N8P_tuUgISdvUbXR8Mxedp_OSCrdlCxPid5NXh8pi4w294CS?width=1915&height=139&cropmode=none");
+            background-image: url("https://1drv.ms/i/c/b81a9b7983f88386/UQSGg_iDeZsaIIC43h8AAAAAAE5QpjDBJjicSrY?width=1915&height=139");
             background-size:cover;
             background-position: left;
             background-repeat: no-repeat;
@@ -984,7 +985,7 @@ $GaiaGrey: #2C2C2C;
 
         .content{
             position: relative;
-            margin-top:95vh;
+            margin-top:90vh;
             background-color: #D0D7CF;
             width: 100vw;
             display: grid;
@@ -1005,6 +1006,7 @@ $GaiaGrey: #2C2C2C;
                     width:100%;
                     z-index: 99;
                     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                    background-color: white;
                 }
 
                 #item1{
@@ -1133,7 +1135,7 @@ $GaiaGrey: #2C2C2C;
                 #item3{
                     display: flex;
                     flex-direction: row;
-                    background-image:url("https://dsm01pap009files.storage.live.com/y4maBrMSD_vYe_m8D3Nr69Pniplc2J1CqscH3AByoGi2F-N-3t6R6VOWtasNtIkz1gTW7CvQmlzv1xxHWyxzlP-5BuAI9ZRuPQvpTVegxPwoOtRTvWxAYFSK8OGCmYwX3xEsqHfjszAjFrvU7yA8piXpUIkfuoFupeaT5h9J-hM7v2b3izyubtZiiBGiMigoAlc?width=1468&height=930&cropmode=none");
+                    background-image:url("https://1drv.ms/i/c/b81a9b7983f88386/UQSGg_iDeZsaIIC4MCAAAAAAAPWUYc5MD3Uy4JI?width=1468&height=930");
                     background-position: bottom center;
                     background-size:cover;
                     background-repeat: no-repeat;
@@ -1198,7 +1200,7 @@ $GaiaGrey: #2C2C2C;
                 #item4{
                     display: grid;
                     grid-template-columns: 1fr;
-                    background-image: url("https://dsm01pap009files.storage.live.com/y4mBrUMkWpXvrMmWaDHF3XQx6d14ayztQHrqmFdg9lI7C2K3i5EuOm88sxO6JetBOdKzQfB68PxRD2a4vT-j51aSH0P2K1FfWhNma-hU8X9lI2a_mVe99A7DB23UbMZwW1EQN3lzWeMN3-Wlx-KO5WznKH0Wckc7ZttLJhHmO4_l0bFv6Gm_aytcMPotB0SIDXo?width=1466&height=1078&cropmode=none");
+                    background-image: url("https://1drv.ms/i/c/b81a9b7983f88386/UQSGg_iDeZsaIIC4MiAAAAAAAJte3MhB3kieQCg?width=1466&height=1078");
                     background-repeat: no-repeat;
                     background-position:right;
                     background-size: cover;
@@ -1326,7 +1328,7 @@ $GaiaGrey: #2C2C2C;
             justify-content: flex-start;
             margin:0;
             z-index:90;
-            position: relative;
+            position: sticky;
             bottom:0px;
             margin-bottom:0px;
             #gaiaartwork{
