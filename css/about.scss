@@ -1,0 +1,239 @@
+@import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+///////////Variables////////////
+//Colors//
+$GaiaLightGreen: #B4DE4A;
+$GaiaDarkGreen:  rgb(68, 98, 88);
+$GaiaGrey: #2C2C2C;
+
+
+//////////Mobile Version/////////
+@media only screen and (max-width: 499px){
+
+}
+
+///////////////Desktop Version////////////// 
+@media only screen and (min-width: 500px){
+    .about-splash{
+        position:absolute;
+        background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%2118502&authkey=%21ADsPQa4as5U4e-0&width=1466&height=890");
+        left:0px;
+        top:12vh;
+        width:100vw;
+        height:80vh;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        z-index:99;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        
+        .about-splash-items{
+            display:flex;
+            flex-direction: column;
+            position: absolute;
+            right: 4vw;
+            top:50vh;
+            margin:0;
+            max-height: 60vh;
+            margin:0;
+            z-index:99;
+            width:35vw;
+
+            .large-title{
+                font-family: 'Noto Serif', serif;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+                font-size: 4vw;
+                text-align: center;
+                margin:0;
+                line-height: 80%;
+                z-index:99;
+                text-shadow: 3px 4px 7px rgba(32, 32, 32, 0.8);
+            }
+        }
+    }
+    #aboutpg-item1{
+        background-color: #F1ECE8;
+        display:grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        justify-items: center;
+        padding:2vw;
+        
+        .aboutpg1container1{
+            display:flex;
+            flex-direction: column;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            height:100%;
+            padding-top:2vw;
+
+            h2{
+                color: $GaiaDarkGreen;
+                font-family: "Roboto";
+                font-weight: 900;
+                font-size: 3vw;
+                text-align: center;
+                font-variant: all-small-caps;
+                height: 12vh;
+                width:15vw;
+                padding-top: 3vh;
+                margin: 0;
+                transition: 1s all ease;
+                border-bottom:3px solid $GaiaDarkGreen;
+            }
+            p{
+                text-align: center;
+                color:$GaiaGrey;
+                font-family: 'Roboto';
+                font-weight: 300;
+                font-size: 1vw;
+                line-height: 140%; 
+                text-align: left;
+                width:60%;
+                height:70%;
+                word-wrap: break-word;
+                margin:0;
+                padding-top: 3vw;
+                padding-bottom: 6vw;
+            }
+            #about-img-grid{
+                display:flex;
+                flex-direction: row;
+                width: 90%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                img{
+                    height:19vw;
+                    padding:.5vw; 
+                }
+            }
+        }
+        .aboutpg1container2{
+            display:flex;
+            flex-direction: row;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            height:50vh;
+            margin-top:1vw;
+
+            img{
+                height:100%;
+            }
+            p{
+                text-align: left;
+                color:$GaiaGrey;
+                font-family: 'Roboto';
+                font-weight: 300;
+                font-size: 1vw;
+                line-height: 140%; 
+                width:55%;
+                height:100%;
+                word-wrap: break-word;
+                margin:0;
+                padding:10%;
+            }
+        }
+    }
+    #aboutpg-item2{
+        background-color: #F1ECE8;
+        display:grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        justify-items: center;
+        height:150vh;
+
+        h2{
+            color: $GaiaDarkGreen;
+            font-family: "Roboto";
+            font-weight: 900;
+            font-size: 3vw;
+            text-align: center;
+            font-variant: all-small-caps;
+            height: 12vh;
+            width:15vw;
+            padding-top: 3vh;
+            margin: 0;
+            transition: 1s all ease;
+            border-bottom:3px solid $GaiaDarkGreen;
+        }
+        p{
+            text-align: center;
+            color:$GaiaGrey;
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 1vw;
+            line-height: 140%; 
+            text-align: left;
+            width:60%;
+            height:70%;
+            word-wrap: break-word;
+            margin:0;
+            padding-top: 3vw;
+            padding-bottom: 6vw;
+        }
+    }
+    #aboutpg-item3{
+        background-color: #F1ECE8;
+        display:grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        justify-items: center;
+        height:150vh;
+
+        h2{
+            color: $GaiaDarkGreen;
+            font-family: "Roboto";
+            font-weight: 900;
+            font-size: 3vw;
+            text-align: center;
+            font-variant: all-small-caps;
+            height: 12vh;
+            width:30vw;
+            padding-top: 3vh;
+            margin: 0;
+            transition: 1s all ease;
+            border-bottom:3px solid $GaiaDarkGreen;
+        }
+        p{
+            text-align: center;
+            color:$GaiaGrey;
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 1vw;
+            line-height: 140%; 
+            text-align: left;
+            width:60%;
+            height:70%;
+            word-wrap: break-word;
+            margin:0;
+            padding-top: 3vw;
+            padding-bottom: 6vw;
+        }
+        li{
+            text-align: center;
+            color:$GaiaGrey;
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 1vw;
+            line-height: 140%; 
+            text-align: left;
+            width:60%;
+            height:70%;
+            word-wrap: break-word;
+            margin:0;
+            padding-top: 3vw;
+            padding-bottom: 6vw;
+        }
+    }
+}

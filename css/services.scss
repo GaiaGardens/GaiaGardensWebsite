@@ -1,0 +1,538 @@
+@import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+///////////Variables////////////
+//Colors//
+$GaiaLightGreen: #B4DE4A;
+$GaiaDarkGreen:  rgb(68, 98, 88);
+$GaiaGrey: #2C2C2C;
+
+
+//////////Mobile Version/////////
+@media only screen and (max-width: 499px){
+    .content-container{
+        position: relative;
+        background-color: #D0D7CF;
+        width: 100%;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        z-index:1;
+        padding-top:8vh;
+        #servicesbanner{
+            display: grid;
+            grid-template-rows: 2fr;
+            width: 100vw;
+            height:85vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166884/ServicesBanner_fte6du.png");
+            
+            #mobiletext1{
+                width:100vw;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                justify-content: center;
+                h2{
+                    padding-top: 150px;
+                    width:80vw;
+                    text-align: center;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 28px;
+                    font-variant: all-small-caps;
+                    color: white;
+                    }
+            }
+            #mobiletext2{
+                width:100vw;
+                display: grid;
+                grid-template-columns: 1fr;
+                position: relative;
+                justify-items: center;
+                padding-bottom:100px;
+                h4{
+                    font-style: normal;
+                    text-align: center;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: 20px;
+                    color: white;
+                    width: 70vw;
+                    padding-bottom:20px;
+                }
+                a{
+                    width: 200px;
+                    height:40px;
+                    background-color: #B4DE4A;
+                    text-decoration: none;
+                    border-radius: 25px;
+                    display: grid;
+                    transition: 0.4s all ease;
+                    p{
+                        font-family: 'Roboto';
+                        color: rgb(0, 0, 0);
+                        margin: 0;
+                        align-self: center;
+                        justify-self: center;
+                    }
+                }
+                a:hover{
+                    background-color: #b4de4a8f;
+                    box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
+                    cursor: pointer;
+                    p{color:white;}
+                }
+            }
+        }
+        .services-title{
+            background-color: transparent;
+            z-index: 99;
+            padding-top: 30px;
+            width: 100%;
+            justify-self: center;
+            h2{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 42px;
+                text-align: center;
+                font-variant: all-small-caps;
+                color: $GaiaGrey;
+                color: $GaiaGrey;
+                height: 12vh;
+                padding-top: 3vh;
+                z-index: 98;
+                margin: 0;
+                transition: 1s all ease;
+            }
+        }
+
+        #tree-care{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF;
+            width: 100%;
+            justify-self: center;
+            align-items: center;
+            justify-items: center;
+            padding-top: 30px;
+            .image-row{
+                display: flex;
+                flex-direction: row;
+                width: 95%;
+                justify-self: center;
+                align-content: center;
+                justify-content: center;
+                margin-top: 5vw;
+                img{
+                    width: 95%;
+                    justify-self: center;
+                }
+            }
+            h3{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 28px;
+                text-align: center;
+                font-variant: all-small-caps;
+                color: $GaiaDarkGreen;
+                padding-top: 30px;
+                line-height: 80%;
+                width:70%;
+                margin-top:1vw;
+                margin-bottom:0;
+            }
+            p{
+                color: #2C2C2C;
+                font-family: "Roboto";
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 140%;
+                width: 60%;
+                height: 70%;
+                word-wrap: break-word;
+                margin: 0;
+                padding-top: 30px;
+                padding-bottom: 60px;
+                text-align: center;
+            }
+        }
+        #garden{
+            display: grid;
+            background-color: #FFF;
+            width: 100%;
+            justify-self: center;
+            align-content: center;
+            justify-items: center;
+            padding-top: 30px;
+            .image-row{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-self: center;
+                align-content: center;
+                justify-content: center;
+                margin-top: 5vw;
+                img{
+                    width:95%;
+                    justify-self: center;
+                }
+            }
+                h3{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 28px;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: $GaiaDarkGreen;
+                    padding-top: 30px;
+                    width:70%;
+                    margin-top:1vw;
+                    margin-bottom:0;
+                    line-height: 80%;
+                }
+                p{
+                    color: #2C2C2C;
+                    font-family: "Roboto";
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 140%;
+                    width: 60%;
+                    height: 70%;
+                    word-wrap: break-word;
+                    margin: 0;
+                    padding-top: 30px;
+                    text-align: center;
+                    padding-bottom: 60px;
+                }
+            }
+
+        #question-header{
+            background-color:$GaiaGrey;
+            width: 100%;
+            height:60vh;
+            justify-self: center;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+
+            h3{
+                color: #B4DE4A;
+                font-family: "Roboto";
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 95.187%;
+                font-variant: all-small-caps;
+                letter-spacing: .25vw;
+            }
+            ol{
+                width:95%;
+                li{
+                    color: #FFF;
+                    font-family: "Roboto";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 95.187%;
+                    font-variant: all-small-caps;
+                    padding-top: 1vw;
+                    padding-bottom: 1vw;
+                    letter-spacing: .1vw;
+                    
+                }
+            }
+
+        }
+        #questionnaire{
+            display:flex;
+            width:100%;
+            align-self: center;
+            justify-self: center;
+            align-content: center;
+            margin-bottom:5vw;
+            background-color: white;
+
+            #edef3681-fa9e-4070-b2be-fc23075d9115{
+                width:100% !important;
+                background-color: white;
+                margin-top: 5vw;
+            }
+        }
+    }
+}
+
+///////////////Desktop Version////////////// 
+@media only screen and (min-width: 500px){
+    .content-container{
+        position: relative;
+        background-color: #D0D7CF;
+        width: 100%;
+        padding-top: 12vh;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        z-index:1;
+        #servicesbanner{
+            display: grid;
+            width: 100vw;
+            height:40vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%218945&authkey=%21ANOnX3tIMdao29k&width=1000&height=572");
+            #text1{
+                position:absolute;
+                left: 10%;
+                top:10%;
+                width: fit-content;
+                height:fit-content;
+                display: flex;
+                flex-direction: row;
+                h2{
+                    text-align: left;
+                    width:fit-content;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    font-variant: all-small-caps;
+                    color: white;
+                    line-height: 80%;
+                    margin-right:0;
+                    margin-left: 1vw;
+                    transition: 0.4 s all ease;
+                    }
+            }
+            #text2{
+                display: flex;
+                flex-direction: row;
+                position:absolute;
+                left: 10%;
+                top:11%;
+                h4{
+                    font-style: normal;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: 24px;
+                    color: white;
+                    line-height: 80%;
+                    margin-right:0;
+                    opacity:0;
+                    margin-left: 1vw;
+                }
+                a{
+                    margin-left: 200px;
+                    width: 200px;
+                    height:40px;
+                    background-color: #B4DE4A;
+                    text-decoration: none;
+                    border-radius: 25px;
+                    display: grid;
+                    transition: 0.4s all ease;
+                    p{
+                        font-family: 'Roboto';
+                        color: rgb(0, 0, 0);
+                        margin: 0;
+                        align-self: center;
+                        justify-self: center;
+                    }
+                }
+                a:hover{
+                    background-color: #b4de4a8f;
+                    box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
+                    cursor: pointer;
+                    p{color:white;}
+                }
+            }
+        }
+        .services-title{
+            background-color: transparent;
+            z-index: 99;
+            padding-top: 5vh;
+            width: 100%;
+            justify-self: center;
+            h2{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 3vw;
+                text-align: center;
+                font-variant: all-small-caps;
+                color: $GaiaGrey;
+                color: $GaiaGrey;
+                height: 12vh;
+                padding-top: 3vh;
+                z-index: 98;
+                margin: 0;
+                transition: 1s all ease;
+            }
+        }
+
+        #tree-care{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF;
+            width: 100%;
+            justify-self: center;
+            align-items: center;
+            justify-items: center;
+            .image-row{
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                justify-self: center;
+                align-content: center;
+                justify-content: center;
+                margin-top: 5vw;
+                img{
+                    width: 80%;
+                    justify-self: center;
+                }
+            }
+            h3{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 1.75vw;
+                text-align: center;
+                font-variant: all-small-caps;
+                color: $GaiaDarkGreen;
+                padding-top: 2vh;
+                width:70%;
+                margin-top:1vw;
+                margin-bottom:0;
+            }
+            p{
+                font-family: 'Roboto';
+                padding:1vw;
+                color:$GaiaGrey;
+                font-family: 'Roboto';
+                font-weight: 300;
+                font-size: 1.2vw;
+                line-height: 150%; 
+                text-align: left;
+                width:70%;
+                height:70%;
+                margin-bottom: 12vw;
+            }
+        }
+        #garden{
+            display: grid;
+            background-color: #FFF;
+            width: 100%;
+            justify-self: center;
+            align-content: center;
+            justify-items: center;
+            .image-row{
+                display: flex;
+                flex-direction: row;
+                width: 80%;
+                justify-self: center;
+                align-content: center;
+                justify-content: center;
+                margin-top: 5vw;
+                img{
+                    width:80%;
+                    justify-self: center;
+                }
+            }
+                h3{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 1.75vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: $GaiaDarkGreen;
+                    padding-top: 2vh;
+                    width:70%;
+                    margin-top:1vw;
+                    margin-bottom:0;
+                }
+                p{
+                    font-family: 'Roboto';
+                    padding:1vw;
+                    margin-top: 2vh;
+                    color:$GaiaGrey;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: 1.2vw;
+                    line-height: 150%; 
+                    text-align: left;
+                    width:70%;
+                    height:70%;
+                    padding-top: 2vw;
+                    margin-bottom: 5vw;
+
+                }
+            }
+
+        #question-header{
+            background-color:$GaiaGrey;
+            width: 100%;
+            justify-self: center;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            height:20vw;
+
+
+            h3{
+                color: #B4DE4A;
+                font-family: "Roboto";
+                font-size: 1.5vw;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 95.187%;
+                font-variant: all-small-caps;
+                letter-spacing: .25vw;
+            }
+            ol{
+                width:60%;
+                li{
+                    color: #FFF;
+                    font-family: "Roboto";
+                    font-size: 1.2vw;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 95.187%;
+                    font-variant: all-small-caps;
+                    padding-top: 1vw;
+                    padding-bottom: 1vw;
+                    letter-spacing: .1vw;
+                    
+                }
+            }
+
+        }
+        #questionnaire{
+            display:flex;
+            width:100%;
+            align-self: center;
+            justify-self: center;
+            align-content: center;
+            margin-bottom:5vw;
+            background-color: white;
+
+            #edef3681-fa9e-4070-b2be-fc23075d9115{
+                width:100% !important;
+                background-color: white;
+                margin-top: 5vw;
+            }
+        }
+    }
+}

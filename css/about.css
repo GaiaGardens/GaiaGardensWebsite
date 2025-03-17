@@ -1,0 +1,218 @@
+@import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@media only screen and (min-width: 500px) {
+  .about-splash {
+    position: absolute;
+    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%2118502&authkey=%21ADsPQa4as5U4e-0&width=1466&height=890");
+    left: 0px;
+    top: 12vh;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .about-splash .about-splash-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 4vw;
+    top: 50vh;
+    margin: 0;
+    max-height: 60vh;
+    margin: 0;
+    z-index: 99;
+    width: 35vw;
+  }
+  .about-splash .about-splash-items .large-title {
+    font-family: "Noto Serif", serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 4vw;
+    text-align: center;
+    margin: 0;
+    line-height: 80%;
+    z-index: 99;
+    text-shadow: 3px 4px 7px rgba(32, 32, 32, 0.8);
+  }
+  #aboutpg-item1 {
+    background-color: #F1ECE8;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    padding: 2vw;
+  }
+  #aboutpg-item1 .aboutpg1container1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 2vw;
+  }
+  #aboutpg-item1 .aboutpg1container1 h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    height: 12vh;
+    width: 15vw;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  #aboutpg-item1 .aboutpg1container1 p {
+    text-align: center;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    word-wrap: break-word;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+  }
+  #aboutpg-item1 .aboutpg1container1 #about-img-grid {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #aboutpg-item1 .aboutpg1container1 #about-img-grid img {
+    height: 19vw;
+    padding: 0.5vw;
+  }
+  #aboutpg-item1 .aboutpg1container2 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 1vw;
+  }
+  #aboutpg-item1 .aboutpg1container2 img {
+    height: 100%;
+  }
+  #aboutpg-item1 .aboutpg1container2 p {
+    text-align: left;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    width: 55%;
+    height: 100%;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 10%;
+  }
+  #aboutpg-item2 {
+    background-color: #F1ECE8;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    height: 150vh;
+  }
+  #aboutpg-item2 h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    height: 12vh;
+    width: 15vw;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  #aboutpg-item2 p {
+    text-align: center;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    word-wrap: break-word;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+  }
+  #aboutpg-item3 {
+    background-color: #F1ECE8;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    height: 150vh;
+  }
+  #aboutpg-item3 h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    height: 12vh;
+    width: 30vw;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  #aboutpg-item3 p {
+    text-align: center;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    word-wrap: break-word;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+  }
+  #aboutpg-item3 li {
+    text-align: center;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    word-wrap: break-word;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+  }
+}/*# sourceMappingURL=about.css.map */

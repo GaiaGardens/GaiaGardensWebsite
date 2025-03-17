@@ -122,49 +122,7 @@
   #alternate-nav-header #main-nav ul #dropdown #dropdown-content {
     display: none;
   }
-  .content-wip-page {
-    position: relative;
-    background-color: #1C312A;
-    width: 100%;
-    padding-top: 12vh;
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    grid-template-columns: 1fr;
-    z-index: 1;
-  }
-  .content-wip-page .content-grid {
-    display: grid;
-    width: 70vw;
-    grid-template-columns: 1fr;
-    align-self: center;
-    justify-self: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-  }
-  .content-wip-page .content-grid .content-item {
-    width: 100%;
-    z-index: 99;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  }
-  .content-wip-page .content-grid #wip {
-    height: 70vh;
-    background-color: rgb(68, 98, 88);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4vw;
-  }
-  .content-wip-page .content-grid #wip h1 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2.5vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: #B4DE4A;
-  }
-  .content-otherpages {
+  .content-container {
     position: relative;
     background-color: #D0D7CF;
     width: 100%;
@@ -175,85 +133,7 @@
     grid-template-columns: 1fr;
     z-index: 1;
   }
-  .content-otherpages #servicesbanner {
-    display: grid;
-    width: 100vw;
-    height: 40vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%218945&authkey=%21ANOnX3tIMdao29k&width=1000&height=572");
-  }
-  .content-otherpages #servicesbanner #text1 {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-  }
-  .content-otherpages #servicesbanner #text1 h2 {
-    text-align: left;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    font-variant: all-small-caps;
-    color: white;
-    line-height: 80%;
-    margin-right: 0;
-    margin-left: 1vw;
-    transition: 0.4 s all ease;
-  }
-  .content-otherpages #servicesbanner #text2 {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 10%;
-    top: 11%;
-  }
-  .content-otherpages #servicesbanner #text2 h4 {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 24px;
-    color: white;
-    line-height: 80%;
-    margin-right: 0;
-    opacity: 0;
-    margin-left: 1vw;
-  }
-  .content-otherpages #servicesbanner #text2 a {
-    margin-left: 200px;
-    width: 200px;
-    height: 40px;
-    background-color: #B4DE4A;
-    text-decoration: none;
-    border-radius: 25px;
-    display: grid;
-    transition: 0.4s all ease;
-  }
-  .content-otherpages #servicesbanner #text2 a p {
-    font-family: "Roboto";
-    color: rgb(0, 0, 0);
-    margin: 0;
-    align-self: center;
-    justify-self: center;
-  }
-  .content-otherpages #servicesbanner #text2 a:hover {
-    background-color: rgba(180, 222, 74, 0.5607843137);
-    box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
-    cursor: pointer;
-  }
-  .content-otherpages #servicesbanner #text2 a:hover p {
-    color: white;
-  }
-  .content-otherpages .content-grid {
+  .content-container .content-grid {
     display: grid;
     background-color: #FFF;
     width: 100%;
@@ -264,192 +144,16 @@
     /* overlay styles */
     /* hover */
   }
-  .content-otherpages .content-grid .content-item {
+  .content-container .content-grid .content-item {
     width: 100%;
     z-index: 99;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   }
-  .content-otherpages .content-grid #treeline {
-    width: 100vw;
-    position: absolute;
-    bottom: -5vw;
-    left: 0px;
-    z-index: 1;
-  }
-  .content-otherpages .content-grid .services-title {
-    background-color: transparent;
-    z-index: 99;
-    padding-top: 5vh;
-    width: 100%;
-    justify-self: center;
-  }
-  .content-otherpages .content-grid .services-title h2 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: #2C2C2C;
-    color: #2C2C2C;
-    height: 12vh;
-    padding-top: 3vh;
-    z-index: 98;
-    margin: 0;
-    transition: 1s all ease;
-  }
-  .content-otherpages .content-grid #tree-care {
-    display: flex;
-    flex-direction: column;
-    background-color: #FFF;
-    width: 100%;
-    justify-self: center;
-    align-items: center;
-    justify-items: center;
-  }
-  .content-otherpages .content-grid #tree-care .image-row {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    margin-top: 5vw;
-  }
-  .content-otherpages .content-grid #tree-care .image-row img {
-    width: 80%;
-    justify-self: center;
-  }
-  .content-otherpages .content-grid #tree-care h3 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.75vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: rgb(68, 98, 88);
-    padding-top: 2vh;
-    width: 70%;
-    margin-top: 1vw;
-    margin-bottom: 0;
-  }
-  .content-otherpages .content-grid #tree-care p {
-    font-family: "Roboto";
-    padding: 1vw;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 150%;
-    text-align: left;
-    width: 70%;
-    height: 70%;
-    margin-bottom: 12vw;
-  }
-  .content-otherpages .content-grid #garden {
-    display: grid;
-    background-color: #FFF;
-    width: 100%;
-    justify-self: center;
-    align-content: center;
-    justify-items: center;
-  }
-  .content-otherpages .content-grid #garden .image-row {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    margin-top: 5vw;
-  }
-  .content-otherpages .content-grid #garden .image-row img {
-    width: 80%;
-    justify-self: center;
-  }
-  .content-otherpages .content-grid #garden h3 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.75vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: rgb(68, 98, 88);
-    padding-top: 2vh;
-    width: 70%;
-    margin-top: 1vw;
-    margin-bottom: 0;
-  }
-  .content-otherpages .content-grid #garden p {
-    font-family: "Roboto";
-    padding: 1vw;
-    margin-top: 2vh;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 150%;
-    text-align: left;
-    width: 70%;
-    height: 70%;
-    padding-top: 2vw;
-    margin-bottom: 5vw;
-  }
-  .content-otherpages .content-grid #question-header {
-    background-color: #2C2C2C;
-    width: 100%;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    height: 20vw;
-  }
-  .content-otherpages .content-grid #question-header h3 {
-    color: #B4DE4A;
-    font-family: "Roboto";
-    font-size: 1.5vw;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 95.187%;
-    font-variant: all-small-caps;
-    letter-spacing: 0.25vw;
-  }
-  .content-otherpages .content-grid #question-header ol {
-    width: 60%;
-  }
-  .content-otherpages .content-grid #question-header ol li {
-    color: #FFF;
-    font-family: "Roboto";
-    font-size: 1.2vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 95.187%;
-    font-variant: all-small-caps;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    letter-spacing: 0.1vw;
-  }
-  .content-otherpages .content-grid #questionnaire {
-    display: flex;
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-    align-content: center;
-    margin-bottom: 5vw;
-    background-color: white;
-  }
-  .content-otherpages .content-grid #questionnaire #edef3681-fa9e-4070-b2be-fc23075d9115 {
-    width: 100% !important;
-    background-color: white;
-    margin-top: 5vw;
-  }
-  .content-otherpages .content-grid .gallery-title {
+  .content-container .content-grid .gallery-title {
     background-color: #FFFFFF;
     z-index: 99;
   }
-  .content-otherpages .content-grid .gallery-title h2 {
+  .content-container .content-grid .gallery-title h2 {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -463,7 +167,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .content-otherpages .content-grid .image-gallery {
+  .content-container .content-grid .image-gallery {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -471,12 +175,12 @@
     margin-left: 15px;
     margin-right: 15px;
   }
-  .content-otherpages .content-grid .image-gallery .column {
+  .content-container .content-grid .image-gallery .column {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .content-otherpages .content-grid .image-item img {
+  .content-container .content-grid .image-item img {
     width: 100%;
     border-radius: 0px;
     height: 100%;
@@ -484,7 +188,7 @@
        object-fit: cover;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   }
-  .content-otherpages .content-grid .project-image-gallery {
+  .content-container .content-grid .project-image-gallery {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 80%;
@@ -497,16 +201,16 @@
     padding-right: 1vw;
     justify-self: center;
   }
-  .content-otherpages .content-grid .project-image-gallery .project {
+  .content-container .content-grid .project-image-gallery .project {
     width: 100%;
   }
-  .content-otherpages .content-grid .project-image-gallery .project img {
+  .content-container .content-grid .project-image-gallery .project img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 25vh;
   }
-  .content-otherpages .content-grid .project-image-gallery .project .project-overlay {
+  .content-container .content-grid .project-image-gallery .project .project-overlay {
     position: relative;
     width: 100%;
     height: 100%;
@@ -529,14 +233,14 @@
     justify-content: center;
     cursor: pointer;
   }
-  .content-otherpages .content-grid .project:hover .project-overlay {
+  .content-container .content-grid .project:hover .project-overlay {
     opacity: 1;
   }
-  .content-otherpages .content-grid .image-item {
+  .content-container .content-grid .image-item {
     position: relative;
     cursor: pointer;
   }
-  .content-otherpages .content-grid .overlay {
+  .content-container .content-grid .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -557,7 +261,7 @@
     align-items: center;
     justify-content: center;
   }
-  .content-otherpages .content-grid .image-item:hover .overlay {
+  .content-container .content-grid .image-item:hover .overlay {
     opacity: 1;
   }
 }
@@ -780,49 +484,7 @@
   #alternate-nav-header #alternate-nav ul #dropdown:hover #dropdown-content a:hover {
     color: #B4DE4A;
   }
-  .content-wip-page {
-    position: relative;
-    background-color: #1C312A;
-    width: 100%;
-    padding-top: 12vh;
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    grid-template-columns: 1fr;
-    z-index: 1;
-  }
-  .content-wip-page .content-grid {
-    display: grid;
-    width: 70vw;
-    grid-template-columns: 1fr;
-    align-self: center;
-    justify-self: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-  }
-  .content-wip-page .content-grid .content-item {
-    width: 100%;
-    z-index: 99;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  }
-  .content-wip-page .content-grid #wip {
-    height: 70vh;
-    background-color: rgb(68, 98, 88);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4vw;
-  }
-  .content-wip-page .content-grid #wip h1 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2.5vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: #B4DE4A;
-  }
-  .content-otherpages {
+  .content-container {
     position: relative;
     background-color: #D0D7CF;
     width: 100%;
@@ -833,85 +495,7 @@
     grid-template-columns: 1fr;
     z-index: 1;
   }
-  .content-otherpages #servicesbanner {
-    display: grid;
-    width: 100vw;
-    height: 40vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%218945&authkey=%21ANOnX3tIMdao29k&width=1000&height=572");
-  }
-  .content-otherpages #servicesbanner #text1 {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-  }
-  .content-otherpages #servicesbanner #text1 h2 {
-    text-align: left;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    font-variant: all-small-caps;
-    color: white;
-    line-height: 80%;
-    margin-right: 0;
-    margin-left: 1vw;
-    transition: 0.4 s all ease;
-  }
-  .content-otherpages #servicesbanner #text2 {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 10%;
-    top: 11%;
-  }
-  .content-otherpages #servicesbanner #text2 h4 {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 24px;
-    color: white;
-    line-height: 80%;
-    margin-right: 0;
-    opacity: 0;
-    margin-left: 1vw;
-  }
-  .content-otherpages #servicesbanner #text2 a {
-    margin-left: 200px;
-    width: 200px;
-    height: 40px;
-    background-color: #B4DE4A;
-    text-decoration: none;
-    border-radius: 25px;
-    display: grid;
-    transition: 0.4s all ease;
-  }
-  .content-otherpages #servicesbanner #text2 a p {
-    font-family: "Roboto";
-    color: rgb(0, 0, 0);
-    margin: 0;
-    align-self: center;
-    justify-self: center;
-  }
-  .content-otherpages #servicesbanner #text2 a:hover {
-    background-color: rgba(180, 222, 74, 0.5607843137);
-    box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
-    cursor: pointer;
-  }
-  .content-otherpages #servicesbanner #text2 a:hover p {
-    color: white;
-  }
-  .content-otherpages .content-grid {
+  .content-container .content-grid {
     display: grid;
     background-color: #FFF;
     width: 60%;
@@ -924,19 +508,19 @@
     /* overlay styles */
     /* hover */
   }
-  .content-otherpages .content-grid .content-item {
+  .content-container .content-grid .content-item {
     width: 100%;
     z-index: 99;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   }
-  .content-otherpages .content-grid #treeline {
+  .content-container .content-grid #treeline {
     width: 100vw;
     position: absolute;
     bottom: -5vw;
     left: 0px;
     z-index: 1;
   }
-  .content-otherpages .content-grid .project-info #project-name {
+  .content-container .content-grid .project-info #project-name {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -947,7 +531,7 @@
     z-index: 98;
     margin: 0;
   }
-  .content-otherpages .content-grid .project-info #project-text1 {
+  .content-container .content-grid .project-info #project-text1 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 600;
@@ -958,7 +542,7 @@
     padding-top: 2vw;
     font-variant: all-small-caps;
   }
-  .content-otherpages .content-grid .project-info #project-text2 {
+  .content-container .content-grid .project-info #project-text2 {
     color: #2C2C2C;
     font-family: "Roboto";
     font-weight: 300;
@@ -970,179 +554,10 @@
     margin: 0;
     padding-top: 2vw;
   }
-  .content-otherpages .content-grid #back-to-gallery-btn a {
+  .content-container .content-grid #back-to-gallery-btn a {
     text-decoration: none;
   }
-  .content-otherpages .content-grid .services-title {
-    background-color: transparent;
-    z-index: 99;
-    padding-top: 5vh;
-    width: 100%;
-    justify-self: center;
-  }
-  .content-otherpages .content-grid .services-title h2 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: #2C2C2C;
-    color: #2C2C2C;
-    height: 12vh;
-    padding-top: 3vh;
-    z-index: 98;
-    margin: 0;
-    transition: 1s all ease;
-  }
-  .content-otherpages .content-grid #tree-care {
-    display: flex;
-    flex-direction: column;
-    background-color: #FFF;
-    width: 100%;
-    justify-self: center;
-    align-items: center;
-    justify-items: center;
-  }
-  .content-otherpages .content-grid #tree-care .image-row {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    margin-top: 5vw;
-  }
-  .content-otherpages .content-grid #tree-care .image-row img {
-    width: 80%;
-    justify-self: center;
-  }
-  .content-otherpages .content-grid #tree-care h3 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.75vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: rgb(68, 98, 88);
-    padding-top: 2vh;
-    width: 70%;
-    margin-top: 1vw;
-    margin-bottom: 0;
-  }
-  .content-otherpages .content-grid #tree-care p {
-    font-family: "Roboto";
-    padding: 1vw;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 150%;
-    text-align: left;
-    width: 70%;
-    height: 70%;
-    margin-bottom: 12vw;
-  }
-  .content-otherpages .content-grid #garden {
-    display: grid;
-    background-color: #FFF;
-    width: 100%;
-    justify-self: center;
-    align-content: center;
-    justify-items: center;
-  }
-  .content-otherpages .content-grid #garden .image-row {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    margin-top: 5vw;
-  }
-  .content-otherpages .content-grid #garden .image-row img {
-    width: 80%;
-    justify-self: center;
-  }
-  .content-otherpages .content-grid #garden h3 {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.75vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    color: rgb(68, 98, 88);
-    padding-top: 2vh;
-    width: 70%;
-    margin-top: 1vw;
-    margin-bottom: 0;
-  }
-  .content-otherpages .content-grid #garden p {
-    font-family: "Roboto";
-    padding: 1vw;
-    margin-top: 2vh;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1.2vw;
-    line-height: 150%;
-    text-align: left;
-    width: 70%;
-    height: 70%;
-    padding-top: 2vw;
-    margin-bottom: 5vw;
-  }
-  .content-otherpages .content-grid #question-header {
-    background-color: #2C2C2C;
-    width: 100%;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    height: 20vw;
-  }
-  .content-otherpages .content-grid #question-header h3 {
-    color: #B4DE4A;
-    font-family: "Roboto";
-    font-size: 1.5vw;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 95.187%;
-    font-variant: all-small-caps;
-    letter-spacing: 0.25vw;
-  }
-  .content-otherpages .content-grid #question-header ol {
-    width: 60%;
-  }
-  .content-otherpages .content-grid #question-header ol li {
-    color: #FFF;
-    font-family: "Roboto";
-    font-size: 1.2vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 95.187%;
-    font-variant: all-small-caps;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    letter-spacing: 0.1vw;
-  }
-  .content-otherpages .content-grid #questionnaire {
-    display: flex;
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-    align-content: center;
-    margin-bottom: 5vw;
-    background-color: white;
-  }
-  .content-otherpages .content-grid #questionnaire #edef3681-fa9e-4070-b2be-fc23075d9115 {
-    width: 100% !important;
-    background-color: white;
-    margin-top: 5vw;
-  }
-  .content-otherpages .content-grid #carousel {
+  .content-container .content-grid #carousel {
     display: flex;
     flex-direction: column;
     background-color: #2C2C2C;
@@ -1152,7 +567,7 @@
     width: 100%;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   }
-  .content-otherpages .content-grid #carousel #whitetitle {
+  .content-container .content-grid #carousel #whitetitle {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -1167,7 +582,7 @@
     margin: 0;
     transition: 1s all ease;
   }
-  .content-otherpages .content-grid #carousel #greentitle {
+  .content-container .content-grid #carousel #greentitle {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -1182,14 +597,14 @@
     margin: 0;
     transition: 1s all ease;
   }
-  .content-otherpages .content-grid #carousel #carousel-arrows {
+  .content-container .content-grid #carousel #carousel-arrows {
     height: 50vh;
     width: 100%;
     z-index: 95;
     display: flex;
     flex-direction: row;
   }
-  .content-otherpages .content-grid #carousel #carousel-arrows #leftdiv {
+  .content-container .content-grid #carousel #carousel-arrows #leftdiv {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0));
     height: 50vh;
     width: 10vh;
@@ -1200,13 +615,13 @@
     align-items: center;
     justify-content: center;
   }
-  .content-otherpages .content-grid #carousel #carousel-arrows #leftdiv #leftarrow {
+  .content-container .content-grid #carousel #carousel-arrows #leftdiv #leftarrow {
     height: 5vw;
     cursor: pointer;
     transition: 0.2s all ease;
     visibility: hidden;
   }
-  .content-otherpages .content-grid #carousel #carousel-arrows #rightdiv {
+  .content-container .content-grid #carousel #carousel-arrows #rightdiv {
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.459) 80%, rgba(0, 0, 0, 0));
     height: 50vh;
     width: 10vh;
@@ -1219,13 +634,13 @@
     align-items: center;
     justify-content: center;
   }
-  .content-otherpages .content-grid #carousel #carousel-arrows #rightdiv #rightarrow {
+  .content-container .content-grid #carousel #carousel-arrows #rightdiv #rightarrow {
     height: 5vw;
     cursor: pointer;
     transition: 0.2s all ease;
     visibility: visible;
   }
-  .content-otherpages .content-grid #carousel #carousel-image-container {
+  .content-container .content-grid #carousel #carousel-image-container {
     width: 50vw;
     height: 50vw;
     background-color: transparent;
@@ -1236,13 +651,13 @@
     top: 34vh;
     display: block;
   }
-  .content-otherpages .content-grid #carousel #carousel-image-container #img-window {
+  .content-container .content-grid #carousel #carousel-image-container #img-window {
     height: 50vh;
     width: -moz-max-content;
     width: max-content;
   }
-  .content-otherpages .content-grid #carousel #carousel-image-container #img-window #img1 {
-    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%218947&authkey=%21AB1Qh04as1rQ2TA&width=1920&height=1440");
+  .content-container .content-grid #carousel #carousel-image-container #img-window #img1 {
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166706/Carousel_Image_1_ouaoik.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1253,8 +668,8 @@
     top: 0;
     transition: 2s all ease;
   }
-  .content-otherpages .content-grid #carousel #carousel-image-container #img-window #img2 {
-    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%218937&authkey=%21AOdy5b469STyz9c&width=1221&height=1628");
+  .content-container .content-grid #carousel #carousel-image-container #img-window #img2 {
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166706/Carousel_Image_2_ykkm4j.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1265,8 +680,8 @@
     top: 0;
     transition: 2s all ease;
   }
-  .content-otherpages .content-grid #carousel #carousel-image-container #img-window #img3 {
-    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%218866&authkey=%21APNppxyABeuv5hM&width=688&height=810");
+  .content-container .content-grid #carousel #carousel-image-container #img-window #img3 {
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742173333/9FCF9C78-9E2E-4706-A4BD-C2433E677B69_c6k03v.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1277,7 +692,7 @@
     top: 0;
     transition: 2s all ease;
   }
-  .content-otherpages .content-grid #carousel #carousel-description {
+  .content-container .content-grid #carousel #carousel-description {
     display: flex;
     height: 30%;
     width: 100%;
@@ -1286,7 +701,7 @@
     justify-content: center;
     padding: 5vw;
   }
-  .content-otherpages .content-grid #carousel #carousel-description h3 {
+  .content-container .content-grid #carousel #carousel-description h3 {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
@@ -1296,19 +711,19 @@
     font-variant: all-small-caps;
     color: #B4DE4A;
   }
-  .content-otherpages .content-grid #carousel #carousel-description p {
+  .content-container .content-grid #carousel #carousel-description p {
     font-family: "Roboto";
     font-weight: 200;
     font-size: 0.9vw;
     line-height: 1.7vw;
     color: #FFFFFF;
   }
-  .content-otherpages .content-grid .gallery-title {
+  .content-container .content-grid .gallery-title {
     background-color: #FFFFFF;
     z-index: 99;
     padding-top: 10vh;
   }
-  .content-otherpages .content-grid .gallery-title h2 {
+  .content-container .content-grid .gallery-title h2 {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -1323,7 +738,7 @@
     margin: 0;
     transition: 1s all ease;
   }
-  .content-otherpages .content-grid .image-gallery {
+  .content-container .content-grid .image-gallery {
     display: flex;
     flex-direction: row;
     gap: 1vw;
@@ -1333,8 +748,8 @@
     padding-left: 1vw;
     padding-right: 1vw;
   }
-  .content-otherpages .content-grid .project-image-gallery {
-    display: grid;
+  .content-container .content-grid .project-image-gallery {
+    display: none;
     grid-template-columns: 1fr 1fr 1fr;
     height: 60vh;
     gap: 1vw;
@@ -1344,16 +759,16 @@
     padding-left: 1vw;
     padding-right: 1vw;
   }
-  .content-otherpages .content-grid .project-image-gallery .project {
+  .content-container .content-grid .project-image-gallery .project {
     width: 100%;
   }
-  .content-otherpages .content-grid .project-image-gallery .project img {
+  .content-container .content-grid .project-image-gallery .project img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  .content-otherpages .content-grid .project-image-gallery .project .project-overlay {
+  .content-container .content-grid .project-image-gallery .project .project-overlay {
     position: relative;
     width: 100%;
     height: 100%;
@@ -1376,15 +791,15 @@
     justify-content: center;
     cursor: pointer;
   }
-  .content-otherpages .content-grid .project:hover .project-overlay {
+  .content-container .content-grid .project:hover .project-overlay {
     opacity: 1;
   }
-  .content-otherpages .content-grid .image-gallery .column {
+  .content-container .content-grid .image-gallery .column {
     display: flex;
     flex-direction: column;
     gap: 1vw;
   }
-  .content-otherpages .content-grid .image-item img {
+  .content-container .content-grid .image-item img {
     width: 100%;
     border-radius: 0px;
     height: 100%;
@@ -1392,11 +807,11 @@
        object-fit: cover;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   }
-  .content-otherpages .content-grid .image-item {
+  .content-container .content-grid .image-item {
     position: relative;
     cursor: pointer;
   }
-  .content-otherpages .content-grid .overlay {
+  .content-container .content-grid .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1417,7 +832,7 @@
     align-items: center;
     justify-content: center;
   }
-  .content-otherpages .content-grid .image-item:hover .overlay {
+  .content-container .content-grid .image-item:hover .overlay {
     opacity: 1;
   }
 }/*# sourceMappingURL=gallery.css.map */
