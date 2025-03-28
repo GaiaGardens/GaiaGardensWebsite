@@ -18,7 +18,7 @@ $GaiaGrey: #2C2C2C;
 @media only screen and (min-width: 500px){
     .about-splash{
         position:absolute;
-        background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%2118502&authkey=%21ADsPQa4as5U4e-0&width=1466&height=890");
+        background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1743114190/Splash_vxrjzl_ydbh4j.png");
         left:0px;
         top:12vh;
         width:100vw;
@@ -26,27 +26,24 @@ $GaiaGrey: #2C2C2C;
         display:flex;
         justify-content: center;
         align-content: center;
-        z-index:99;
+        z-index:95;
         background-repeat: no-repeat;
-        background-position: top;
         background-size: cover;
         
         .about-splash-items{
             display:flex;
             flex-direction: column;
             position: absolute;
-            right: 4vw;
+            right: 10vw;
             top:50vh;
-            margin:0;
-            max-height: 60vh;
             margin:0;
             z-index:99;
             width:35vw;
 
             .large-title{
-                font-family: 'Noto Serif', serif;
+                font-family: 'Aref Ruqaa', serif;
                 text-transform: uppercase;
-                color: white;
+                color: $GaiaLightGreen;
                 font-weight: 700;
                 font-size: 4vw;
                 text-align: center;
@@ -57,183 +54,323 @@ $GaiaGrey: #2C2C2C;
             }
         }
     }
-    #aboutpg-item1{
-        background-color: #F1ECE8;
-        display:grid;
-        grid-template-columns: 1fr;
-        align-content: center;
-        justify-items: center;
-        padding:2vw;
-        
-        .aboutpg1container1{
-            display:flex;
-            flex-direction: column;
-            background-color: white;
-            align-items: center;
-            justify-content: center;
-            width:100%;
-            height:100%;
-            padding-top:2vw;
 
-            h2{
-                color: $GaiaDarkGreen;
-                font-family: "Roboto";
-                font-weight: 900;
-                font-size: 3vw;
-                text-align: center;
-                font-variant: all-small-caps;
-                height: 12vh;
-                width:15vw;
-                padding-top: 3vh;
-                margin: 0;
-                transition: 1s all ease;
-                border-bottom:3px solid $GaiaDarkGreen;
+    .about-content{
+        position: relative;
+        padding-top:95vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        z-index:1;
+        background-color: #F1ECE8;
+        
+        .about-content-grid{
+            display: grid;
+            width: 70vw;
+            grid-template-columns: 1fr;
+            align-self: center;
+            justify-self: center;
+            margin-bottom: 10vh;
+
+            .about-content-item{
+                width:100%;
+                z-index: 99;
             }
-            p{
-                text-align: center;
-                color:$GaiaGrey;
-                font-family: 'Roboto';
-                font-weight: 300;
-                font-size: 1vw;
-                line-height: 140%; 
-                text-align: left;
-                width:60%;
-                height:70%;
-                word-wrap: break-word;
-                margin:0;
-                padding-top: 3vw;
-                padding-bottom: 6vw;
-            }
-            #about-img-grid{
-                display:flex;
-                flex-direction: row;
-                width: 90%;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-                img{
-                    height:19vw;
-                    padding:.5vw; 
+        
+            #aboutpg-item1{
+                display:grid;
+                grid-template-columns: 1fr;
+                align-content: center;
+                justify-items: center;
+                
+                .aboutpg1container1{
+                    display:flex;
+                    flex-direction: column;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                    align-items: center;
+                    justify-content: center;
+                    width:100%;
+                    height:100%;
+                    padding-top:2vw;
+        
+                    h2{
+                        color: $GaiaDarkGreen;
+                        font-family: "Roboto";
+                        font-weight: 900;
+                        font-size: 3vw;
+                        text-align: center;
+                        font-variant: all-small-caps;
+                        height: 12vh;
+                        width:15vw;
+                        padding-top: 3vh;
+                        margin: 0;
+                        transition: 1s all ease;
+                        border-bottom:3px solid $GaiaDarkGreen;
+                    }
+                    p{
+                        text-align: center;
+                        color:$GaiaGrey;
+                        font-family: 'Roboto';
+                        font-weight: 300;
+                        font-size: 1vw;
+                        line-height: 140%; 
+                        text-align: left;
+                        width:60%;
+                        height:70%;
+                        word-wrap: break-word;
+                        margin:0;
+                        padding-top: 3vw;
+                        padding-bottom: 6vw;
+                    }
+                    #about-img-grid{
+                        display:grid;
+                        grid-template-columns: 1fr;
+                        width: 80%;
+                        .about-img-row{
+                            display: flex;
+                            flex-direction: row;
+                            width:100%;
+                            height:40vh;
+                            margin-bottom: 1vw;;
+                            #about-img1{
+                                height: 100%;
+                                width: 33%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin:.5vw;
+                                background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738574/Anthony_snag_at5ab2.jpg");
+                                background-position: center;
+                            }
+                            #about-img2{
+                                height: 100%;
+                                width: 33%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin:.5vw;
+                                background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738573/Snags_ogswkk.jpg");
+                                background-position: center; 
+                            }
+                            #about-img3{
+                                height: 100%;
+                                width: 33%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin:.5vw;
+                                background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738572/dogs_in_truck_ahokbb.png");
+                                background-position: center; 
+                            }
+                            #about-img4{
+                                height: 100%;
+                                width: 33%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin:.5vw;
+                                background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738570/arborist2_yhdtlw.jpg");
+                                background-position: center; 
+                            }
+                            #about-img5{
+                                height: 100%;
+                                width: 33%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin:.5vw;
+                                background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166937/arborist1_a7j9lz.jpg");
+                                background-position: center; 
+                            }
+                            #about-img6{
+                                height: 100%;
+                                width: 33%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin:.5vw;
+                                background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738569/Anthony_Pruning_mobile_ukpi7l.png");
+                                background-position: center; 
+                            }
+                        } 
+                    }
+                }
+                .aboutpg1container2{
+                    display:flex;
+                    flex-direction: row;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                    align-items: center;
+                    justify-content: center;
+                    width:100%;
+                    height:50vh;
+                    margin-top:1vw;
+        
+                    img{
+                        height:100%;
+                    }
+                    p{
+                        text-align: left;
+                        color:$GaiaGrey;
+                        font-family: 'Roboto';
+                        font-weight: 300;
+                        font-size: 1vw;
+                        line-height: 140%; 
+                        width:55%;
+                        height:100%;
+                        word-wrap: break-word;
+                        margin:0;
+                        padding:10%;
+                    }
                 }
             }
-        }
-        .aboutpg1container2{
-            display:flex;
-            flex-direction: row;
-            background-color: white;
-            align-items: center;
-            justify-content: center;
-            width:100%;
-            height:50vh;
-            margin-top:1vw;
+            #aboutpg-item2{
+                background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166649/Bg1_bgnkif.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                display:grid;
+                grid-template-columns: 1fr;
+                align-content: center;
+                justify-items: center;
+                height:90vh;
+                margin-top:1vw;
 
-            img{
-                height:100%;
+                #ethosbox{
+                    padding:2vw;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                    display:grid;
+                    grid-template-columns: 1fr;
+                    align-content: center;
+                    justify-items: center;
+                    h2{
+                        color: $GaiaDarkGreen;
+                        font-family: "Roboto";
+                        font-weight: 900;
+                        font-size: 3vw;
+                        text-align: center;
+                        font-variant: all-small-caps;
+                        height: 12vh;
+                        width:18vw;
+                        padding-top: 3vh;
+                        margin: 0;
+                        transition: 1s all ease;
+                        border-bottom:3px solid $GaiaDarkGreen;
+                    }
+                    p{
+                        text-align: center;
+                        color:$GaiaGrey;
+                        font-family: 'Roboto';
+                        font-weight: 300;
+                        font-size: 1vw;
+                        line-height: 140%; 
+                        text-align: left;
+                        width:60%;
+                        height:70%;
+                        word-wrap: break-word;
+                        margin:0;
+                        padding-top: 3vw;
+                        padding-bottom: 6vw;
+                    }
+                }
+                
             }
-            p{
-                text-align: left;
-                color:$GaiaGrey;
-                font-family: 'Roboto';
-                font-weight: 300;
-                font-size: 1vw;
-                line-height: 140%; 
-                width:55%;
-                height:100%;
-                word-wrap: break-word;
-                margin:0;
-                padding:10%;
+            #aboutpg-item3{
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                display:grid;
+                grid-template-columns: 1fr;
+                align-content: center;
+                justify-items: center;
+                height:150vh;
+                margin-top: 1vw;
+        
+                h2{
+                    color: $GaiaDarkGreen;
+                    font-family: "Roboto";
+                    font-weight: 900;
+                    font-size: 3vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    height: 12vh;
+                    width:13vw;
+                    padding-top: 3vh;
+                    margin: 0;
+                    transition: 1s all ease;
+                    border-bottom:3px solid $GaiaDarkGreen;
+                }
+                p{
+                    text-align: center;
+                    color:$GaiaGrey;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    font-size: 1vw;
+                    line-height: 140%; 
+                    text-align: left;
+                    width:60%;
+                    height:70%;
+                    word-wrap: break-word;
+                    margin:0;
+                    padding-top: 3vw;
+                    padding-bottom: 6vw;
+                }
+                ul{
+                    color: $GaiaDarkGreen;
+                    font-family: "Roboto";
+                    font-weight: 600;
+                    font-size: 2vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    transition: 1s all ease;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    width:60%;
+                    li{
+                        width:100%;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        padding:5vw;
+                        
+                        p{
+                        text-align: center;
+                        color:$GaiaGrey;
+                        font-family: 'Roboto';
+                        font-weight: 300;
+                        font-size: 1.8vw;
+                        width:100%; 
+                        text-align: center;
+                        word-wrap: break-word;
+                        margin:0;
+                        padding:0;
+                        }
+    
+                        h3{
+                        color: $GaiaDarkGreen;
+                        font-family: "Roboto";
+                        font-weight: 600;
+                        font-size: 2vw;
+                        text-align: center;
+                        font-variant: all-small-caps;
+                        transition: 1s all ease;
+                        width:100%;
+                        }
+                    }
+                }
+                    
+            }
+            #aboutpg-item4{
+                h2{
+                    color: $GaiaDarkGreen;
+                    font-family: "Roboto";
+                    font-weight: 900;
+                    font-size: 3vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    height: 12vh;
+                    width:18vw;
+                    padding-top: 3vh;
+                    margin: 0;
+                    transition: 1s all ease;
+                    border-bottom:3px solid $GaiaDarkGreen;
             }
         }
-    }
-    #aboutpg-item2{
-        background-color: #F1ECE8;
-        display:grid;
-        grid-template-columns: 1fr;
-        align-content: center;
-        justify-items: center;
-        height:150vh;
-
-        h2{
-            color: $GaiaDarkGreen;
-            font-family: "Roboto";
-            font-weight: 900;
-            font-size: 3vw;
-            text-align: center;
-            font-variant: all-small-caps;
-            height: 12vh;
-            width:15vw;
-            padding-top: 3vh;
-            margin: 0;
-            transition: 1s all ease;
-            border-bottom:3px solid $GaiaDarkGreen;
-        }
-        p{
-            text-align: center;
-            color:$GaiaGrey;
-            font-family: 'Roboto';
-            font-weight: 300;
-            font-size: 1vw;
-            line-height: 140%; 
-            text-align: left;
-            width:60%;
-            height:70%;
-            word-wrap: break-word;
-            margin:0;
-            padding-top: 3vw;
-            padding-bottom: 6vw;
         }
     }
-    #aboutpg-item3{
-        background-color: #F1ECE8;
-        display:grid;
-        grid-template-columns: 1fr;
-        align-content: center;
-        justify-items: center;
-        height:150vh;
-
-        h2{
-            color: $GaiaDarkGreen;
-            font-family: "Roboto";
-            font-weight: 900;
-            font-size: 3vw;
-            text-align: center;
-            font-variant: all-small-caps;
-            height: 12vh;
-            width:30vw;
-            padding-top: 3vh;
-            margin: 0;
-            transition: 1s all ease;
-            border-bottom:3px solid $GaiaDarkGreen;
-        }
-        p{
-            text-align: center;
-            color:$GaiaGrey;
-            font-family: 'Roboto';
-            font-weight: 300;
-            font-size: 1vw;
-            line-height: 140%; 
-            text-align: left;
-            width:60%;
-            height:70%;
-            word-wrap: break-word;
-            margin:0;
-            padding-top: 3vw;
-            padding-bottom: 6vw;
-        }
-        li{
-            text-align: center;
-            color:$GaiaGrey;
-            font-family: 'Roboto';
-            font-weight: 300;
-            font-size: 1vw;
-            line-height: 140%; 
-            text-align: left;
-            width:60%;
-            height:70%;
-            word-wrap: break-word;
-            margin:0;
-            padding-top: 3vw;
-            padding-bottom: 6vw;
-        }
-    }
+    
 }

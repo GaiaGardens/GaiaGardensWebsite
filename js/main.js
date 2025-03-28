@@ -11,6 +11,8 @@ ScrollReveal().reveal('#expert-care', {duration:2000, delay:800, distance: '10px
 ScrollReveal().reveal('#underline', {duration:2000, delay:1000, distance: '20px', origin: 'bottom'});
 ScrollReveal().reveal('#row2', {duration:2000, delay:1500, distance: '30px', origin: 'bottom'});
 
+ScrollReveal().reveal('#ethosbox', { duration:2000});
+
 /*Services Page*/
 
 $('#text1 h2').css("opacity","0");
@@ -75,13 +77,13 @@ $(document).ready(function(){
 
             if(count=1){
                 /* Slide 2*/
-                $('#gardenname').text('Andrea Watson: Queen Anne Woodland');
-                $('#gardendescription').text('I have had the pleasure of working with Andrea and her family since 2018. While  her garden was already established by the time I came on, we have worked together to make small and big changes throughout the years to bring more native plants, color, and diversity to the garden. We have been reclaiming parts of the garden that were heavily invaded by English Ivy and have transformed them into woodland garden beds featuring native plants mixed in with colorful, non-invasive exotic plants.');
+                $('#gardenname').text('Queen Anne Woodland');
+                $('#gardendescription').text('I have had the pleasure of working with the homeowner and her family since 2018. While her garden was already established by the time I came on, we have worked together to make small and big changes throughout the years to bring more native plants, color, and diversity to the garden. We have been reclaiming parts of the garden that were heavily invaded by English Ivy and have transformed them into woodland garden beds featuring native plants mixed in with colorful, non-invasive exotic plants.');
             }
             else if(count=2){
                 /* Slide 3*/
-                $('#gardenname').text('Sam Volum: Madison Park Beach Vibes');
-                $('#gardendescription').text('Sam and her husband Ryan moved into their home in 2021 and loved some of the older trees in the garden but wanted to update the formal plantings of sheared shrubs. We worked together to preserve the older Rhododendrons, snake bark Maples, and mountain Hemlocks and enhanced the garden spaces, each with their own style that still wove together beautifully. Their goal was to have their garden in a presentable state for their wedding at their house which we were able to accomplish. I feel grateful to have had a part in making their wedding backdrop beautiful.');
+                $('#gardenname').text('Madison Park Beach Vibes');
+                $('#gardendescription').text('The homeowners moved into their home in 2021 and loved some of the older trees in the garden but wanted to update the formal plantings of sheared shrubs. We worked together to preserve the older Rhododendrons, snake bark Maples, and mountain Hemlocks and enhanced the garden spaces, each with their own style that still wove together beautifully. Their goal was to have their garden in a presentable state for their wedding at their house which we were able to accomplish. I feel grateful to have had a part in making their wedding backdrop beautiful.');
             }
             else{
                 $('#gardenname').text('');
@@ -93,8 +95,8 @@ $(document).ready(function(){
                 '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
             });
             /* Slide 1*/
-            $('#gardenname').text('Laura Lohman: Queen Anne Urban Oasis');
-            $('#gardendescription').text('Laura and I have worked together in her garden since 2019. Laura’ small Seattle garden is an oasis for beautiful specimens, outdoor entertaining, and a peaceful space to be able to work from home. The creation of her garden has been a team effort with Avalon NW, who’s amazing team built the unique fences and walls, containers, and patio, and custom designed the green wall built into the outdoor kitchen. The challenge in this garden has been giving space for her and her husband’s energetic Pointers but with Laura’s impeccable taste for aesthetics and my freedom to be creative with plant choices, we have created a space to be enjoyed by the whole family.');
+            $('#gardenname').text('Queen Anne Urban Oasis');
+            $('#gardendescription').text("The homeowner and I have worked together in her garden since 2019. Her small Seattle garden is an oasis for beautiful specimens, outdoor entertaining, and a peaceful space to be able to work from home. The creation of her garden has been a team effort with Avalon NW, who's amazing team built the unique fences and walls, containers, and patio, and custom designed the green wall built into the outdoor kitchen. The challenge in this garden has been giving space for her and her husband's energetic Pointers but with their impeccable taste for aesthetics and my freedom to be creative with plant choices, we have created a space to be enjoyed by the whole family.");
         };
         
         if(count>=2){
@@ -136,8 +138,8 @@ $(document).ready(function(){
 
             if(count=2){
                 /* Slide 3*/
-                $('#gardenname').text('Sam Volum: Madison Park Beach Vibes');
-                $('#gardendescription').text('Sam and her husband Ryan moved into their home in 2021 and loved some of the older trees in the garden but wanted to update the formal plantings of sheared shrubs. We worked together to preserve the older Rhododendrons, snake bark Maples, and mountain Hemlocks and enhanced the garden spaces, each with their own style that still wove together beautifully. Their goal was to have their garden in a presentable state for their wedding at their house which we were able to accomplish. I feel grateful to have had a part in making their wedding backdrop beautiful.');
+                $('#gardenname').text('Madison Park Beach Vibes');
+                $('#gardendescription').text('The homeowners moved into their home in 2021 and loved some of the older trees in the garden but wanted to update the formal plantings of sheared shrubs. We worked together to preserve the older Rhododendrons, snake bark Maples, and mountain Hemlocks and enhanced the garden spaces, each with their own style that still wove together beautifully. Their goal was to have their garden in a presentable state for their wedding at their house which we were able to accomplish. I feel grateful to have had a part in making their wedding backdrop beautiful.');
             }
             else{
                 $('#gardenname').text('');
@@ -149,8 +151,8 @@ $(document).ready(function(){
                 '-webkit-transform': 'translatex(' + (-70 * (count)) + 'vw) '
             });
             /* Slide 2*/
-            $('#gardenname').text('Andrea Watson: Queen Anne Woodland');
-            $('#gardendescription').text('I have had the pleasure of working with Andrea and her family since 2018. While  her garden was already established by the time I came on, we have worked together to make small and big changes throughout the years to bring more native plants, color, and diversity to the garden. We have been reclaiming parts of the garden that were heavily invaded by English Ivy and have transformed them into woodland garden beds featuring native plants mixed in with colorful, non-invasive exotic plants.');
+            $('#gardenname').text('Queen Anne Woodland');
+            $('#gardendescription').text('I have had the pleasure of working with the homeowner and her family since 2018. While her garden was already established by the time I came on, we have worked together to make small and big changes throughout the years to bring more native plants, color, and diversity to the garden. We have been reclaiming parts of the garden that were heavily invaded by English Ivy and have transformed them into woodland garden beds featuring native plants mixed in with colorful, non-invasive exotic plants.');
         }
     });
 

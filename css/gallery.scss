@@ -11,70 +11,6 @@ $GaiaGrey: #2C2C2C;
 
 //////////Mobile Version/////////
 @media only screen and (max-width: 499px){
-//overlay-carousel pictures//
-.overlay-carousel-container{
-    display:grid;
-    opacity: 0;
-    visibility: hidden;
-    grid-template-columns: 1fr;
-    width:100vw;
-    height:100vh;
-    top:0px;
-    left:0px;
-    position:fixed;
-    z-index:99;
-    transition: 0.8s all ease;
-    .overlay-carousel{
-        display:grid;
-        grid-template-columns: 1fr;
-        justify-self: center;
-        align-self: center;
-        width:90vw;
-        height:90vh;
-        z-index:99;
-        background-color:$GaiaGrey;
-        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-        .x{
-            position:absolute;
-            z-index: 99;
-            display:block;
-            top:10vh;
-            right:10vw;
-            width:2vw;
-            height:2vw;
-            opacity:1;
-            transition: 0.4s all ease;
-        }
-        .x:hover{
-            cursor: pointer;
-            opacity:.6;
-        }
-        .overlay-carousel-picture{
-            width:90%;
-            height: 90%;
-            padding:30px;
-            align-self: center;
-            justify-self: center;
-            background-position: center;
-            background-size:contain;
-            background-repeat: no-repeat;
-        }
-    }
-}
-
-.dark-overlay{
-    width:100vw;
-    height:100vh;
-    background-color:$GaiaDarkGreen;
-    opacity:0%;
-    visibility: hidden;
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index:98;
-    transition: 0.4s all ease;
-}
-
 
 #alternate-nav-header{
         display:flex;
@@ -88,6 +24,10 @@ $GaiaGrey: #2C2C2C;
         width: 100vw;
         height: 90vh;
         background-color: #2E443E;
+        
+        #gaia-logo-mobile{
+            width:35vw;
+        }
     #main-nav ul{
             display: grid;
             width:100%;
@@ -137,160 +77,195 @@ $GaiaGrey: #2C2C2C;
         }    
     }
 }
+#carousel{
+    display:none;
+                
+    #whitetitle{
+        display:none;
+    }    
+    #greentitle{
+        display:none;
+    }
+    #carousel-arrows{
+        display:none;
 
-
-
-//All Other Pages///
-.content-container{
-    position: relative;
-    background-color: #D0D7CF;
-    width: 100%;
-    padding-top: 12vh;
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    grid-template-columns: 1fr;
-    z-index:1;
-
-    .content-grid{
-        display: grid;
-        background-color: #FFF;
-        width: 100%;
-        grid-template-columns: 1fr;
-        align-self: center;
-        justify-self: center;
-        
-        
-        .content-item{
-            width:100%;
-            z-index: 99;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-        }
-        
-
-        ///Gallery Page
-
-        //Section Title//
-        .gallery-title{
-            background-color: #FFFFFF;
-            z-index: 99;
-            h2{
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 900;
-                font-size: 42px;
-                text-align: center;
-                font-variant: all-small-caps;
-                color: $GaiaGrey;
-                color: $GaiaGrey;
-                z-index: 98;
-                transition: 1s all ease;
-                margin-top: 50px;
-                margin-bottom: 50px;
+        #leftdiv{
+            display:none;
+            #leftarrow{
+                display:none;
             }
         }
-        .image-gallery {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            background-color: white;
-            margin-left: 15px;
-            margin-right:15px;
+        #rightdiv{
+            display:none;
+            #rightarrow{
+                display:none;
+            }
         }
+    }
 
-        .image-gallery .column {
-            display: flex;
-            flex-direction: column;
-            gap:10px;
-        }
+    #carousel-image-container{
+        display:none;
         
-        .image-item img {
-            width: 100%;
-            border-radius: 0px;
-            height: 100%;
-            object-fit: cover;
-            box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-        }
-        
-        .project-image-gallery {
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            width:80%;
-            height:90vh;
-            gap: 10px;
-            background-color: white;
-            padding-top:3vh;
-            padding-bottom: 3vw;
-            padding-left: 1vw;
-            padding-right: 1vw;
-            justify-self:center;
-            .project{
-                width:100%;
-                img{object-fit: cover; width:100%; height:25vh;}
-                .project-overlay {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(57, 57, 57, 0.502);
-                    border-radius: 0;
-                    top: -101%;
-                    left: 0;
-                    opacity: 0;
-                    transition: 0.4s all ease;
-                    color: #fff;
-                    font-family: 'Roboto';
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 1.7vw; 
-                    color: #FFFFFF;
-                    z-index: 99;
-                    /* center overlay content */
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
+            #img-window{
+                display:none;
+                #img1{
+                    display:none;
+                }
+                #img2{
+                    display:none;
+                }
+                #img3{
+                    display:none;
                 }
             }
+            
+    }
+
+
+    #carousel-description{
+        display:none;
+        h3{
+            display:none;
         }
-            /* hover */
-            .project:hover .project-overlay {
-                opacity: 1;
-            }
-
-    /* overlay styles */
-
-    .image-item {
-    position: relative;
-    cursor: pointer;
+        p{
+            display:none;
+        }
     }
-
-    .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(57, 57, 57, 0.502);
-    border-radius: 0;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 0.4s all ease;
-    color: #fff;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.7vw; 
-    color: #FFFFFF;
-    /* center overlay content */
+}
+.gallery-title{
+    background-color: #FFFFFF;
+    z-index: 99;
+    padding-top: 10vh;
+    h2{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 42px;
+        text-align: center;
+        font-variant: all-small-caps;
+        color: $GaiaGrey;
+        color: $GaiaGrey;
+        height: 12vh;
+        padding-top: 3vh;
+        z-index: 98;
+        margin: 0;
+        transition: 1s all ease;
+    }
+}
+.image-gallery {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    background-color: white;
+    padding-top:3vh;
+    padding-bottom: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.project-image-gallery {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:60vh;
+    gap: 1vw;
+    background-color: white;
+    padding-top:3vh;
+    padding-bottom: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    .project{
+        width:100%;
+        img{object-fit: cover; width:100%; height:100%;}
+        .project-overlay {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: rgba(57, 57, 57, 0.502);
+            border-radius: 0;
+            top: -101%;
+            left: 0;
+            opacity: 0;
+            transition: 0.4s all ease;
+            color: #fff;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: .9vw;
+            line-height: 1.7vw; 
+            color: #FFFFFF;
+            z-index: 99;
+            /* center overlay content */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
     }
+}
+
+
 
     /* hover */
-    .image-item:hover .overlay {
+.project:hover .project-overlay {
         opacity: 1;
-        }
     }
+
+.image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.image-item img {
+    width: 100%;
+    border-radius: 0px;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.design-image-item img {
+    width: 100%;
+    border-radius: 0px;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+/* overlay styles */
+
+.image-item {
+position: relative;
+}
+
+.design-image-item {
+position: relative;
+}
+
+.overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(57, 57, 57, 0.502);
+border-radius: 0;
+top: 0;
+left: 0;
+opacity: 0;
+transition: 0.4s all ease;
+color: #fff;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: .9vw;
+line-height: 1.7vw; 
+color: #FFFFFF;
+/* center overlay content */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* hover */
+.image-item:hover .overlay {
+opacity: 1;
 }
 }
 
@@ -861,6 +836,14 @@ $GaiaGrey: #2C2C2C;
                 object-fit: cover;
                 box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
             }
+
+            .design-image-item img {
+                width: 100%;
+                border-radius: 0px;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+            }
     
         /* overlay styles */
     
@@ -868,6 +851,10 @@ $GaiaGrey: #2C2C2C;
         position: relative;
         cursor: pointer;
         }
+
+        .design-image-item {
+            position: relative;
+            }
     
         .overlay {
         position: absolute;

@@ -155,6 +155,10 @@ $GaiaGrey: #2C2C2C;
             height: 90vh;
             background-color: #2E443E;
             
+            #gaia-logo-mobile{
+                width:35vw;
+            }
+            
             #main-nav ul{
                 display: grid;
                 width:100%;
@@ -165,7 +169,7 @@ $GaiaGrey: #2C2C2C;
                 justify-items: center;
                 list-style-type: none;
                 padding:0;
-                margin-top: 20vw;
+                margin-top: 15vw;
                 visibility: visible;
                 
                 .non-drop{
@@ -496,7 +500,7 @@ $GaiaGrey: #2C2C2C;
                 #item4{
                     display: grid;
                     grid-template-columns: 1fr;
-                    background-image: url("https://onedrive.live.com/embed?resid=B81A9B7983F88386%219012&authkey=%21AC7DRUs41kNuNJ4&width=1466&height=1078");
+                    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166655/WA_map_faded_vfdqrp.jpg");
                     background-repeat: no-repeat;
                     background-position:right;
                     background-size: cover;
@@ -532,7 +536,7 @@ $GaiaGrey: #2C2C2C;
                 #pruningpic{
                     display: flex;
                     padding:0;
-                    height: 60vh;
+                    height: 70vh;
                     background-color: #F1ECE8;
                 }
 
@@ -568,6 +572,11 @@ $GaiaGrey: #2C2C2C;
                         margin:0;
                         padding-top:40px;
                         text-align: center;
+                    a{
+                        text-decoration:underline;
+                        color:$GaiaDarkGreen;
+                        font-weight: 500;
+                    }
                     }
                 }
             }
