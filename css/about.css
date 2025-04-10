@@ -255,7 +255,6 @@
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
-    height: 150vh;
     margin-top: 1vw;
   }
   .about-content .about-content-grid #aboutpg-item3 h2 {
@@ -272,60 +271,53 @@
     transition: 1s all ease;
     border-bottom: 3px solid rgb(68, 98, 88);
   }
-  .about-content .about-content-grid #aboutpg-item3 p {
-    text-align: center;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1vw;
-    line-height: 140%;
-    text-align: left;
-    width: 60%;
-    height: 70%;
-    word-wrap: break-word;
-    margin: 0;
-    padding-top: 3vw;
-    padding-bottom: 6vw;
-  }
   .about-content .about-content-grid #aboutpg-item3 ul {
     color: rgb(68, 98, 88);
-    font-family: "Roboto";
-    font-weight: 600;
-    font-size: 2vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    transition: 1s all ease;
     display: grid;
     grid-template-columns: 1fr;
-    width: 60%;
+    width: 100%;
   }
   .about-content .about-content-grid #aboutpg-item3 ul li {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5vw 0;
   }
   .about-content .about-content-grid #aboutpg-item3 ul li p {
     text-align: center;
     color: #2C2C2C;
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1.8vw;
-    width: 100%;
+    font-size: 1.2vw;
+    width: 50%;
+  }
+  .about-content .about-content-grid #aboutpg-item3 ul li a {
+    text-decoration: none;
+    background-color: #B4DE4A;
+    color: rgb(68, 98, 88);
+    width: 17vw;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    margin: 0 0 0 1vw;
+    transition: 0.4s all ease;
+    border-radius: 44.9876px;
     text-align: center;
-    word-wrap: break-word;
-    margin: 0;
-    padding: 0;
+    padding: 1vw;
+  }
+  .about-content .about-content-grid #aboutpg-item3 ul li a:hover {
+    box-shadow: 0 0.1em 0.5em 0.1em rgb(68, 98, 88);
   }
   .about-content .about-content-grid #aboutpg-item3 ul li h3 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 1.8vw;
     text-align: center;
     font-variant: all-small-caps;
-    transition: 1s all ease;
-    width: 100%;
+    width: 80%;
   }
   .about-content .about-content-grid #aboutpg-item4 h2 {
     color: rgb(68, 98, 88);

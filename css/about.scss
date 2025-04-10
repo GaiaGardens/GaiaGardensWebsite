@@ -278,7 +278,6 @@ $GaiaGrey: #2C2C2C;
                 grid-template-columns: 1fr;
                 align-content: center;
                 justify-items: center;
-                height:150vh;
                 margin-top: 1vw;
         
                 h2{
@@ -295,60 +294,56 @@ $GaiaGrey: #2C2C2C;
                     transition: 1s all ease;
                     border-bottom:3px solid $GaiaDarkGreen;
                 }
-                p{
-                    text-align: center;
-                    color:$GaiaGrey;
-                    font-family: 'Roboto';
-                    font-weight: 300;
-                    font-size: 1vw;
-                    line-height: 140%; 
-                    text-align: left;
-                    width:60%;
-                    height:70%;
-                    word-wrap: break-word;
-                    margin:0;
-                    padding-top: 3vw;
-                    padding-bottom: 6vw;
-                }
+                
                 ul{
                     color: $GaiaDarkGreen;
-                    font-family: "Roboto";
-                    font-weight: 600;
-                    font-size: 2vw;
-                    text-align: center;
-                    font-variant: all-small-caps;
-                    transition: 1s all ease;
                     display: grid;
                     grid-template-columns: 1fr;
-                    width:60%;
+                    width:100%;
                     li{
                         width:100%;
-                        display: grid;
-                        grid-template-columns: 1fr;
-                        padding:5vw;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 2.5vw 0;
                         
                         p{
                         text-align: center;
                         color:$GaiaGrey;
                         font-family: 'Roboto';
                         font-weight: 300;
-                        font-size: 1.8vw;
-                        width:100%; 
+                        font-size: 1.2vw;
+                        width:50%;
+                        }
+
+                        a{
+                        text-decoration: none;
+                        background-color: $GaiaLightGreen;
+                        color: $GaiaDarkGreen;
+                        width:17vw;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.2vw;
+                        margin: 0 0 0 1vw;
+                        transition: 0.4s all ease;
+                        border-radius: 44.9876px;
                         text-align: center;
-                        word-wrap: break-word;
-                        margin:0;
-                        padding:0;
+                        padding:1vw;
+                        }
+
+                        a:hover{
+                        box-shadow: 0 0.1em 0.5em 0.1em $GaiaDarkGreen;
                         }
     
                         h3{
                         color: $GaiaDarkGreen;
                         font-family: "Roboto";
                         font-weight: 600;
-                        font-size: 2vw;
+                        font-size: 1.8vw;
                         text-align: center;
                         font-variant: all-small-caps;
-                        transition: 1s all ease;
-                        width:100%;
+                        width:80%;
                         }
                     }
                 }
