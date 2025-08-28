@@ -450,18 +450,15 @@ html {
   #alternate-nav-header {
     display: grid;
     position: absolute;
-    top: 3vh;
-    right: 4vw;
+    top: 6vh;
     z-index: 99;
     width: 100vw;
-    align-content: flex-end;
   }
   #alternate-nav-header #alternate-nav ul {
     display: grid;
     width: 50%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-self: center;
-    align-self: center;
     justify-items: center;
     list-style-type: none;
     padding: 0;
@@ -1511,53 +1508,56 @@ html {
 @media only screen and (max-width: 499px) {
   .about-splash {
     position: absolute;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1743114190/Splash_vxrjzl_ydbh4j.png");
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756266143/Splash_editedmobile_z2ynzq.jpg");
     left: 0px;
-    top: 12vh;
+    top: 0vh;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-content: center;
     z-index: 95;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
+    margin-top: 8vh;
   }
   .about-splash .about-splash-items {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 10vw;
-    top: 50vh;
     margin: 0;
     z-index: 99;
-    width: 35vw;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .about-splash .about-splash-items .large-title {
     font-family: "Aref Ruqaa", serif;
     text-transform: uppercase;
     color: #B4DE4A;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 50px;
     text-align: center;
     margin: 0;
-    line-height: 80%;
+    line-height: 100%;
     z-index: 99;
     text-shadow: 3px 4px 7px rgba(32, 32, 32, 0.8);
+    width: 100%;
+    background-color: rgb(68, 98, 88);
   }
   .about-content {
     position: relative;
-    padding-top: 95vh;
+    padding-top: 80vh;
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     z-index: 1;
     background-color: #F1ECE8;
   }
   .about-content .about-content-grid {
-    display: grid;
-    width: 70vw;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
     align-self: center;
     justify-self: center;
     margin-bottom: 10vh;
@@ -1566,146 +1566,141 @@ html {
     width: 100%;
     z-index: 99;
   }
-  .about-content .about-content-grid #aboutpg-item1 {
+  .about-content .about-content-grid #story-section {
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
+    width: 350px;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 {
+  .about-content .about-content-grid #story-section .storysect-container1 {
     display: flex;
     flex-direction: column;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 350px;
     padding-top: 2vw;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 h2 {
+  .about-content .about-content-grid #story-section .storysect-container1 h2 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 30px;
     text-align: center;
     font-variant: all-small-caps;
     height: 12vh;
-    width: 15vw;
+    width: 80%;
     padding-top: 3vh;
     margin: 0;
     transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 p {
+  .about-content .about-content-grid #story-section .storysect-container1 p {
     text-align: center;
     color: #2C2C2C;
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 18px;
     line-height: 140%;
-    text-align: left;
-    width: 60%;
-    height: 70%;
+    width: 80%;
     word-wrap: break-word;
     margin: 0;
     padding-top: 3vw;
     padding-bottom: 6vw;
+    padding-left: 10%;
+    padding-right: 10%;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid {
-    display: grid;
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid {
+    display: none;
     grid-template-columns: 1fr;
     width: 80%;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row {
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 40vh;
     margin-bottom: 1vw;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img1 {
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img1 {
     height: 100%;
     width: 33%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738574/Anthony_snag_at5ab2.jpg");
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255281/gallery7_rqysd7_sdvl71.jpg");
     background-position: center;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img2 {
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img2 {
     height: 100%;
     width: 33%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738573/Snags_ogswkk.jpg");
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255753/Snags_ogswkk_y4zmqe.jpg");
     background-position: center;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img3 {
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img3 {
     height: 100%;
     width: 33%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738572/dogs_in_truck_ahokbb.png");
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255639/dogs_in_truck_ahokbb_nu36hc.jpg");
     background-position: center;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img4 {
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img4 {
     height: 100%;
     width: 33%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738570/arborist2_yhdtlw.jpg");
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756172624/Untitled_c2vdxx.jpg");
     background-position: center;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img5 {
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img5 {
     height: 100%;
     width: 33%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166937/arborist1_a7j9lz.jpg");
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255687/arborist1_a7j9lz_1_am6r7i.jpg");
     background-position: center;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img6 {
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img6 {
     height: 100%;
     width: 33%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738569/Anthony_Pruning_mobile_ukpi7l.png");
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756256370/Anthony_Pruning_mobile_ukpi7l_yefrxz.png");
     background-position: center;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container2 {
-    display: flex;
-    flex-direction: row;
+  .about-content .about-content-grid #story-section .storysect-container2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 50vh;
-    margin-top: 1vw;
+    width: 350px;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container2 img {
-    height: 100%;
+  .about-content .about-content-grid #story-section .storysect-container2 img {
+    height: 300px;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container2 p {
-    text-align: left;
+  .about-content .about-content-grid #story-section .storysect-container2 p {
+    text-align: center;
     color: #2C2C2C;
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 18px;
     line-height: 140%;
-    width: 55%;
-    height: 100%;
     word-wrap: break-word;
     margin: 0;
     padding: 10%;
   }
-  .about-content .about-content-grid #aboutpg-item2 {
+  .about-content .about-content-grid #ethos-section {
     background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166649/Bg1_bgnkif.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1714,477 +1709,213 @@ html {
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
-    height: 90vh;
+    height: 70vh;
     margin-top: 1vw;
+    width: 100%;
+    padding: 40px;
   }
-  .about-content .about-content-grid #aboutpg-item2 #ethosbox {
-    padding: 2vw;
+  .about-content .about-content-grid #ethos-section #ethosbox {
+    padding: 10px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
+    height: 50vh;
   }
-  .about-content .about-content-grid #aboutpg-item2 #ethosbox h2 {
+  .about-content .about-content-grid #ethos-section #ethosbox h2 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 30px;
     text-align: center;
     font-variant: all-small-caps;
-    height: 12vh;
-    width: 18vw;
-    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
   }
-  .about-content .about-content-grid #aboutpg-item2 #ethosbox p {
+  .about-content .about-content-grid #ethos-section #ethosbox p {
     text-align: center;
     color: #2C2C2C;
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1vw;
+    font-size: 18px;
     line-height: 140%;
     text-align: left;
-    width: 60%;
-    height: 70%;
     word-wrap: break-word;
     margin: 0;
-    padding-top: 3vw;
-    padding-bottom: 6vw;
   }
-  .about-content .about-content-grid #aboutpg-item3 {
+  .about-content .about-content-grid #credentials-section {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
     justify-items: center;
     margin-top: 1vw;
+    padding: 20px;
+    height: 60vh;
   }
-  .about-content .about-content-grid #aboutpg-item3 h2 {
+  .about-content .about-content-grid #credentials-section h2 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 30px;
     text-align: center;
     font-variant: all-small-caps;
-    height: 12vh;
-    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     padding-top: 3vh;
     margin: 0;
     transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
   }
-  .about-content .about-content-grid #aboutpg-item3 ul {
-    color: rgb(68, 98, 88);
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .about-content .about-content-grid #aboutpg-item3 ul li {
-    width: 100%;
+  .about-content .about-content-grid #credentials-section div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 1vw;
+    width: 75%;
+    margin-top: 0.5vw;
     align-items: center;
-    margin: 2.5vw 0;
   }
-  .about-content .about-content-grid #aboutpg-item3 ul li p {
-    text-align: center;
+  .about-content .about-content-grid #credentials-section div #hort {
+    height: 5.5vw;
+  }
+  .about-content .about-content-grid #credentials-section div #arbor {
+    height: 7vw;
+  }
+  .about-content .about-content-grid #credentials-section div #degree {
+    height: 4vw;
+  }
+  .about-content .about-content-grid #credentials-section div a {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    transition: 0.4s all ease;
+  }
+  .about-content .about-content-grid #credentials-section div a:hover {
+    color: #B4DE4A;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  .about-content .about-content-grid #credentials-section div p {
     color: #2C2C2C;
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1.2vw;
-    width: 50%;
-  }
-  .about-content .about-content-grid #aboutpg-item3 ul li a {
-    text-decoration: none;
-    background-color: #B4DE4A;
-    color: rgb(68, 98, 88);
-    width: 17vw;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2vw;
-    margin: 0 0 0 1vw;
-    transition: 0.4s all ease;
-    border-radius: 44.9876px;
-    text-align: center;
-    padding: 1vw;
-  }
-  .about-content .about-content-grid #aboutpg-item3 ul li a:hover {
-    box-shadow: 0 0.1em 0.5em 0.1em rgb(68, 98, 88);
-  }
-  .about-content .about-content-grid #aboutpg-item3 ul li h3 {
-    color: rgb(68, 98, 88);
-    font-family: "Roboto";
-    font-weight: 600;
-    font-size: 1.8vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    width: 80%;
-  }
-  .about-content .about-content-grid #aboutpg-item4 h2 {
-    color: rgb(68, 98, 88);
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 3vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    height: 12vh;
-    width: 18vw;
-    padding-top: 3vh;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
     margin: 0;
-    transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
+    padding-left: 2vw;
+    align-self: center;
   }
-}
-@media only screen and (min-width: 500px) {
-  .about-splash {
-    position: absolute;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1743114190/Splash_vxrjzl_ydbh4j.png");
-    left: 0px;
-    top: 12vh;
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    z-index: 95;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .about-splash .about-splash-items {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 10vw;
-    top: 50vh;
-    margin: 0;
-    z-index: 99;
-    width: 35vw;
-  }
-  .about-splash .about-splash-items .large-title {
-    font-family: "Aref Ruqaa", serif;
-    text-transform: uppercase;
-    color: #B4DE4A;
-    font-weight: 700;
-    font-size: 4vw;
-    text-align: center;
-    margin: 0;
-    line-height: 80%;
-    z-index: 99;
-    text-shadow: 3px 4px 7px rgba(32, 32, 32, 0.8);
-  }
-  .about-content {
-    position: relative;
-    padding-top: 95vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    z-index: 1;
-    background-color: #F1ECE8;
-  }
-  .about-content .about-content-grid {
-    display: grid;
-    width: 70vw;
-    grid-template-columns: 1fr;
+  .about-content .about-content-grid #FAQ-section {
+    background-color: white;
+    width: 400px;
     align-self: center;
     justify-self: center;
-    margin-bottom: 10vh;
-  }
-  .about-content .about-content-grid .about-content-item {
-    width: 100%;
-    z-index: 99;
-  }
-  .about-content .about-content-grid #aboutpg-item1 {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
+    margin-top: 1vw;
   }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 {
+  .about-content .about-content-grid #FAQ-section h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    font-variant: all-small-caps;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding-top: 2vw;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 h2 {
-    color: rgb(68, 98, 88);
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 3vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    height: 12vh;
-    width: 15vw;
-    padding-top: 3vh;
-    margin: 0;
-    transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 p {
-    text-align: center;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1vw;
-    line-height: 140%;
-    text-align: left;
-    width: 60%;
-    height: 70%;
-    word-wrap: break-word;
-    margin: 0;
-    padding-top: 3vw;
-    padding-bottom: 6vw;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid {
-    display: grid;
-    grid-template-columns: 1fr;
     width: 80%;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 40vh;
-    margin-bottom: 1vw;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img1 {
-    height: 100%;
-    width: 33%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738574/Anthony_snag_at5ab2.jpg");
-    background-position: center;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img2 {
-    height: 100%;
-    width: 33%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738573/Snags_ogswkk.jpg");
-    background-position: center;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img3 {
-    height: 100%;
-    width: 33%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738572/dogs_in_truck_ahokbb.png");
-    background-position: center;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img4 {
-    height: 100%;
-    width: 33%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738570/arborist2_yhdtlw.jpg");
-    background-position: center;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img5 {
-    height: 100%;
-    width: 33%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166937/arborist1_a7j9lz.jpg");
-    background-position: center;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container1 #about-img-grid .about-img-row #about-img6 {
-    height: 100%;
-    width: 33%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0.5vw;
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742738569/Anthony_Pruning_mobile_ukpi7l.png");
-    background-position: center;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container2 {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50vh;
-    margin-top: 1vw;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container2 img {
-    height: 100%;
-  }
-  .about-content .about-content-grid #aboutpg-item1 .aboutpg1container2 p {
-    text-align: left;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1vw;
-    line-height: 140%;
-    width: 55%;
-    height: 100%;
-    word-wrap: break-word;
-    margin: 0;
-    padding: 10%;
-  }
-  .about-content .about-content-grid #aboutpg-item2 {
-    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166649/Bg1_bgnkif.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-    justify-items: center;
-    height: 90vh;
-    margin-top: 1vw;
-  }
-  .about-content .about-content-grid #aboutpg-item2 #ethosbox {
-    padding: 2vw;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-    justify-items: center;
-  }
-  .about-content .about-content-grid #aboutpg-item2 #ethosbox h2 {
-    color: rgb(68, 98, 88);
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 3vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    height: 12vh;
-    width: 18vw;
     padding-top: 3vh;
     margin: 0;
     transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
   }
-  .about-content .about-content-grid #aboutpg-item2 #ethosbox p {
-    text-align: center;
-    color: #2C2C2C;
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 1vw;
-    line-height: 140%;
-    text-align: left;
-    width: 60%;
-    height: 70%;
-    word-wrap: break-word;
-    margin: 0;
-    padding-top: 3vw;
-    padding-bottom: 6vw;
-  }
-  .about-content .about-content-grid #aboutpg-item3 {
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-    justify-items: center;
-    margin-top: 1vw;
-  }
-  .about-content .about-content-grid #aboutpg-item3 h2 {
-    color: rgb(68, 98, 88);
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 3vw;
-    text-align: center;
-    font-variant: all-small-caps;
-    height: 12vh;
-    width: 13vw;
-    padding-top: 3vh;
-    margin: 0;
-    transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
-  }
-  .about-content .about-content-grid #aboutpg-item3 ul {
+  .about-content .about-content-grid #FAQ-section ul {
     color: rgb(68, 98, 88);
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    padding: 0px;
   }
-  .about-content .about-content-grid #aboutpg-item3 ul li {
+  .about-content .about-content-grid #FAQ-section ul li {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2.5vw 0;
   }
-  .about-content .about-content-grid #aboutpg-item3 ul li p {
+  .about-content .about-content-grid #FAQ-section ul li p {
     text-align: center;
     color: #2C2C2C;
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 1.2vw;
-    width: 50%;
+    font-size: 18px;
+    width: 80%;
+    margin-top: 0px;
   }
-  .about-content .about-content-grid #aboutpg-item3 ul li a {
+  .about-content .about-content-grid #FAQ-section ul li a {
     text-decoration: none;
     background-color: #B4DE4A;
     color: rgb(68, 98, 88);
-    width: 20vw;
+    width: 70%;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2vw;
+    font-size: 18px;
     margin: 0 0 0 1vw;
     transition: 0.4s all ease;
     border-radius: 44.9876px;
     text-align: center;
-    padding: 1vw;
+    padding: 0.8vw;
   }
-  .about-content .about-content-grid #aboutpg-item3 ul li a:hover {
+  .about-content .about-content-grid #FAQ-section ul li a:hover {
     box-shadow: 0 0.1em 0.5em 0.1em rgb(68, 98, 88);
   }
-  .about-content .about-content-grid #aboutpg-item3 ul li h3 {
+  .about-content .about-content-grid #FAQ-section ul li h3 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 1.8vw;
+    font-size: 24px;
     text-align: center;
     font-variant: all-small-caps;
     width: 80%;
   }
-  .about-content .about-content-grid #aboutpg-item4 {
+  .about-content .about-content-grid #reading-section {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     margin-top: 1vw;
+    background-color: whitesmoke;
   }
-  .about-content .about-content-grid #aboutpg-item4 h2 {
+  .about-content .about-content-grid #reading-section h2 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 30px;
     text-align: center;
     font-variant: all-small-caps;
-    height: 12vh;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     padding-top: 3vh;
     margin: 0;
     transition: 1s all ease;
-    border-bottom: 3px solid rgb(68, 98, 88);
   }
-  .about-content .about-content-grid #aboutpg-item4 ul {
+  .about-content .about-content-grid #reading-section ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
+    grid-template-columns: 1fr;
+    width: 300px;
+    padding: 0px;
   }
-  .about-content .about-content-grid #aboutpg-item4 ul li {
+  .about-content .about-content-grid #reading-section ul li {
     display: grid;
     align-items: start;
     justify-items: center;
@@ -2194,10 +1925,466 @@ html {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     margin: 0.5vw;
   }
-  .about-content .about-content-grid #aboutpg-item4 ul li img {
+  .about-content .about-content-grid #reading-section ul li img {
     width: 50%;
   }
-  .about-content .about-content-grid #aboutpg-item4 ul li p {
+  .about-content .about-content-grid #reading-section ul li p {
+    text-align: left;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    width: 75%;
+    margin: 0;
+  }
+  .about-content .about-content-grid #reading-section ul li h4 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 20px;
+    text-align: left;
+    font-variant: all-small-caps;
+    width: 75%;
+    padding-bottom: 1vh;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .about-splash {
+    position: absolute;
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255966/Splash_edited_cidqgv.jpg");
+    left: 0px;
+    top: 12vh;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 95;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about-splash .about-splash-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10vw;
+    top: 50vh;
+    margin: 0;
+    z-index: 99;
+    width: 35vw;
+  }
+  .about-splash .about-splash-items .large-title {
+    font-family: "Aref Ruqaa", serif;
+    text-transform: uppercase;
+    color: #B4DE4A;
+    font-weight: 700;
+    font-size: 4vw;
+    text-align: center;
+    margin: 0;
+    line-height: 80%;
+    z-index: 99;
+    text-shadow: 3px 4px 7px rgba(32, 32, 32, 0.8);
+  }
+  .about-content {
+    position: relative;
+    padding-top: 95vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 1;
+    background-color: #F1ECE8;
+  }
+  .about-content .about-content-grid {
+    display: grid;
+    width: 70vw;
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 10vh;
+  }
+  .about-content .about-content-grid .about-content-item {
+    width: 100%;
+    z-index: 99;
+  }
+  .about-content .about-content-grid #story-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 2vw;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    height: 12vh;
+    width: 15vw;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 p {
+    text-align: center;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    word-wrap: break-word;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 1vw;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img1 {
+    height: 100%;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255281/gallery7_rqysd7_sdvl71.jpg");
+    background-position: center;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img2 {
+    height: 100%;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255753/Snags_ogswkk_y4zmqe.jpg");
+    background-position: center;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img3 {
+    height: 100%;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255639/dogs_in_truck_ahokbb_nu36hc.jpg");
+    background-position: center;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img4 {
+    height: 100%;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756172624/Untitled_c2vdxx.jpg");
+    background-position: center;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img5 {
+    height: 100%;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756255687/arborist1_a7j9lz_1_am6r7i.jpg");
+    background-position: center;
+  }
+  .about-content .about-content-grid #story-section .storysect-container1 #about-img-grid .about-img-row #about-img6 {
+    height: 100%;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5vw;
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1756256370/Anthony_Pruning_mobile_ukpi7l_yefrxz.png");
+    background-position: center;
+  }
+  .about-content .about-content-grid #story-section .storysect-container2 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    margin-top: 1vw;
+  }
+  .about-content .about-content-grid #story-section .storysect-container2 img {
+    height: 100%;
+  }
+  .about-content .about-content-grid #story-section .storysect-container2 p {
+    text-align: left;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    width: 55%;
+    height: 100%;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 10%;
+  }
+  .about-content .about-content-grid #ethos-section {
+    background-image: url("https://res.cloudinary.com/dr3r301ht/image/upload/v1742166649/Bg1_bgnkif.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    height: 90vh;
+    margin-top: 1vw;
+  }
+  .about-content .about-content-grid #ethos-section #ethosbox {
+    padding: 2vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+  }
+  .about-content .about-content-grid #ethos-section #ethosbox h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  .about-content .about-content-grid #ethos-section #ethosbox p {
+    text-align: center;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 140%;
+    text-align: left;
+    width: 60%;
+    height: 70%;
+    word-wrap: break-word;
+    margin: 0;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+  }
+  .about-content .about-content-grid #credentials-section {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 1vw;
+    padding: 3vw;
+    height: 80vh;
+  }
+  .about-content .about-content-grid #credentials-section h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  .about-content .about-content-grid #credentials-section div {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+    width: 75%;
+    margin-top: 0.5vw;
+    align-items: center;
+  }
+  .about-content .about-content-grid #credentials-section div #hort {
+    height: 5.5vw;
+  }
+  .about-content .about-content-grid #credentials-section div #arbor {
+    height: 7vw;
+  }
+  .about-content .about-content-grid #credentials-section div #degree {
+    height: 4vw;
+  }
+  .about-content .about-content-grid #credentials-section div a {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    transition: 0.4s all ease;
+  }
+  .about-content .about-content-grid #credentials-section div a:hover {
+    color: #B4DE4A;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  .about-content .about-content-grid #credentials-section div p {
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1vw;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+    margin: 0;
+    padding-left: 2vw;
+    align-self: center;
+  }
+  .about-content .about-content-grid #FAQ-section {
+    background-color: white;
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+    border-style: solid;
+    border-width: 30px;
+    border-color: #D0D7CF;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    margin-top: 1vw;
+  }
+  .about-content .about-content-grid #FAQ-section h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  .about-content .about-content-grid #FAQ-section ul {
+    color: rgb(68, 98, 88);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0px;
+  }
+  .about-content .about-content-grid #FAQ-section ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5vw 0;
+  }
+  .about-content .about-content-grid #FAQ-section ul li p {
+    text-align: center;
+    color: #2C2C2C;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1.2vw;
+    width: 50%;
+    margin-top: 0px;
+  }
+  .about-content .about-content-grid #FAQ-section ul li a {
+    text-decoration: none;
+    background-color: #B4DE4A;
+    color: rgb(68, 98, 88);
+    width: 20vw;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    margin: 0 0 0 1vw;
+    transition: 0.4s all ease;
+    border-radius: 44.9876px;
+    text-align: center;
+    padding: 0.8vw;
+  }
+  .about-content .about-content-grid #FAQ-section ul li a:hover {
+    box-shadow: 0 0.1em 0.5em 0.1em rgb(68, 98, 88);
+  }
+  .about-content .about-content-grid #FAQ-section ul li h3 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 1.8vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    width: 80%;
+  }
+  .about-content .about-content-grid #reading-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 1vw;
+    background-color: whitesmoke;
+  }
+  .about-content .about-content-grid #reading-section h2 {
+    color: rgb(68, 98, 88);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 3vh;
+    margin: 0;
+    transition: 1s all ease;
+    border-bottom: 3px solid rgb(68, 98, 88);
+  }
+  .about-content .about-content-grid #reading-section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    padding: 0px;
+  }
+  .about-content .about-content-grid #reading-section ul li {
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    transition: 1s all ease;
+    padding: 10%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    margin: 0.5vw;
+  }
+  .about-content .about-content-grid #reading-section ul li img {
+    width: 50%;
+  }
+  .about-content .about-content-grid #reading-section ul li p {
     text-align: left;
     color: #2C2C2C;
     font-family: "Roboto";
@@ -2207,7 +2394,7 @@ html {
     width: 75%;
     margin: 0;
   }
-  .about-content .about-content-grid #aboutpg-item4 ul li h4 {
+  .about-content .about-content-grid #reading-section ul li h4 {
     color: rgb(68, 98, 88);
     font-family: "Roboto";
     font-weight: 900;
@@ -2305,7 +2492,6 @@ html {
     height: 50vh;
     grid-template-columns: 1fr;
     justify-self: center;
-    align-self: center;
     justify-items: center;
     list-style-type: none;
     padding: 0;
@@ -2905,7 +3091,6 @@ html {
     width: 50%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-self: center;
-    align-self: center;
     justify-items: center;
     list-style-type: none;
     padding: none;
@@ -3459,7 +3644,6 @@ html {
   }
   .main-body .footer .footer-ul .footer-li {
     width: 20vw;
-    height: 18vw;
     align-self: center;
   }
   .main-body .footer .footer-ul .footer-li h5 {

@@ -165,7 +165,6 @@ $GaiaGrey: #2C2C2C;
                 height:50vh;
                 grid-template-columns: 1fr;
                 justify-self: center;
-                align-self: center;
                 justify-items: center;
                 list-style-type: none;
                 padding:0;
@@ -786,7 +785,6 @@ $GaiaGrey: #2C2C2C;
                 width:50%;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 justify-self: center;
-                align-self: center;
                 justify-items: center;
                 list-style-type: none;
                 padding:none;
@@ -1366,7 +1364,6 @@ $GaiaGrey: #2C2C2C;
                 left:20vw;
                 .footer-li{
                     width: 20vw;
-                    height:18vw;
                     align-self: center;
                     
                     h5{
