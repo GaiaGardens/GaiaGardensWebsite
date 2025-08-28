@@ -11,8 +11,13 @@ ScrollReveal().reveal('#expert-care', {duration:2000, delay:800, distance: '10px
 ScrollReveal().reveal('#underline', {duration:2000, delay:1000, distance: '20px', origin: 'bottom'});
 ScrollReveal().reveal('#row2', {duration:2000, delay:1500, distance: '30px', origin: 'bottom'});
 
-ScrollReveal().reveal('#ethosbox', { duration:2000});
 
+
+ScrollReveal().reveal('#ethosbox', { duration:2000});
+ScrollReveal().reveal('.about-content-item', { duration:2000, distance: '10px', origin: 'bottom'});
+ScrollReveal().reveal('.storysect-container1', { duration:2000, distance: '10px', origin: 'bottom'});
+ScrollReveal().reveal('.storysect-container2', { duration:2000, distance: '10px', origin: 'bottom'});
+ScrollReveal().reveal('#about-img-grid', { delay:800, duration:2000});
 /*Services Page*/
 
 $('#text1 h2').css("opacity","0");
@@ -32,7 +37,7 @@ $('#pleasecallslidein').delay(8000).animate({opacity: '.8',}, 1800 );
 $('#text2 a').delay(9000).animate({opacity: '1',}, 1800 );
 
 
-/*Cycling Animated Pictures*/        
+/*Home Page Cycling Animated Pictures*/        
 $('#background div:first').siblings().hide();
 loop();
 function loop(){
