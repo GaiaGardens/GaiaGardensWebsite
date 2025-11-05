@@ -1106,6 +1106,83 @@ html {
     text-align: center;
     padding-bottom: 60px;
   }
+  .content-container #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+    padding: 10vh;
+    gap: 2rem;
+    width: 100%;
+  }
+  .content-container #contact h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 8vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    color: rgb(68, 98, 88);
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .content-container #contact p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4vw;
+    text-align: center;
+    color: #2C2C2C;
+    width: 100%;
+    line-height: 150%;
+    margin-top: 0;
+  }
+  .content-container #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2vw;
+  }
+  .content-container #contact form label {
+    font-family: "Roboto";
+    font-size: 4vw;
+    color: rgb(68, 98, 88);
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+  }
+  .content-container #contact form input, .content-container #contact form textarea {
+    font-family: "Roboto";
+    font-size: 4vw;
+    padding: 1rem;
+    border: 2px solid rgb(68, 98, 88);
+    border-radius: 5px;
+    resize: vertical;
+    width: 100%;
+    max-width: 500px;
+  }
+  .content-container #contact form button {
+    width: 150px;
+    height: 40px;
+    background-color: #B4DE4A;
+    border: none;
+    border-radius: 20px;
+    font-family: "Roboto";
+    font-size: 4vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  .content-container #contact form button:hover {
+    background-color: rgba(180, 222, 74, 0.5607843137);
+    box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
+    color: rgb(68, 98, 88);
+  }
   .content-container #question-header {
     background-color: #2C2C2C;
     width: 100%;
@@ -1366,6 +1443,83 @@ html {
     padding-top: 2vw;
     margin-bottom: 5vw;
   }
+  .content-container #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+    padding: 10vh;
+    gap: 2rem;
+    width: 100%;
+  }
+  .content-container #contact h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.8vw;
+    text-align: center;
+    font-variant: all-small-caps;
+    color: rgb(68, 98, 88);
+    margin-bottom: 0;
+    width: 80%;
+  }
+  .content-container #contact p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #2C2C2C;
+    width: 70%;
+    line-height: 150%;
+    margin-top: 0;
+  }
+  .content-container #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2vw;
+  }
+  .content-container #contact form label {
+    font-family: "Roboto";
+    font-size: 1vw;
+    color: rgb(68, 98, 88);
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+  }
+  .content-container #contact form input, .content-container #contact form textarea {
+    font-family: "Roboto";
+    font-size: 1vw;
+    padding: 1rem;
+    border: 2px solid rgb(68, 98, 88);
+    border-radius: 5px;
+    resize: vertical;
+    width: 100%;
+    max-width: 500px;
+  }
+  .content-container #contact form button {
+    width: 150px;
+    height: 40px;
+    background-color: #B4DE4A;
+    border: none;
+    border-radius: 20px;
+    font-family: "Roboto";
+    font-size: 1vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  .content-container #contact form button:hover {
+    background-color: rgba(180, 222, 74, 0.5607843137);
+    box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
+    color: rgb(68, 98, 88);
+  }
   .content-container #question-header {
     background-color: #2C2C2C;
     width: 100%;
@@ -1415,6 +1569,10 @@ html {
     width: 100% !important;
     background-color: white;
     margin-top: 5vw;
+  }
+  .content-container form {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 499px) {
@@ -1571,7 +1729,6 @@ html {
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
-    width: 350px;
   }
   .about-content .about-content-grid #story-section .storysect-container1 {
     display: flex;
@@ -1743,7 +1900,7 @@ html {
     font-weight: 300;
     font-size: 18px;
     line-height: 140%;
-    text-align: left;
+    text-align: center;
     word-wrap: break-word;
     margin: 0;
   }
