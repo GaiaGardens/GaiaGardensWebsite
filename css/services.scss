@@ -215,6 +215,84 @@ $GaiaGrey: #2C2C2C;
                 }
             }
 
+                #contact{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0;
+                padding: 10vh;
+                gap: 2rem;
+                width:100%;
+                h2{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 8vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: $GaiaDarkGreen;
+                    margin-bottom: 0;
+                    width:100%;
+                }
+                p{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 4vw;
+                    text-align: center;
+                    color: $GaiaGrey;
+                    width: 100%;
+                    line-height: 150%;
+                    margin-top:0;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    width: 100%;
+                    align-items: center;
+                    margin-bottom: 2vw;
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 4vw;
+                        color: $GaiaDarkGreen;
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        text-align: left;
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                    input, textarea{
+                        font-family: 'Roboto';
+                        font-size: 4vw;
+                        padding: 1rem;
+                        border: 2px solid $GaiaDarkGreen;
+                        border-radius: 5px;
+                        resize: vertical;
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                    button{
+                        width: 150px;
+                        height: 40px;
+                        background-color: $GaiaLightGreen;
+                        border: none;
+                        border-radius: 20px;
+                        font-family: 'Roboto';
+                        font-size: 4vw;
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition: 0.3s all ease;
+                    }
+                    button:hover{
+                        background-color: #b4de4a8f;
+                        box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
+                        color:$GaiaDarkGreen;
+                    }
+                }
+        }
+
         #question-header{
             background-color:$GaiaGrey;
             width: 100%;
@@ -478,7 +556,83 @@ $GaiaGrey: #2C2C2C;
 
                 }
             }
-
+        #contact{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0;
+                padding: 10vh;
+                gap: 2rem;
+                width:100%;
+                h2{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 2.8vw;
+                    text-align: center;
+                    font-variant: all-small-caps;
+                    color: $GaiaDarkGreen;
+                    margin-bottom: 0;
+                    width:80%;
+                }
+                p{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.2vw;
+                    text-align: center;
+                    color: $GaiaGrey;
+                    width: 70%;
+                    line-height: 150%;
+                    margin-top:0;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    width: 100%;
+                    align-items: center;
+                    margin-bottom: 2vw;
+                    label{
+                        font-family: 'Roboto';
+                        font-size: 1vw;
+                        color: $GaiaDarkGreen;
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        text-align: left;
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                    input, textarea{
+                        font-family: 'Roboto';
+                        font-size: 1vw;
+                        padding: 1rem;
+                        border: 2px solid $GaiaDarkGreen;
+                        border-radius: 5px;
+                        resize: vertical;
+                        width: 100%;
+                        max-width: 500px;
+                    }
+                    button{
+                        width: 150px;
+                        height: 40px;
+                        background-color: $GaiaLightGreen;
+                        border: none;
+                        border-radius: 20px;
+                        font-family: 'Roboto';
+                        font-size: 1vw;
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition: 0.3s all ease;
+                    }
+                    button:hover{
+                        background-color: #b4de4a8f;
+                        box-shadow: 0 0.1em 0.5em 0.1em rgba(0, 0, 0, 0.801);
+                        color:$GaiaDarkGreen;
+                    }
+                }
+        }
         #question-header{
             background-color:$GaiaGrey;
             width: 100%;
@@ -533,6 +687,11 @@ $GaiaGrey: #2C2C2C;
                 background-color: white;
                 margin-top: 5vw;
             }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            
         }
     }
 }
